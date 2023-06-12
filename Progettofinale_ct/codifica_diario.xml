@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="trasformata.xsl"?>
+<!DOCTYPE TEI SYSTEM "tei_all.dtd">
+
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Codifica del diario di Emanuele Artom</title>
+                <author ref="artom">Emanuele Artom</author>
+                <respStmt>
+                    <resp>Codifica TEI a cura di</resp>
+                    <persName>
+                        <forename>Gabriele</forename>
+                        <surname> Isola <surname>
+                    </persName>
+                <respStmt>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    Edizione universitaria del<date when="2023-06">Giugno 2023</date>
+                </edition>
+                <respStmt>
+                    <resp>Codifica TEI a cura di</resp>
+                    <persName>
+                        <forename>Gabriele</forename>
+                        <surname> Isola <surname>
+                    </persName>
+                <respStmt>
+                <editor role="Managing_Editor">Angelo Del Grosso</editor>
+            </editionStmt>
+        </fileDesc>
+        <encodingDesc></encodingDesc>
+        <profileDesc></profileDesc>
+    </teiHeader>
+    <text>
+        <back>
+            <listPerson>
+                <head>Lista persone</head>
+                <person xml:id="artom">
+                    <persName>
+                        <ref xml:lang="it" target="http://digital-library.cdec.it/cdec-web/persone/detail/person-it-cdec-eaccpf0001-000015/artom-emanuele.html"/>
+                        <forename>Emanuele</forename>
+                        <surname>Artom</surname>
+                    </persName>
+                    <sex value="M">uomo</sex>
+                    <birth>
+                        <date when="1915-06-23">23 giugno 1915</date>
+                        <placeName ref="#aosta">
+                            <settlement type="municipality">Aosta</settlement>
+                            <settlement type="region">Valle d'Aosta</settlement>
+                            <country key="IT">Italia</country>
+                        </placeName>
+                    </birth>
+                    <death>
+                        <date when="1944-04-07">7 aprile 1944</date>
+                        <placeName ref="#torino">
+                            <settlement type="municipality">Torino</settlement>
+                            <settlement type="region">Piemonte</settlement>
+                            <country key="IT">Italia</country>
+                        </placeName>
+                    </death>
+                </person>
+            </listPerson>
+            <listPlace>
+                <head>Lista luoghi</head>
+                <place xml:id="torino">
+                    <placeName ref="http://www.comune.torino.it/">Torino</placeName>
+                    <settlement type="province">Torino</settlement>
+                    <settlement type="region">Piemonte</settlement>
+                    <country key="IT">Italia</country>
+                </place>
+                <place xml:id="aosta">
+                    <placeName ref="https://www.comune.aosta.it/it">Aosta</placeName>
+                    <settlement type="province">Aosta</settlement>
+                    <settlement type="region">Valle d'Aosta</settlement>
+                    <country key="IT">Italia</country>
+                </place>
+            </listPlace>
+        </back>
+    </text>
+</TEI>
