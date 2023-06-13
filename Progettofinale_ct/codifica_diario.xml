@@ -7,28 +7,69 @@
         <fileDesc>
             <titleStmt>
                 <title>Codifica del diario di Emanuele Artom</title>
-                <author ref="artom">Emanuele Artom</author>
+                <author ref="#artom">Emanuele Artom</author>
                 <respStmt>
                     <resp>Codifica TEI a cura di</resp>
                     <persName>
                         <forename>Gabriele</forename>
-                        <surname> Isola <surname>
+                        <surname> Isola </surname>
                     </persName>
                 <respStmt>
             </titleStmt>
             <editionStmt>
                 <edition>
-                    Edizione universitaria del<date when="2023-06">Giugno 2023</date>
+                    Edizione universitaria del<date when="2023-06">Giugno 2023 per il progetto d'esame del corso di Codifica di testi</date>
                 </edition>
                 <respStmt>
                     <resp>Codifica TEI a cura di</resp>
                     <persName>
                         <forename>Gabriele</forename>
-                        <surname> Isola <surname>
+                        <surname> Isola </surname>
                     </persName>
                 <respStmt>
+                <principal>Gabriele Isola</principal>
                 <editor role="Managing_Editor">Angelo Del Grosso</editor>
+                <sponsor>Università di Pisa</sponsor>
             </editionStmt>
+            <publicationStmt>
+                <authority>
+                    <orgName ref="#unipi">Università di Pisa<orgName>
+                </authority>
+                 <availability>
+                    <p>Codifica opensource disponibile sul <orgName> gitHub <orgName>di <persName>Gabriele Isola<PersoName> </p>
+                </availability>
+                <date when="2023">2023</date>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier source="https://digital-library.cdec.it/cdec-web/storico/detail/IT-CDEC-ST0003-000001/fondo-emanuele-artom.html">
+                        <settlement ref="#milano">Milano<settlement>
+                        <institution>Centro di documentazione ebraiaca</institution>
+                        <repository>Fondo Emanuele Artom, b.1, fasc9</repository>
+                    </msIdentifier>
+                    <msContents>
+                        <summary source="http://digital-library.cdec.it/cdec-web/storico/detail/IT-CDEC-ST0003-000006/diari.html">Raccolta degli scritti autografi di <persName ref="#artom"> Emanuele Artom <persName> redatti tra il <date when="1943">1943 </date> e il <date>1944</date> accompagnati dalla lettera originale della madre <persName ref="#segre">Amalia<persName> riportante l'epigrafe alla mia morte questo plico deve essere consegnato al Centro di documentazione ebraica [..] esso ha un grande valore storico</summary>
+                        <textLang mainLang="it"> Italiano</textLang>
+                        <msItemStruct n="1">
+                            <author ref="segre">Amalia Segre</author>
+                            <title>lettera introduttiva</title>
+                            <note> lettera originale della madre <persName ref="segre"> Amalia <persName> al figlio <persName ref="artom"> Emanuele Artom <persName> </note>
+                        </msItemStruct>
+                        <msItemStruct n="2">
+                            <author ref="artom">Emanuele Artom</author>
+                            <title>Prima parte</title>
+                            <note>riguarda il periodo che va dal <date when="1940-01-01"> 1 gennaio 1940 </date> al <date when="1943-09-10"> 10 settembre 1943 </date>, ed è una fonte di notizie sulla vita culturale torinese di quegli anni e sullo sviluppo della persecuzione razziale<note>
+                        </msItemStruct>
+                        <msItemStruct n="3">
+                            <author ref="artom">Emanuele Artom</author>
+                            <title>seconda parte</title>
+                            <note> riguarda il periodo che va dal <date when="1943-11">novembre 1943 </date> al <date when="1944-02-23">23 febbraio 1944</date> riguarda invece l'esperienza partigiana di <persName ref="artom">Emanuele Artom <persName></note>
+                        </msItemStruct>
+                    </msContents>
+                    <physDesc></physDesc>
+                    <history><history>
+                </msDesc>
+            <sourceDesc>
         </fileDesc>
         <encodingDesc></encodingDesc>
         <profileDesc></profileDesc>
@@ -61,6 +102,30 @@
                         </placeName>
                     </death>
                 </person>
+                <person xml:id="segre">
+                    <persName>
+                        <ref xml:lang="it" target="http://digital-library.cdec.it/cdec-web/persone/detail/person-it-cdec-eaccpf0001-017448/segre-amalia.html?persone=%22Segre%2C+Amalia%22"/>
+                        <forename>Amalia</forename>
+                        <surname>Segre</surname>
+                    </persName>
+                    <sex value="F">donna</sex>
+                    <birth>
+                        <date when="1890">1890</date>
+                        <placeName ref="#torino">
+                            <settlement type="municipality">Torino</settlement>
+                            <settlement type="region">Piemonte</settlement>
+                            <country key="IT">Italia</country>
+                        </placeName>
+                    </birth>
+                    <death>
+                        <date when="1972-09-10">10 settembre 1972</date>
+                        <placeName ref="#torino">
+                            <settlement type="municipality">Torino</settlement>
+                            <settlement type="region">Piemonte</settlement>
+                            <country key="IT">Italia</country>
+                        </placeName>
+                    </death>
+                </person>
             </listPerson>
             <listPlace>
                 <head>Lista luoghi</head>
@@ -71,12 +136,34 @@
                     <country key="IT">Italia</country>
                 </place>
                 <place xml:id="aosta">
-                    <placeName ref="https://www.comune.aosta.it/it">Aosta</placeName>
+                    <placeName ref="https://www.comune.milano.it/">Aosta</placeName>
                     <settlement type="province">Aosta</settlement>
                     <settlement type="region">Valle d'Aosta</settlement>
                     <country key="IT">Italia</country>
                 </place>
+                <place xml:id="milano">
+                    <placeName ref="https://www.comune.aosta.it/it">Milano</placeName>
+                    <settlement type="province">Milano</settlement>
+                    <settlement type="region">Lombardia</settlement>
+                    <country key="IT">Italia</country>
+                </place>
             </listPlace>
+            <listOrg>
+                <head>Elenco organizzazioni<head>
+                <org xml:id="unipi">
+                    <orgName ref="https://www.unipi.it/">Università di Pisa</orgName>
+                    <place>
+                        <location type="address">
+                            <country key="IT">Italia,</country>
+                            <settlement>Pisa</settlement>
+                            <address>
+                                <addrLine>Lungarno Antonio Pacinotti 43,</addrLine>
+                                <addrLine>56126, Pisa</addrLine>
+                            </address>
+                        </location>
+                    <place>
+                <org>
+            <listOrg>
         </back>
     </text>
 </TEI>
