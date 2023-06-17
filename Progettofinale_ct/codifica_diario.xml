@@ -9,12 +9,12 @@
                 <title>Codifica del diario di Emanuele Artom</title>
                 <author ref="#artom">Emanuele Artom</author>
                 <respStmt>
-                    <resp>Codifica TEI a cura di</resp>
+                    <resp>Conversione TEI P5 a cura di</resp>
                     <persName>
                         <forename>Gabriele</forename>
                         <surname> Isola </surname>
                     </persName>
-                <respStmt>
+                </respStmt>
             </titleStmt>
             <editionStmt>
                 <edition>
@@ -26,55 +26,203 @@
                         <forename>Gabriele</forename>
                         <surname> Isola </surname>
                     </persName>
-                <respStmt>
+                </respStmt>
                 <principal>Gabriele Isola</principal>
                 <editor role="Managing_Editor">Angelo Del Grosso</editor>
                 <sponsor>Università di Pisa</sponsor>
             </editionStmt>
             <publicationStmt>
                 <authority>
-                    <orgName ref="#unipi">Università di Pisa<orgName>
+                    <orgName ref="#unipi">Università di Pisa</orgName>
                 </authority>
                  <availability>
-                    <p>Codifica opensource disponibile sul <orgName> gitHub <orgName>di <persName>Gabriele Isola<PersoName> </p>
+                    <p>Codifica opensource disponibile sul <orgName> gitHub </orgName>di <persName>Gabriele Isola</PersName> </p>
                 </availability>
                 <date when="2023">2023</date>
             </publicationStmt>
             <sourceDesc>
                 <msDesc>
-                    <msIdentifier source="https://digital-library.cdec.it/cdec-web/storico/detail/IT-CDEC-ST0003-000001/fondo-emanuele-artom.html">
-                        <settlement ref="#milano">Milano<settlement>
-                        <institution>Centro di documentazione ebraiaca</institution>
+                    <msIdentifier ref="https://digital-library.cdec.it/cdec-web/storico/detail/IT-CDEC-ST0003-000001/fondo-emanuele-artom.html">
+                        <settlement ref="#milano">Milano</settlement>
+                        <<orgName ref="CDEC">>Centro di documentazione ebraiaca</orgName>
                         <repository>Fondo Emanuele Artom, b.1, fasc9</repository>
                     </msIdentifier>
                     <msContents>
-                        <summary source="http://digital-library.cdec.it/cdec-web/storico/detail/IT-CDEC-ST0003-000006/diari.html">Raccolta degli scritti autografi di <persName ref="#artom"> Emanuele Artom <persName> redatti tra il <date when="1943">1943 </date> e il <date>1944</date> accompagnati dalla lettera originale della madre <persName ref="#segre">Amalia<persName> riportante l'epigrafe alla mia morte questo plico deve essere consegnato al Centro di documentazione ebraica [..] esso ha un grande valore storico</summary>
+                        <summary ref="http://digital-library.cdec.it/cdec-web/storico/detail/IT-CDEC-ST0003-000006/diari.html">Raccolta degli scritti autografi di <persName ref="#artom"> Emanuele Artom </persName> redatti tra il <date when="1943">1943 </date> e il <date>1944</date> accompagnati dalla lettera originale della madre <persName ref="#segre">Amalia</persName> riportante l'epigrafe alla mia morte questo plico deve essere consegnato al <orgName ref="CDEC">Centro di documentazione ebraica</orgName> [..] esso ha un grande valore storico</summary>
                         <textLang mainLang="it"> Italiano</textLang>
                         <msItemStruct n="1">
                             <author ref="segre">Amalia Segre</author>
                             <title>lettera introduttiva</title>
-                            <note> lettera originale della madre <persName ref="segre"> Amalia <persName> al figlio <persName ref="artom"> Emanuele Artom <persName> </note>
+                            <note> lettera originale della madre <persName ref="segre"> Amalia </persName> al figlio <persName ref="artom"> Emanuele Artom </persName> </note>
                         </msItemStruct>
                         <msItemStruct n="2">
                             <author ref="artom">Emanuele Artom</author>
                             <title>Prima parte</title>
-                            <note>riguarda il periodo che va dal <date when="1940-01-01"> 1 gennaio 1940 </date> al <date when="1943-09-10"> 10 settembre 1943 </date>, ed è una fonte di notizie sulla vita culturale torinese di quegli anni e sullo sviluppo della persecuzione razziale<note>
+                            <note>riguarda il periodo che va dal <date when="1940-01-01"> 1 gennaio 1940 </date> al <date when="1943-09-10"> 10 settembre 1943 </date>, ed è una fonte di notizie sulla vita culturale torinese di quegli anni e sullo sviluppo della persecuzione razziale</note>
                         </msItemStruct>
                         <msItemStruct n="3">
                             <author ref="artom">Emanuele Artom</author>
                             <title>seconda parte</title>
-                            <note> riguarda il periodo che va dal <date when="1943-11">novembre 1943 </date> al <date when="1944-02-23">23 febbraio 1944</date> riguarda invece l'esperienza partigiana di <persName ref="artom">Emanuele Artom <persName></note>
+                            <note> riguarda il periodo che va dal <date when="1943-11">novembre 1943 </date> al <date when="1944-02-23">23 febbraio 1944</date> riguarda invece l'esperienza partigiana di <persName ref="artom">Emanuele Artom </persName></note>
                         </msItemStruct>
                     </msContents>
-                    <physDesc></physDesc>
-                    <history><history>
+                    <physDesc>
+                        <objectDesc>
+                            <supportDesc material="paper">
+                                <condition>Alcune pagine presentano degli strappi o sono leggermente rovinate, in generale il diario è in buone condizioni</condition>
+                                <foliation>Le pagine non risultano numerate</foliation>
+                                <support>Diario in pagine di <material>carta</support>
+                                <extent>
+                                    <measure unit="pages"> 171 pagine e 1 foglietto </measure>                                  
+                                </extent>
+                            </supportDesc>
+                        </objectDesc>
+                        <handDesc><p>Scritto a mano da <persName ref="artom">Emanuele Artom</persName> con un'accompagnamento scritto a mano dalla madre <persName ref="segre"> Amalia Segre</persName> </p></handDesc>
+                        <decoDesc><p>Non sono presenti particolari decorazioni all'interno del testo</p></decoDesc>
+                    </physDesc>
+                    <history>
+                        <origin>Raccolta degli scritti autografi di <persName ref="artom">Emanuele Artom</persName> redatti tra il <date when="1943"> 1943</date> e il <date when="1944">1944</date> accompagnati dalla lettera originale della madre <PersName ref="segre">Amalia</persName></origin>
+                        <acquisition>Le carte del fondo Emanuele Artom sono state donate alla Fondazione CDEC su espressa volontà della madre <persName ref="segre">Amalia Segre Artom</persName></acquisition>
+                    </history>
                 </msDesc>
-            <sourceDesc>
+            </sourceDesc>
         </fileDesc>
-        <encodingDesc></encodingDesc>
-        <profileDesc></profileDesc>
+        <encodingDesc>
+            <projectDesc><p>Codifica svolta per il progetto finale di Codifica di testi, corso svolto dal professor <PersoName><forename> Angelo </forename> <surname>Del Grosso </surname> </persName> nella triennale di informatica umanistica, <orgName ref="#unipi">unipi</orgName> </p></projectDesc>
+            <editorialDecl>
+                <segmentation><p>Codifica svolta dividendo il testo in frasi numerate in base alla pagina e alla riga</p></segmentation>
+                <correction></correction>
+                <normalization></normalization>
+                <quotation marks="all"><p>Tutte le virgolette vengono mantenute nel testo e sono rappresentate dal codice Unicode appropriato</p></quotation>
+            </editorialDecl>
+        </encodingDesc>
+        <profileDesc>
+                <particDesc>
+                    <listPerson>
+                        <person ref="artom"><persName>Emanuele Artom</persName></person>
+                    </listPerson>
+                </particDesc>
+            <langUsage>
+                <language ident="it">Italiano</language>
+            </langUsage>
+            <textDesc>
+                <channel mode="w">Diario scritto a mano</channel>
+                <constitution type="composite">Raccolta degli scritti autografi di <persName ref="#artom"> Emanuele Artom </persName> accompagnati dalla lettera originale della madre <persName ref="#segre">Amalia</persName> </costituition>
+                <derivation type="original"/>
+                <domain type="domestic"/>
+                <factuality type="fact"/>
+                <purpose type="express"/>
+            </textDesc>
+            <creation> 
+                <date when="1943-12-11"> 11 dicembre 1943 </date> Pagina 64
+                <date when="1943-12-12"> 12 dicembre 1943 </date> Pagina 65
+                <date when="1943-12-12"> 12 dicembre 1943 </date> Pagina 66
+            </creation>
+        </profileDesc>
     </teiHeader>
-    <text>
+    <text xml:lang="it" subtype="diary">
+        <body>
+            <ab>
+                <pb xml:id="pag64" n="1" facs="#p64" />
+                <lb xml:id="64_1" n="1" facs="#p64_1"/>
+                <del rend="overstrike" hand="author">L<del>a conquista della <subst><del rend="overstrike" hand="author">vita</del> <add place="above" hand="author">scienza</add></subst>casalinga ha i 
+                <lb xml:id="64_2" n="2" facs="#p64_2"/>
+                suoi fasti e i suoi nefasti. I fazzoletti 
+                <lb xml:id="64_3" n="3" facs="#p64_3"/>
+                lavati ieri sono risultati ben puliti<pc>;</pc> sta 
+                <lb xml:id="64_4" n="4" facs="#p64_4"/>
+                notte a letto mi scoprii e avevo freddo<pc>,</pc>
+                <lb xml:id="64_5" n="5" facs="#p64_5"/>
+                cosicchè pensai di mettere le coperte
+                <lb xml:id="64_6" n="6" facs="#p64_6"/>
+                in una maniera più razionale: la 
+                <lb xml:id="64_7" n="7" facs="#p64_7"/>
+                più ampia sopra, invece che sotto di 
+                <lb xml:id="64_8" n="8" facs="#p64_8"/>
+                modo che <del rend="overstrike" hand="author"> <gap reason="illegible" quantity="4" unit="character"/><del> si possa infilare bene sotto
+                <lb xml:id="64_9" n="9" facs="#p64_9"/>
+                il materasso. Ho comprato i fiammiferi,
+                <lb xml:id="64_10" n="10" facs="#p64_10"/>
+                che ora accendo senza senza difficoltà e do
+                <lb xml:id="64_11" n="11" facs="#p64_11"/>
+                mani spero <subst><del rend="overstrike" hand="author">che arrivino</del> <add place="above" hand="author">di procurarmi</add></subst> il carbu
+                <lb xml:id="64_12" n="12" facs="#p64_12"/>
+                rante per la lampada, il burro, il 
+                <lb xml:id="64_13" n="13" facs="#p64_13"/>
+                veleno per i topi. <del rend="overstrike" hand="author"> <gap reason="illegible" quantity="2" unit="character"/><del> Invece riportai una scon
+                <lb xml:id="64_14" n="14" facs="#p64_14"/>
+                fitta <del rend="overstrike" hand="author">nella<del> quando diedi il grasso alle
+                <lb xml:id="64_15" n="15" facs="#p64_15"/>
+                scarpe, perchè mi macchiai di nero la
+                <lb xml:id="64_16" n="16" facs="#p64_16"/>
+                giacca, ma la padrona di casa mi inse
+                <lb xml:id="64_17" n="17" facs="#p64_17"/>
+                gnò a far sbiadire le macchie con la
+                <lb xml:id="64_18" n="18" facs="#p64_18"/>
+                mollica di pane. Stamane una ragazza
+                <lb xml:id="64_19" n="19" facs="#p64_19"/>
+                del paese mi chiese: siete un patriota?
+                <lb xml:id="64_20" n="20" facs="#p64_20"/>
+                <del rend="overstrike" hand="author">No, rispos<del>Siamo tutti patrioti, risposi.
+                <lb xml:id="64_21" n="21" facs="#p64_21"/>
+                No, di quelli che vivono in montagna.
+
+
+
+
+                <pb xml:id="pag65" n="1" facs="#p65" />
+                <lb xml:id="64_1" n="1" facs="#p64_1"/>
+                <lb xml:id="65_2" n="2" facs="#p65_2"/>
+                <lb xml:id="65_3" n="3" facs="#p65_3"/>
+                <lb xml:id="65_4" n="4" facs="#p65_4"/>
+                <lb xml:id="65_5" n="5" facs="#p65_5"/>
+                <lb xml:id="65_6" n="6" facs="#p65_6"/>
+                <lb xml:id="65_7" n="7" facs="#p65_7"/>
+                <lb xml:id="65_8" n="8" facs="#p65_8"/>
+                <lb xml:id="65_9" n="9" facs="#p65_9"/>
+                <lb xml:id="65_10" n="10" facs="#p65_10"/>
+                <lb xml:id="65_11" n="11" facs="#p65_11"/>
+                <lb xml:id="65_12" n="12" facs="#p65_12"/>
+                <lb xml:id="65_13" n="13" facs="#p65_13"/>
+                <lb xml:id="65_14" n="14" facs="#p65_14"/>
+                <lb xml:id="65_15" n="15" facs="#p65_15"/>
+                <lb xml:id="65_16" n="16" facs="#p65_16"/>
+                <lb xml:id="65_17" n="17" facs="#p65_17"/>
+                <lb xml:id="65_18" n="18" facs="#p65_18"/>
+                <lb xml:id="65_19" n="19" facs="#p65_19"/>
+                <lb xml:id="65_20" n="20" facs="#p65_20"/>
+                <lb xml:id="65_21" n="21" facs="#p65_21"/>
+
+
+
+                <pb xml:id="pag66" n="1" facs="#p66" />
+                <lb xml:id="64_1" n="1" facs="#p64_1"/>
+                <lb xml:id="66_2" n="2" facs="#p66_2"/>
+                <lb xml:id="66_3" n="3" facs="#p66_3"/>
+                <lb xml:id="66_4" n="4" facs="#p66_4"/>
+                <lb xml:id="66_5" n="5" facs="#p66_5"/>
+                <lb xml:id="66_6" n="6" facs="#p66_6"/>
+                <lb xml:id="66_7" n="7" facs="#p66_7"/>
+                <lb xml:id="66_8" n="8" facs="#p66_8"/>
+                <lb xml:id="66_9" n="9" facs="#p66_9"/>
+                <lb xml:id="66_10" n="10" facs="#p66_10"/>
+                <lb xml:id="66_11" n="11" facs="#p66_11"/>
+                <lb xml:id="66_12" n="12" facs="#p66_12"/>
+                <lb xml:id="66_13" n="13" facs="#p66_13"/>
+                <lb xml:id="66_14" n="14" facs="#p66_14"/>
+                <lb xml:id="66_15" n="15" facs="#p66_15"/>
+                <lb xml:id="66_16" n="16" facs="#p66_16"/>
+                <lb xml:id="66_17" n="17" facs="#p66_17"/>
+                <lb xml:id="66_18" n="18" facs="#p66_18"/>
+                <lb xml:id="66_19" n="19" facs="#p66_19"/>
+                <lb xml:id="66_20" n="20" facs="#p66_20"/>
+                <lb xml:id="66_21" n="21" facs="#p66_21"/>
+
+
+
+
+            </ab>
+        </body>
         <back>
             <listPerson>
                 <head>Lista persone</head>
@@ -163,6 +311,13 @@
                         </location>
                     <place>
                 <org>
+                <org xml:id="CDEC">
+                    <orgName ref="https://www.cdec.it/"> CDEC - Centro di Documentazione Ebraica Contemporanea </orgName>
+                    <place ref="#milano"> Milano </place>
+                    <desc>
+                        Il CDEC è un istituto storico culturale indipendente con sede a Milano, che promuove lo studio delle vicende storiche, della cultura e della realtà degli ebrei, con particolare riferimento all'Italia e all'età contemporanea.
+                    </desc>
+                </org>
             <listOrg>
         </back>
     </text>
