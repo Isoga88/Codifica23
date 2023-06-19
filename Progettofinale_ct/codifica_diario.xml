@@ -8,7 +8,7 @@
             <titleStmt>
                 <title>Codifica del diario di Emanuele Artom</title>
                 <author ref="#artom">Emanuele Artom</author>
-                <respStmt>
+                <respStmt xml:id="personal">
                     <resp>Conversione TEI P5 a cura di</resp>
                     <persName>
                         <forename>Gabriele</forename>
@@ -27,7 +27,7 @@
                         <surname> Isola </surname>
                     </persName>
                 </respStmt>
-                <principal>Gabriele Isola</principal>
+                <principal ref="#personal">Gabriele Isola</principal>
                 <editor role="Managing_Editor">Angelo Del Grosso</editor>
                 <sponsor>Università di Pisa</sponsor>
             </editionStmt>
@@ -44,24 +44,24 @@
                 <msDesc>
                     <msIdentifier ref="https://digital-library.cdec.it/cdec-web/storico/detail/IT-CDEC-ST0003-000001/fondo-emanuele-artom.html">
                         <settlement ref="#milano">Milano</settlement>
-                        <<orgName ref="CDEC">>Centro di documentazione ebraiaca</orgName>
+                        <orgName ref="#CDEC">Centro di documentazione ebraiaca</orgName>
                         <repository>Fondo Emanuele Artom, b.1, fasc9</repository>
                     </msIdentifier>
                     <msContents>
-                        <summary ref="http://digital-library.cdec.it/cdec-web/storico/detail/IT-CDEC-ST0003-000006/diari.html">Raccolta degli scritti autografi di <persName ref="#artom"> Emanuele Artom </persName> redatti tra il <date when="1943">1943 </date> e il <date>1944</date> accompagnati dalla lettera originale della madre <persName ref="#segre">Amalia</persName> riportante l'epigrafe alla mia morte questo plico deve essere consegnato al <orgName ref="CDEC">Centro di documentazione ebraica</orgName> [..] esso ha un grande valore storico</summary>
+                        <summary ref="http://digital-library.cdec.it/cdec-web/storico/detail/IT-CDEC-ST0003-000006/diari.html">Raccolta degli scritti autografi di <persName ref="#artom"> Emanuele Artom </persName> redatti tra il <date when="1943">1943 </date> e il <date>1944</date> accompagnati dalla lettera originale della madre <persName ref="#segre">Amalia</persName> riportante l'epigrafe alla mia morte questo plico deve essere consegnato al <orgName ref="#CDEC">Centro di documentazione ebraica</orgName> [..] esso ha un grande valore storico</summary>
                         <textLang mainLang="it"> Italiano</textLang>
                         <msItemStruct n="1">
-                            <author ref="segre">Amalia Segre</author>
+                            <author ref="#segre">Amalia Segre</author>
                             <title>lettera introduttiva</title>
-                            <note> lettera originale della madre <persName ref="segre"> Amalia </persName> al figlio <persName ref="artom"> Emanuele Artom </persName> </note>
+                            <note> lettera originale della madre <persName ref="#segre"> Amalia </persName> al figlio <persName ref="#artom"> Emanuele Artom </persName> </note>
                         </msItemStruct>
                         <msItemStruct n="2">
-                            <author ref="artom">Emanuele Artom</author>
+                            <author ref="#artom">Emanuele Artom</author>
                             <title>Prima parte</title>
                             <note>riguarda il periodo che va dal <date when="1940-01-01"> 1 gennaio 1940 </date> al <date when="1943-09-10"> 10 settembre 1943 </date>, ed è una fonte di notizie sulla vita culturale torinese di quegli anni e sullo sviluppo della persecuzione razziale</note>
                         </msItemStruct>
                         <msItemStruct n="3">
-                            <author ref="artom">Emanuele Artom</author>
+                            <author ref="#artom">Emanuele Artom</author>
                             <title>seconda parte</title>
                             <note> riguarda il periodo che va dal <date when="1943-11">novembre 1943 </date> al <date when="1944-02-23">23 febbraio 1944</date> riguarda invece l'esperienza partigiana di <persName ref="artom">Emanuele Artom </persName></note>
                         </msItemStruct>
@@ -77,12 +77,12 @@
                                 </extent>
                             </supportDesc>
                         </objectDesc>
-                        <handDesc><p>Scritto a mano da <persName ref="artom">Emanuele Artom</persName> con un'accompagnamento scritto a mano dalla madre <persName ref="segre"> Amalia Segre</persName> </p></handDesc>
+                        <handDesc><p>Scritto a mano da <persName ref="#artom">Emanuele Artom</persName> con un'accompagnamento scritto a mano dalla madre <persName ref="#segre"> Amalia Segre</persName> </p></handDesc>
                         <decoDesc><p>Non sono presenti particolari decorazioni all'interno del testo</p></decoDesc>
                     </physDesc>
                     <history>
-                        <origin>Raccolta degli scritti autografi di <persName ref="artom">Emanuele Artom</persName> redatti tra il <date when="1943"> 1943</date> e il <date when="1944">1944</date> accompagnati dalla lettera originale della madre <PersName ref="segre">Amalia</persName></origin>
-                        <acquisition>Le carte del fondo Emanuele Artom sono state donate alla Fondazione CDEC su espressa volontà della madre <persName ref="segre">Amalia Segre Artom</persName></acquisition>
+                        <origin>Raccolta degli scritti autografi di <persName ref="#artom">Emanuele Artom</persName> redatti tra il <date when="1943"> 1943</date> e il <date when="1944">1944</date> accompagnati dalla lettera originale della madre <PersName ref="#segre">Amalia</persName></origin>
+                        <acquisition>Le carte del fondo Emanuele Artom sono state donate alla Fondazione CDEC su espressa volontà della madre <persName ref=#"segre">Amalia Segre Artom</persName></acquisition>
                     </history>
                 </msDesc>
             </sourceDesc>
@@ -92,14 +92,22 @@
             <editorialDecl>
                 <segmentation><p>Codifica svolta dividendo il testo in frasi numerate in base alla pagina e alla riga</p></segmentation>
                 <correction></correction>
-                <normalization></normalization>
+                <normalization method="markup">
+                    <p>Per le normalizzazioni sono stati usati i tag <gi>orig</gi> e <gi>reg</gi>.</p>
+                    <p>Sono state normalizzare le seguenti parole:
+                        <list>
+                            <item>Stamane in stamani; pag. 64, riga 18</item>
+                            <item>Stamane in stamani; pag. 65, riga 4</item>
+                        </list>
+                    </p>
+                </normalization>
                 <quotation marks="all"><p>Tutte le virgolette vengono mantenute nel testo e sono rappresentate dal codice Unicode appropriato</p></quotation>
             </editorialDecl>
         </encodingDesc>
         <profileDesc>
                 <particDesc>
                     <listPerson>
-                        <person ref="artom"><persName>Emanuele Artom</persName></person>
+                        <person ref="#artom"><persName>Emanuele Artom</persName></person>
                     </listPerson>
                 </particDesc>
             <langUsage>
@@ -127,7 +135,7 @@
                 <lb xml:id="64_1" n="1" facs="#p64_1"/>
                 <del rend="overstrike" hand="author">L<del>a conquista della <subst><del rend="overstrike" hand="author">vita</del> <add place="above" hand="author">scienza</add></subst>casalinga ha i 
                 <lb xml:id="64_2" n="2" facs="#p64_2"/>
-                suoi fasti e i suoi nefasti. I fazzoletti 
+                suoi fasti e i suoi nefasti<pc>.</pc> I fazzoletti 
                 <lb xml:id="64_3" n="3" facs="#p64_3"/>
                 lavati ieri sono risultati ben puliti<pc>;</pc> sta 
                 <lb xml:id="64_4" n="4" facs="#p64_4"/>
@@ -135,91 +143,143 @@
                 <lb xml:id="64_5" n="5" facs="#p64_5"/>
                 cosicchè pensai di mettere le coperte
                 <lb xml:id="64_6" n="6" facs="#p64_6"/>
-                in una maniera più razionale: la 
+                in una maniera più razionale <pc>:<pc> la 
                 <lb xml:id="64_7" n="7" facs="#p64_7"/>
-                più ampia sopra, invece che sotto di 
+                più ampia sopra<pc>,</pc> invece che sotto di 
                 <lb xml:id="64_8" n="8" facs="#p64_8"/>
                 modo che <del rend="overstrike" hand="author"> <gap reason="illegible" quantity="4" unit="character"/><del> si possa infilare bene sotto
                 <lb xml:id="64_9" n="9" facs="#p64_9"/>
-                il materasso. Ho comprato i fiammiferi,
+                il materasso<pc>.</pc> Ho comprato i fiammiferi<pc>,</pc>
                 <lb xml:id="64_10" n="10" facs="#p64_10"/>
                 che ora accendo senza senza difficoltà e do
                 <lb xml:id="64_11" n="11" facs="#p64_11"/>
                 mani spero <subst><del rend="overstrike" hand="author">che arrivino</del> <add place="above" hand="author">di procurarmi</add></subst> il carbu
                 <lb xml:id="64_12" n="12" facs="#p64_12"/>
-                rante per la lampada, il burro, il 
+                rante per la lampada<pc>,</pc> il burro<pc>,</pc> il 
                 <lb xml:id="64_13" n="13" facs="#p64_13"/>
-                veleno per i topi. <del rend="overstrike" hand="author"> <gap reason="illegible" quantity="2" unit="character"/><del> Invece riportai una scon
+                veleno per i topi<pc>.</pc> <del rend="overstrike" hand="author"> <gap reason="illegible" quantity="2" unit="character"/><del> Invece riportai una scon
                 <lb xml:id="64_14" n="14" facs="#p64_14"/>
                 fitta <del rend="overstrike" hand="author">nella<del> quando diedi il grasso alle
                 <lb xml:id="64_15" n="15" facs="#p64_15"/>
-                scarpe, perchè mi macchiai di nero la
+                scarpe<pc>,</pc> perchè mi macchiai di nero la
                 <lb xml:id="64_16" n="16" facs="#p64_16"/>
-                giacca, ma la padrona di casa mi inse
+                giacca<pc>,</pc> ma la padrona di casa mi inse
                 <lb xml:id="64_17" n="17" facs="#p64_17"/>
                 gnò a far sbiadire le macchie con la
                 <lb xml:id="64_18" n="18" facs="#p64_18"/>
-                mollica di pane. Stamane una ragazza
+                mollica di pane<pc>.</pc> <choice><orig>Stamane</orig><reg resp="#personal">Stamani</reg></choice> una ragazza
                 <lb xml:id="64_19" n="19" facs="#p64_19"/>
-                del paese mi chiese: siete un patriota?
+                del paese mi chiese<pc>:</pc> <q><supplied reason="omitted-in-original" cert="high" resp="#personal">&#171;</supplied>siete un patriota?<supplied reason="omitted-in-original" cert="high" resp="#personal">&#187;</supplied></q>
                 <lb xml:id="64_20" n="20" facs="#p64_20"/>
-                <del rend="overstrike" hand="author">No, rispos<del>Siamo tutti patrioti, risposi.
+                <del rend="overstrike" hand="author">No, rispos<del><q><supplied reason="omitted-in-original" cert="high" resp="#personal">&#171;</supplied>Siamo tutti patrioti<supplied reason="omitted-in-original" cert="high" resp="#personal">&#187;</supplied></q>, risposi.
                 <lb xml:id="64_21" n="21" facs="#p64_21"/>
-                No, di quelli che vivono in montagna.
+                <q><supplied reason="omitted-in-original" cert="high" resp="#personal">&#171;</supplied>No<pc>,</pc> di quelli che vivono in montagna.<supplied reason="omitted-in-original" cert="high" resp="#personal">&#187;</supplied></q>
 
 
 
 
                 <pb xml:id="pag65" n="1" facs="#p65" />
                 <lb xml:id="64_1" n="1" facs="#p64_1"/>
+                <q><supplied reason="omitted-in-original" cert="high" resp="#personal">&#171;</supplied>Non vede che vivo qui<pc>;</pc> sono sfollato
                 <lb xml:id="65_2" n="2" facs="#p65_2"/>
+                dopo gli ultimi bombardamenti<supplied reason="omitted-in-original" cert="high" resp="#personal">&#187;</supplied></q><pc>:</pc> allora
                 <lb xml:id="65_3" n="3" facs="#p65_3"/>
+                mi raccontò che i partigiani sono molto 
                 <lb xml:id="65_4" n="4" facs="#p65_4"/>
+                buoni e <choice><orig>Stamane</orig><reg resp="#personal">Stamani</reg></choice> avevano regalato alla
                 <lb xml:id="65_5" n="5" facs="#p65_5"/>
+                popolazione di <placeName ref="#barge">Barge</placeName> tanto latte<pc>.</pc> Infatti<pc>,</pc>
                 <lb xml:id="65_6" n="6" facs="#p65_6"/>
+                come poi seppi<pc>;</pc> nella notte avevano
                 <lb xml:id="65_7" n="7" facs="#p65_7"/>
+                fermato un camion di latte destinato 
                 <lb xml:id="65_8" n="8" facs="#p65_8"/>
+                ai Tedeschi<pc>.</pc> Studio storia<pc>.</pc> Oggi fa freddo<pc>,</pc>
                 <lb xml:id="65_9" n="9" facs="#p65_9"/>
-                <lb xml:id="65_10" n="10" facs="#p65_10"/>
+                piove e c’è per la <subst><del rend="overstrike" hand="author">strda</del> <add place="above" hand="author">campagna</add></subst> un gran fango<pc>.</pc> Ho
+                <lb xml:id="65_10" rend="" n="10" facs="#p65_10"/>
+                <add place="inspace">mal di pancia e le mani mi tremano per il freddo<pc>.</pc></add><add place="margin"> Resisterò un pezzo a questa vitaccia<pc>?</pc></add>
                 <lb xml:id="65_11" n="11" facs="#p65_11"/>
+                Ho composto <del rend="overstrike" hand="author"> <gap reason="illegible" quantity="2" unit="character"/></del> durante la strada la prima
                 <lb xml:id="65_12" n="12" facs="#p65_12"/>
+                strofa della lirica<pc>,</pc> che dovrà commemo
                 <lb xml:id="65_13" n="13" facs="#p65_13"/>
+                rare <persName ref="#diena">Sergio Diena</persName><pc>:</pc>
                 <lb xml:id="65_14" n="14" facs="#p65_14"/>
-                <lb xml:id="65_15" n="15" facs="#p65_15"/>
-                <lb xml:id="65_16" n="16" facs="#p65_16"/>
-                <lb xml:id="65_17" n="17" facs="#p65_17"/>
+                <floatingText>
+                    <body>
+                        <div type="poem">
+                            <l>Ancora andare<subst><del rend="overstrike" hand="author">,</del> <add place="over" hand="author">.</add></subst> Vivere la guerra</l>
+                            <lb xml:id="65_15" n="15" facs="#p65_15"/>
+                            <l>sotto la pioggia ed una sorte ignota<pc>;</pc></l>
+                            <lb xml:id="65_16" n="16" facs="#p65_16"/>
+                            <l>sempre pestare questa grigia terra</l>
+                            <lb xml:id="65_17" n="17" facs="#p65_17"/>
+                            <l>sempre pestare questa fredda mota</l>
+                        </div>
+                    <body>
+                </floatingText>
                 <lb xml:id="65_18" n="18" facs="#p65_18"/>
+                Mentre scrivo può essere che si decida 
                 <lb xml:id="65_19" n="19" facs="#p65_19"/>
+                del mio destino<pc>,</pc> perchè forse a <placeName ref="#torre">Torre</placeName>
                 <lb xml:id="65_20" n="20" facs="#p65_20"/>
+                Pellice il <choice><abbr type="acronym">P.d.A</abbr><expan resp="#personal" cert="high"><orgName ref="#pda">Partito d’Azione<orgName></expan></choice> deciderà se devo
                 <lb xml:id="65_21" n="21" facs="#p65_21"/>
-
+                o fermarmi a <placeName ref="#barge">Barge</placeName> o se andrò in un
+                <lb xml:id="65_22" n="22" facs="#p65_22"/>
+                altro luogo e la mia vita può dipendere 
+                <lb xml:id="65_23" n="23" facs="#p65_23"/>
+                da questa decisione<pc>.</pc>
 
 
                 <pb xml:id="pag66" n="1" facs="#p66" />
                 <lb xml:id="64_1" n="1" facs="#p64_1"/>
+                Sebbene i più mi conoscano<pc>,</pc> si terrà conto
                 <lb xml:id="66_2" n="2" facs="#p66_2"/>
+                non dei miei interessi<pc>,</pc> ma di quelli <subst><del rend="overstrike" hand="author">del partito</del> <add place="above" hand="author">generali</add></subst><pc>.</pc>
                 <lb xml:id="66_3" n="3" facs="#p66_3"/>
+                Così appena si entra nella vita politica ci si 
                 <lb xml:id="66_4" n="4" facs="#p66_4"/>
+                accorge di essere <subst><del rend="overstrike" hand="author">una pedina di una schiacchiera</del> <add place="above" hand="author" rend="pencil">il pezzo di un gioco<pc>:</pc></add></subst>
                 <lb xml:id="66_5" n="5" facs="#p66_5"/>
+                potrò restare pedina in un angolo morto della
                 <lb xml:id="66_6" n="6" facs="#p66_6"/>
+                scacchiera<pc>,</pc> potrò diventare dama<pc>,</pc> come parrà
                 <lb xml:id="66_7" n="7" facs="#p66_7"/>
+                 al Giocatore<pc>,</pc> cioè al <orgname ref="#pda">Partito</orgname><pc>.</pc> Poco contano le 
                 <lb xml:id="66_8" n="8" facs="#p66_8"/>
+                abilità<pc>:</pc> se mi lasciano qui<pc>,</pc> potrò rimproverarmi
                 <lb xml:id="66_9" n="9" facs="#p66_9"/>
+                della polemica contro il Comunismo<pc>,</pc> che mi
                 <lb xml:id="66_10" n="10" facs="#p66_10"/>
+                ha suscitato delle antipatie<pc>;</pc> supponiamo che
                 <lb xml:id="66_11" n="11" facs="#p66_11"/>
+                mi nominino commissario di una banda perchè
                 <lb xml:id="66_12" n="12" facs="#p66_12"/>
+                si è fatto <subst><del rend="overstrike" hand="author">questa</del> <add place="alongside" hand="author">libero</add></subst> un posto del genere<pc>.</pc> Allora
                 <lb xml:id="66_13" n="13" facs="#p66_13"/>
+                potrò congratularmi di aver preso una posizione 
                 <lb xml:id="66_14" n="14" facs="#p66_14"/>
+                di punta<pc>,</pc> che mi ha fatto avanzare<pc>,</pc> ma i
                 <lb xml:id="66_15" n="15" facs="#p66_15"/>
+                miei meriti saranno sempre gli stessi<pc>.</pc> Così
                 <lb xml:id="66_16" n="16" facs="#p66_16"/>
+                l’altro giorno andai a Pinerolo<pc>:</pc> se avessi trovato
                 <lb xml:id="66_17" n="17" facs="#p66_17"/>
+                <num value="50">50</num> rivoltelle, sarei stato considerato un grande
                 <lb xml:id="66_18" n="18" facs="#p66_18"/>
+                uomo<pc>;</pc> se <add place="above" hand="author">non<add> ne avessi trovato nessuna uno stupido<pc>.</pc>
                 <lb xml:id="66_19" n="19" facs="#p66_19"/>
+                Con quanto ho trovato<pc>,</pc> ho fatto una figura di
                 <lb xml:id="66_20" n="20" facs="#p66_20"/>
+                screta<pc>,</pc> ma il merito è sempre della fortuna.
                 <lb xml:id="66_21" n="21" facs="#p66_21"/>
-
-
-
+                In ciascuno dei <num value="3">tre</num> casi il mio contegno è
+                <lb xml:id="66_22" n="22" facs="#p66_22"/>
+                stato uguale<pc>.</pc> Smetto perchè fa tanto freddo che non
+                <lb xml:id="66_23" n="23" facs="#p66_23"/>
+                riesco più a scrivere<pc>.</pc>
 
             </ab>
         </body>
@@ -274,6 +334,30 @@
                         </placeName>
                     </death>
                 </person>
+                <person xml:id="diena">
+                    <persName>
+                        <ref xml:lang="it" target="http://digital-library.cdec.it/cdec-web/persone/detail/person-it-cdec-eaccpf0001-000162/diena-sergio.html?persone=%22Diena%2C+Sergio%22"/>
+                        <forename>Sergio</forename>
+                        <surname>Diena</surname>
+                    </persName>
+                    <sex value="M">uomo</sex>
+                    <birth>
+                        <date when="1919/10/10">10 ottobre 1919</date>
+                        <placeName ref="#torino">
+                            <settlement type="municipality">Torino</settlement>
+                            <settlement type="region">Piemonte</settlement>
+                            <country key="IT">Italia</country>
+                        </placeName>
+                    </birth>
+                    <death>
+                        <date when="1943-12-04">4 dicembre 1948</date>
+                        <placeName>
+                            <settlement type="municipality"> Villar Pellice</settlement>
+                            <settlement type="region">Piemonte</settlement>
+                            <country key="IT">Italia</country>
+                        </placeName>
+                    </death>
+                </person>
             </listPerson>
             <listPlace>
                 <head>Lista luoghi</head>
@@ -295,7 +379,27 @@
                     <settlement type="region">Lombardia</settlement>
                     <country key="IT">Italia</country>
                 </place>
+                <place xml:id="barge">
+                    <placeName ref="https://www.comune.barge.cn.it/">Barge</placeName>
+                    <settlement type="province">Cuneo</settlement>
+                    <settlement type="region">Piemonte</settlement>
+                    <country key="IT">Italia</country>
+                </place>
+                <place xml:id="torre">
+                    <placeName ref="https://www.comune.torrepellice.to.it/">Torre Pellice</placeName>
+                    <settlement type="province">Torino</settlement>
+                    <settlement type="region">Piemonte</settlement>
+                    <country key="IT">Italia</country>
+                </place>
+                <place xml:id="pinerolo">
+                    <placeName ref="https://www.comune.pinerolo.to.it/">Pinerolo</placeName>
+                    <settlement type="province">Torino</settlement>
+                    <settlement type="region">Piemonte</settlement>
+                    <country key="IT">Italia</country>
+                </place>
+
             </listPlace>
+
             <listOrg>
                 <head>Elenco organizzazioni<head>
                 <org xml:id="unipi">
@@ -316,6 +420,12 @@
                     <place ref="#milano"> Milano </place>
                     <desc>
                         Il CDEC è un istituto storico culturale indipendente con sede a Milano, che promuove lo studio delle vicende storiche, della cultura e della realtà degli ebrei, con particolare riferimento all'Italia e all'età contemporanea.
+                    </desc>
+                </org>
+                <org xml:id="pda">
+                    <orgName ref="https://it.wikipedia.org/wiki/Partito_d%27Azione"> Partito d'Azione </orgName>
+                    <desc>
+                        Partito politico italiano di centro-sinistra fondato nel <date when="1942">1942.</date>
                     </desc>
                 </org>
             <listOrg>
