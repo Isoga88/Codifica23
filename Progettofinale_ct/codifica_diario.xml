@@ -91,7 +91,6 @@
             <projectDesc><p>Codifica svolta per il progetto finale di Codifica di testi, corso svolto dal professor <PersoName><forename> Angelo </forename> <surname>Del Grosso </surname> </persName> nella triennale di informatica umanistica, <orgName ref="#unipi">unipi</orgName> </p></projectDesc>
             <editorialDecl>
                 <segmentation><p>Codifica svolta dividendo il testo in frasi numerate in base alla pagina e alla riga</p></segmentation>
-                <correction></correction>
                 <normalization method="markup">
                     <p>Per le normalizzazioni sono stati usati i tag <gi>orig</gi> e <gi>reg</gi>.</p>
                     <p>Sono state normalizzare le seguenti parole:
@@ -108,6 +107,9 @@
                 <particDesc>
                     <listPerson>
                         <person ref="#artom"><persName>Emanuele Artom</persName></person>
+                        <person ref="#segre"><persName>Amalia Segre</persName></person>
+                        <person ref="#diena"><persName>Sergio Diena</persName></person>
+
                     </listPerson>
                 </particDesc>
             <langUsage>
