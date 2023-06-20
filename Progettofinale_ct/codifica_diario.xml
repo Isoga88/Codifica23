@@ -18,7 +18,7 @@
             </titleStmt>
             <editionStmt>
                 <edition>
-                    Edizione universitaria del<date when="2023-06">Giugno 2023 per il progetto d'esame del corso di Codifica di testi</date>
+                    Edizione universitaria del<date when="2023-06"> Giugno 2023 per il progetto d'esame del corso di Codifica di testi</date>
                 </edition>
                 <respStmt>
                     <resp>Codifica TEI a cura di</resp>
@@ -36,7 +36,7 @@
                     <orgName ref="#unipi">Università di Pisa</orgName>
                 </authority>
                  <availability status="free">
-                    <p>Codifica opensource disponibile sul <orgName> gitHub </orgName>di <persName ref="#personal"> Gabriele Isola</persName></p>
+                    <p>Codifica opensource disponibile sul<orgName> GitHub </orgName>di<persName ref="#personal"> Gabriele Isola</persName></p>
                 </availability>
                 <date when="2023">2023</date>
             </publicationStmt>
@@ -49,7 +49,7 @@
                         <repository ref="https://digital-library.cdec.it/cdec-web/storico/detail/IT-CDEC-ST0003-000001/fondo-emanuele-artom.html">Fondo Emanuele Artom, b.1, fasc9</repository>
                     </msIdentifier>
                     <msContents>
-                        <summary>Raccolta degli scritti autografi di <persName ref="#artom"> Emanuele Artom </persName> redatti tra il <date when="1943">1943 </date> e il <date>1944</date> accompagnati dalla lettera originale della madre <persName ref="#segre">Amalia</persName> riportante l'epigrafe alla mia morte questo plico deve essere consegnato al <orgName ref="#CDEC">Centro di documentazione ebraica</orgName> [..] esso ha un grande valore storico</summary>
+                        <summary>Raccolta degli scritti autografi di<persName ref="#artom"> Emanuele Artom </persName>redatti tra il <date when="1943">1943 </date>e il <date>1944</date> accompagnati dalla lettera originale della madre <persName ref="#segre">Amalia</persName> riportante l'epigrafe alla mia morte questo plico deve essere consegnato al <orgName ref="#CDEC">Centro di documentazione ebraica</orgName> [..] esso ha un grande valore storico</summary>
                         <textLang mainLang="it"> Italiano</textLang>
                         <msItemStruct n="1">
                             <author ref="#segre">Amalia Segre</author>
@@ -78,7 +78,7 @@
                                 <condition>Alcune pagine presentano degli strappi o sono leggermente rovinate, in generale il diario è in buone condizioni</condition>
                             </supportDesc>
                         </objectDesc>
-                        <handDesc><p>Scritto a mano da <persName ref="#artom">Emanuele Artom</persName> con un'accompagnamento scritto a mano dalla madre <persName ref="#segre"> Amalia Segre</persName> </p></handDesc>
+                        <handDesc><p>Scritto a mano da <persName ref="#artom">Emanuele Artom</persName> con un'accompagnamento scritto a mano dalla madre <persName ref="#segre">Amalia Segre</persName> </p></handDesc>
                         <decoDesc><p>Non sono presenti particolari decorazioni all'interno del testo</p></decoDesc>
                     </physDesc>
                     <history>
@@ -89,7 +89,7 @@
             </sourceDesc>
         </fileDesc>
         <encodingDesc>
-            <projectDesc><p>Codifica svolta per il progetto finale di Codifica di testi, corso svolto dal professor <persName> Angelo Del Grosso</persName> nella triennale di informatica umanistica, <orgName ref="#unipi">unipi</orgName> </p></projectDesc>
+            <projectDesc><p>Codifica svolta per il progetto finale di Codifica di testi, corso svolto dal professor <persName>Angelo Del Grosso</persName> nella triennale di informatica umanistica, <orgName ref="#unipi">unipi</orgName> </p></projectDesc>
             <editorialDecl>
                 <segmentation><p>Codifica svolta dividendo il testo in frasi numerate in base alla pagina e alla riga</p></segmentation>
                 <normalization method="markup">
@@ -157,7 +157,9 @@
             <zone ulx="67" uly="580" lrx="445" lry="606" xml:id="p64_21" start="#pag64_21"/>
             <zone ulx="69" uly="611" lrx="444" lry="633" xml:id="p64_22" start="#pag64_22"/>
             <zone ulx="67" uly="638" lrx="275" lry="659" xml:id="p64_23" start="#pag64_23"/>
+        </surface>
 
+        <surface xml:id="p65" start="#pag65" n="1">
             <graphic url='pag65.jpg' width='521.571428px' height='716.571428px' />
             <zone ulx="53" uly="48" lrx="446" lry="75" xml:id="p65_1" start="#pag65_1"/>
             <zone ulx="53" uly="76" lrx="448" lry="104" xml:id="p65_2" start="#pag65_2" />
@@ -182,7 +184,10 @@
             <zone ulx="57" uly="600" lrx="434" lry="621" xml:id="p65_21" start="#pag65_21"/>
             <zone ulx="56" uly="626" lrx="474" lry="650" xml:id="p65_22" start="#pag65_22"/>
             <zone ulx="58" uly="656" lrx="246" lry="674" xml:id="p65_23" start="#pag65_23"/>
+        </surface>
 
+
+        <surface xml:id="p66" start="#pag66" n="1">
             <graphic url='pag66.jpg' width='527.571428px' height='713.571428px' />
             <zone ulx="62" uly="56" lrx="493" lry="73" xml:id="p66_1" start="#pag66_1"/>
             <zone ulx="65" uly="76" lrx="465" lry="101" xml:id="p66_2" start="#pag66_2"/>
@@ -204,7 +209,7 @@
             <zone ulx="63" uly="377" lrx="446" lry="401" xml:id="p66_18" start="#pag66_18"/>
             <zone ulx="62" uly="405" lrx="429" lry="426" xml:id="p66_19" start="#pag66_19"/>
             <zone ulx="63" uly="433" lrx="284" lry="454" xml:id="p66_20" start="#pag66_20"/>
-
+        </surface>
      
     </facsimile>
     <text xml:lang="it" subtype="diary">
@@ -504,7 +509,7 @@
                 </org>
                 <org xml:id="CDEC">
                     <orgName ref="https://www.cdec.it/"> CDEC - Centro di Documentazione Ebraica Contemporanea </orgName>
-                    <place ref="#milano"> Milano </place>
+                    <placeName ref="#milano"> Milano </placeName>
                     <desc>
                         Il CDEC è un istituto storico culturale indipendente con sede a Milano, che promuove lo studio delle vicende storiche, della cultura e della realtà degli ebrei, con particolare riferimento all'Italia e all'età contemporanea.
                     </desc>
