@@ -133,7 +133,7 @@
     </teiHeader>
     <facsimile>
         <surface xml:id="p64" start="#pag64" n="1">
-            <graphic url='image/pag64.jpg' width='530.571428px' height='717.571428px' />
+            <graphic url='image/pag1.jpg' width='530.571428px' height='717.571428px' />
             <zone ulx="63" uly="64" lrx="441" lry="78" xml:id="p64_1" start="#pag64_1" />
             <zone ulx="62" uly="89" lrx="451" lry="108" xml:id="p64_2" start="#pag64_2" />
             <zone ulx="62" uly="119" lrx="452" lry="132" xml:id="p64_3" start="#pag64_3"/>
@@ -160,7 +160,7 @@
         </surface>
 
         <surface xml:id="p65" start="#pag65" n="1">
-            <graphic url='pag65.jpg' width='521.571428px' height='716.571428px' />
+            <graphic url='pag2.jpg' width='521.571428px' height='716.571428px' />
             <zone ulx="53" uly="48" lrx="446" lry="75" xml:id="p65_1" start="#pag65_1"/>
             <zone ulx="53" uly="76" lrx="448" lry="104" xml:id="p65_2" start="#pag65_2" />
             <zone ulx="55" uly="108" lrx="455" lry="129" xml:id="p65_3" start="#pag65_3"/>
@@ -188,7 +188,7 @@
 
 
         <surface xml:id="p66" start="#pag66" n="1">
-            <graphic url='pag66.jpg' width='527.571428px' height='713.571428px' />
+            <graphic url='pag3.jpg' width='527.571428px' height='713.571428px' />
             <zone ulx="62" uly="56" lrx="493" lry="73" xml:id="p66_1" start="#pag66_1"/>
             <zone ulx="65" uly="76" lrx="465" lry="101" xml:id="p66_2" start="#pag66_2"/>
             <zone ulx="82" uly="493" lrx="457" lry="512" xml:id="p66_3" start="#pag66_3"/>
@@ -214,8 +214,8 @@
     </facsimile>
     <text xml:lang="it" subtype="diary">
         <body>
-            <ab>
-            <pb xml:id="pag64" n="1" facs="#p64" />
+            <ab n="1">
+                <pb xml:id="pag64" n="1" facs="#p64" />
                 <lb xml:id="pag64_1" n="1" facs="#p64_1"/>
                 <q><supplied reason="omitted-in-original" cert="high" resp="#personal">&#171;</supplied>Non vede che vivo qui<pc>;</pc> sono sfollato
                 <lb xml:id="pag64_2" n="2" facs="#p64_2"/>
@@ -223,7 +223,7 @@
                 <lb xml:id="pag64_3" n="3" facs="#p64_3"/>
                 mi raccontò che i partigiani sono molto 
                 <lb xml:id="pag64_4" n="4" facs="#p64_4"/>
-                buoni e <choice><orig>Stamane</orig><reg resp="#personal">Stamani</reg></choice> avevano regalato alla
+                buoni e <choice><orig>stamane</orig><reg resp="#personal"> stamani</reg></choice> avevano regalato alla
                 <lb xml:id="pag64_5" n="5" facs="#p64_5"/>
                 popolazione di <placeName ref="#barge">Barge</placeName> tanto latte<pc>.</pc> Infatti<pc>,</pc>
                 <lb xml:id="pag64_6" n="6" facs="#p64_6"/>
@@ -233,7 +233,7 @@
                 <lb xml:id="pag64_8" n="8" facs="#p64_8"/>
                 ai Tedeschi<pc>.</pc> Studio storia<pc>.</pc> Oggi fa freddo<pc>,</pc>
                 <lb xml:id="pag64_9" n="9" facs="#p64_9"/>
-                piove e c’è per la <subst><del rend="overstrike" hand="author">strada</del> <add place="above" hand="author">campagna</add></subst> un gran fango<pc>.</pc> Ho
+                piove e c’è per la <subst><del rend="overstrike" hand="author">strada </del> <add place="above" hand="author">campagna</add></subst> un gran fango<pc>.</pc> Ho
                 <lb xml:id="pag64_10" rend="" n="10" facs="#p64_10"/>
                 <add place="inspace">mal di pancia e le mani mi tremano per il freddo<pc>.</pc></add><add place="margin"> Resisterò un pezzo a questa vitaccia<pc>?</pc></add>
                 <lb xml:id="pag64_11" n="11" facs="#p64_11"/>
@@ -268,16 +268,17 @@
                 altro luogo e la mia vita può dipendere 
                 <lb xml:id="pag64_23" n="23" facs="#p64_23"/>
                 da questa decisione<pc>.</pc>
-
-                <pb xml:id="pag65" n="1" facs="#p65" />
+            </ab>
+            <ab n="2">
+                <pb xml:id="pag65" n="2" facs="#p65" />
                 <lb xml:id="pag65_1" n="1" facs="#p65_1"/>
                 Sebbene i più mi conoscano<pc>,</pc> si terrà conto
                 <lb xml:id="pag65_2" n="2" facs="#p65_2"/>
-                non dei miei interessi<pc>,</pc> ma di quelli <subst><del rend="overstrike" hand="author">del partito</del> <add place="above" hand="author">generali</add></subst><pc>.</pc>
+                non dei miei interessi<pc>,</pc> ma di quelli <subst><del rend="overstrike" hand="author">del partito </del> <add place="above" hand="author">generali</add></subst><pc>.</pc>
                 <lb xml:id="pag65_3" n="3" facs="#p65_3"/>
                 Così appena si entra nella vita politica ci si 
                 <lb xml:id="pag65_4" n="4" facs="#p65_4"/>
-                accorge di essere <subst><del rend="overstrike" hand="author">una pedina di una schiacchiera</del> <add place="above" hand="author" rend="pencil">il pezzo di un gioco<pc>:</pc></add></subst>
+                accorge di essere <subst><del rend="overstrike" hand="author">una pedina di una schiacchiera </del> <add place="above" hand="author" rend="pencil">il pezzo di un gioco<pc>:</pc></add></subst>
                 <lb xml:id="pag65_5" n="5" facs="#p66_5"/>
                 potrò restare pedina in un angolo morto della
                 <lb xml:id="pag65_6" n="6" facs="#p65_6"/>
@@ -293,7 +294,7 @@
                 <lb xml:id="pag65_11" n="11" facs="#p65_11"/>
                 mi nominino commissario di una banda perchè
                 <lb xml:id="pag65_12" n="12" facs="#p66_12"/>
-                si è fatto <subst><del rend="overstrike" hand="author">questa</del> <add place="alongside" hand="author">libero</add></subst> un posto del genere<pc>.</pc> Allora
+                si è fatto <subst><del rend="overstrike" hand="author">questa </del> <add place="alongside" hand="author">libero</add></subst> un posto del genere<pc>.</pc> Allora
                 <lb xml:id="pag65_13" n="13" facs="#p65_13"/>
                 potrò congratularmi di aver preso una posizione 
                 <lb xml:id="pag65_14" n="14" facs="#p65_14"/>
@@ -316,9 +317,9 @@
                 stato uguale<pc>.</pc> Smetto perchè fa tanto freddo che non
                 <lb xml:id="pag65_23" n="23" facs="#p65_23"/>
                 riesco più a scrivere<pc>.</pc>
-
-
-                <pb xml:id="pag66" n="1" facs="#p66" />
+            </ab>
+            <ab n="3">
+                <pb xml:id="pag66" n="3" facs="#p66" />
                 <lb xml:id="pag66_1" n="1" facs="#p66_1"/>
                 con chi siamo<pc>,</pc>contro chi siamo &#187;<pc>,</pc> che pongano
                 <lb xml:id="pag66_2" n="2" facs="#p66_2"/>
@@ -336,7 +337,7 @@
                     reazioni<pc>.</pc>
                 </add>
                 <lb xml:id="pag66_8" n="8" facs="#p66_8"/>
-                Intanto la guerra si prolunga<pc>:</pc> <subst><del rend="overstrike" hand="author">fino a</del> <add place="above" hand="author">prima di</add></subst> <date when="1943-9">settembre</date>
+                Intanto la guerra si prolunga<pc>:</pc> <subst><del rend="overstrike" hand="author"> fino a </del> <add place="above" hand="author">prima di</add></subst> <date when="1943-9">settembre</date>
                 <lb xml:id="pag66_9" n="9" facs="#p66_9"/>
                 non c’è da sperare che finisca e a <date when="1943-9">settembre</date>
                 <lb xml:id="pag66_10" n="10" facs="#p66_10"/>
@@ -344,7 +345,7 @@
                 <lb xml:id="pag66_11" n="11" facs="#p66_11"/>
                 per una grande causa<pc>,</pc> ma ieri pensando a
                 <lb xml:id="pag66_12" n="12" facs="#p66_12"/>
-                <persName ref="diena">Sergio <choice><abbr>D.</abbr><expan resp="#personal" cert="high">Diena</expan></choice></persName> mi pareva <subst><del rend="overstrike" hand="author">che</del> <add place="above" hand="author">amarissimo</add></subst> vedere la vittoria
+                <persName ref="diena">Sergio <choice><abbr>D.</abbr><expan resp="#personal" cert="high">Diena</expan></choice></persName> mi pareva <subst><del rend="overstrike" hand="author">che </del> <add place="above" hand="author">amarissimo</add></subst> vedere la vittoria
                 <lb xml:id="pag66_13" n="13" facs="#p66_13"/>
                 sicura<pc>,</pc> ma sentire di non poterla affer
                 <lb xml:id="pag66_14" n="14" facs="#p66_14"/>

@@ -6,7 +6,7 @@
       <title>Progetto di Gabriele Isola, Codifica di Testi </title>
    </head>
    <body>
-      <nav class="navbar"><a href="#info" class="textnav">Info</a><a href="#manoscitto" class="textnav">Manoscritto</a><a href="#codifica" class="textnav">Codifica</a></nav>
+      <nav class="navbar"><a href="#info" class="textnav">Info</a><a href="#codifica" class="textnav">Codifica</a></nav>
       <div id="header">
          <h1 class="titolo">Codifica del diario di Emanuele Artom</h1>
          <h2 class="subtitle">Conversione TEI P5 a cura di
@@ -16,58 +16,291 @@
       </div>
       <h2 class="textimportant">Informazioni utili</h2>
       <div class="cardtot">
-         <div class="flex gap-5">
-            <div id="info" class="halfcard">
-               <h3 class="textimp">Codifica</h3>
-               <p class="center">
-                  Edizione universitaria del Giugno 2023 per il progetto d'esame del corso di Codifica
-                  di testi
-                  </p>
-               <p><label class="bold">Curatore: </label>Angelo Del Grosso</p>
-               <p>Codifica opensource disponibile sul GitHub di Gabriele Isola</p>
-            </div>
-            <div id="manoscritto" class="halfcard">
-               <h3 class="textimp">Manoscritto</h3>
-               <p><label class="bold">Istituzione: </label>Centro di documentazione ebraiaca</p>
-               <p><label class="bold">Luogo: </label>Italia, Milano</p>
-               <p><label class="bold">Supporto: </label>Diario in pagine di carta</p>
-               <p><label class="bold">Grandezza: </label>
-                  171 pagine e 1 foglietto                                   
-                  </p>
-               <p><label class="bold">Condizioni: </label>Alcune pagine presentano degli strappi o sono leggermente rovinate, in generale il
-                  diario è in buone condizioni</p>
-               <p><label class="bold">Tipo scrittura: </label>Scritto a mano da Emanuele Artom con un'accompagnamento scritto a mano dalla madre
-                  Amalia Segre </p>
-            </div>
+         <div id="info" class="halfcard">
+            <h3 class="textimp">Codifica</h3>
+            <p class="center">
+               Edizione universitaria del Giugno 2023 per il progetto d'esame del corso di Codifica
+               di testi
+               </p>
+            <p>
+               <div class="bold">Curatore: </div>Angelo Del Grosso</p>
+            <p>Codifica opensource disponibile sul GitHub di Gabriele Isola</p>
          </div>
-         <div class="card">
-            <h3 class="textimp">Testo</h3>
-            <p class="center">Raccolta degli scritti autografi di Emanuele Artom redatti tra il 1943 e il 1944 accompagnati
-               dalla lettera originale della madre Amalia riportante l'epigrafe alla mia morte questo
-               plico deve essere consegnato al Centro di documentazione ebraica [..] esso ha un grande
-               valore storico</p>
-            <p class="center">Diviso in:</p>
-            <div class="flex">
-               <div class="w-2/6">
-                  <p>Parte numero: 1 - lettera introduttiva</p>
-                  <p>Autore: Amalia Segre</p>
-                  <p>Info:  lettera originale della madre  Amalia  al figlio  Emanuele Artom  </p>
-               </div>
-               <div class="w-2/6">
-                  <p>Parte numero: 2 - Prima parte</p>
-                  <p>Autore: Emanuele Artom</p>
-                  <p>Info: riguarda il periodo che va dal  1 gennaio 1940  al  10 settembre 1943 , ed è una fonte
-                     di notizie sulla vita culturale torinese di quegli anni e sullo sviluppo della persecuzione
-                     razziale</p>
-               </div>
-               <div class="w-2/6">
-                  <p>Parte numero: 3 - seconda parte</p>
-                  <p>Autore: Emanuele Artom</p>
-                  <p>Info:  riguarda il periodo che va dal novembre 1943  al 23 febbraio 1944 riguarda invece
-                     l'esperienza partigiana di Emanuele Artom </p>
-               </div>
+         <div id="manoscritto" class="halfcard">
+            <h3 class="textimp">Manoscritto</h3>
+            <p>
+               <div class="bold">Istituzione: </div>Centro di documentazione ebraiaca</p>
+            <p>
+               <div class="bold">Luogo: </div>Italia, Milano</p>
+            <p n="2">
+               <div class="bold">Supporto: </div>Diario in pagine di carta</p>
+            <p>
+               <div class="bold">Grandezza: </div>
+               171 pagine e 1 foglietto                                   
+               </p>
+            <p>
+               <div class="bold">Condizioni: </div>Alcune pagine presentano degli strappi o sono leggermente rovinate, in generale il
+               diario è in buone condizioni</p>
+            <p>
+               <div class="bold">Tipo scrittura: </div>Scritto a mano da Emanuele Artom con un'accompagnamento scritto a mano dalla madre
+               Amalia Segre </p>
+         </div>
+      </div>
+      <div class="card">
+         <h3 class="textimp">Testo</h3>
+         <p class="center">Raccolta degli scritti autografi di Emanuele Artom redatti tra il 1943 e il 1944 accompagnati
+            dalla lettera originale della madre Amalia riportante l'epigrafe alla mia morte questo
+            plico deve essere consegnato al Centro di documentazione ebraica [..] esso ha un grande
+            valore storico</p>
+         <p class="center">Diviso in:</p>
+         <div class="flex">
+            <div class="divide1  w-2/6">
+               <p>lettera introduttiva</p>
+               <p>Autore: Amalia Segre</p>
+               <p>Info:  lettera originale della madre  Amalia  al figlio  Emanuele Artom  </p>
+            </div>
+            <div class="divide2  w-2/6">
+               <p>Prima parte</p>
+               <p>Autore: Emanuele Artom</p>
+               <p>Info: riguarda il periodo che va dal  1 gennaio 1940  al  10 settembre 1943 , ed è una fonte
+                  di notizie sulla vita culturale torinese di quegli anni e sullo sviluppo della persecuzione
+                  razziale</p>
+            </div>
+            <div class="divide3  w-2/6">
+               <p>seconda parte</p>
+               <p>Autore: Emanuele Artom</p>
+               <p>Info:  riguarda il periodo che va dal novembre 1943  al 23 febbraio 1944 riguarda invece
+                  l'esperienza partigiana di Emanuele Artom </p>
             </div>
          </div>
       </div>
-   </body>
+      <h2 id="codifica" class="textimportant pt-12 pb-5">Codifica del testo</h2>
+      <div class="flex text-center justify-center align-center"><button onclick="changePage(-1)" type="button" class="button">pagina precedente</button><button onclick="changePage(1)" type="button" class="button">pagina successiva</button></div>
+      <div class="flex flex-wrap gap-5 justify-around py-4">
+         <div class="relative inline-flex items-center cursor-pointer"><input id="correction" type="checkbox" class="sr-only peer/correction"><div onclick="changeCorrection()" class="w-11 h-6 bg-gray-200 rounded-full peer-checked/correction:after:translate-x-full peer-checked/correction:after:border-white after:content-[''] after:absolute after:top-0.5 after:left-[2px] after:bg-white after:border-gray-300 after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked/correction:bg-blue-600"></div><span class="text-sm font-medium text-gray-900 ">Correzioni</span></div>
+         <div class="relative inline-flex items-center cursor-pointer"><input id="place" type="checkbox" class="sr-only peer/place"><div onclick="changePlace()" class="w-11 h-6 bg-gray-200 rounded-full peer-checked/place:after:translate-x-full peer-checked/place:after:border-white after:content-[''] after:absolute after:top-0.5 after:left-[2px] after:bg-white after:border-gray-300 after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked/place:bg-red-600"></div><span class="text-sm font-medium text-gray-900 ">Luoghi</span></div>
+         <div class="relative inline-flex items-center cursor-pointer"><input id="person" type="checkbox" class="sr-only peer/person"><div onclick="changePerson()" class="w-11 h-6 bg-gray-200 rounded-full peer-checked/person:after:translate-x-full peer-checked/person:after:border-white after:content-[''] after:absolute after:top-0.5 after:left-[2px] after:bg-white after:border-gray-300 after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked/person:bg-yellow-600"></div><span class="text-sm font-medium text-gray-900 ">Persone</span></div>
+         <div class="relative inline-flex items-center cursor-pointer"><input id="normalization" type="checkbox" class="sr-only peer/normalization"><div onclick="changeNormalization()" class="w-11 h-6 bg-gray-200 rounded-full peer-checked/normalization:after:translate-x-full peer-checked/normalization:after:border-white after:content-[''] after:absolute after:top-0.5 after:left-[2px] after:bg-white after:border-gray-300 after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked/normalization:bg-zinc-600"></div><span class="text-sm font-medium text-gray-900 ">Normalizzazioni</span></div>
+         <div class="relative inline-flex items-center cursor-pointer"><input id="erasures" type="checkbox" class="sr-only peer/erasures"><div onclick="changeErasures()" class="w-11 h-6 bg-gray-200 rounded-full peer-checked/erasures:after:translate-x-full peer-checked/erasures:after:border-white after:content-[''] after:absolute after:top-0.5 after:left-[2px] after:bg-white after:border-gray-300 after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked/erasures:bg-green-600"></div><span class="text-sm font-medium text-gray-900">Cancellature</span></div>
+      </div>
+      <div class="flex">
+         <div id="pag1" class="flex items-center w-full">
+            <div class="page text-sm w-1/2 pl-2 text-center">
+               
+               <h3 class="font-sm title text-center">
+                  Pagina 1</h3>
+               <br><span id="#p64_1" class="line">1&nbsp;
+                  </span>
+               <span class="supplied hide">«</span>Non vede che vivo qui; sono sfollato
+               <br><span id="#p64_2" class="line">2&nbsp;
+                  </span>
+               dopo gli ultimi bombardamenti<span class="supplied hide">»</span>: allora
+               <br><span id="#p64_3" class="line">3&nbsp;
+                  </span>
+               mi raccontò che i partigiani sono molto 
+               <br><span id="#p64_4" class="line">4&nbsp;
+                  </span>
+               buoni e <span class="orig">stamane</span><span class="normalization hide"> stamani</span> avevano regalato alla
+               <br><span id="#p64_5" class="line">5&nbsp;
+                  </span>
+               popolazione di <span class="place">Barge</span> tanto latte. Infatti,
+               <br><span id="#p64_6" class="line">6&nbsp;
+                  </span>
+               come poi seppi; nella notte avevano
+               <br><span id="#p64_7" class="line">7&nbsp;
+                  </span>
+               fermato un camion di latte destinato 
+               <br><span id="#p64_8" class="line">8&nbsp;
+                  </span>
+               ai Tedeschi. Studio storia. Oggi fa freddo,
+               <br><span id="#p64_9" class="line">9&nbsp;
+                  </span>
+               piove e c’è per la <span class="del hide">strada </span><span class="add">campagna</span> un gran fango. Ho
+               <br><span id="#p64_10" class="line">10&nbsp;
+                  </span>
+               <span class="add">mal di pancia e le mani mi tremano per il freddo.</span><span class="add"> Resisterò un pezzo a questa vitaccia?</span>
+               <br><span id="#p64_11" class="line">11&nbsp;
+                  </span>
+               Ho composto <span class="del hide"> </span> durante la strada la prima
+               <br><span id="#p64_12" class="line">12&nbsp;
+                  </span>
+               strofa della lirica, che dovrà commemo
+               <br><span id="#p64_13" class="line">13&nbsp;
+                  </span>
+               rare <span class="person">Sergio Diena</span>:
+               <br><span id="#p64_14" class="line">14&nbsp;
+                  </span>
+               <span class="italic">Ancora andare<span class="del hide">,</span><span class="add">.</span> Vivere la guerra<br><span id="#p64_15" class="line">15&nbsp;
+                     </span>sotto la pioggia ed una sorte ignota;<br><span id="#p64_16" class="line">16&nbsp;
+                     </span>sempre pestare questa grigia terra<br><span id="#p64_17" class="line">17&nbsp;
+                     </span>sempre pestare questa fredda mota</span>
+               <br><span id="#p64_18" class="line">18&nbsp;
+                  </span>
+               Mentre scrivo può essere che si decida 
+               <br><span id="#p64_19" class="line">19&nbsp;
+                  </span>
+               del mio destino, perchè forse a <span class="place">Torre</span>
+               <br><span id="#p64_20" class="line">20&nbsp;
+                  </span>
+               Pellice il <span class="abbr">P.d.A</span><span class="expan hide">Partito d’Azione</span> deciderà se devo
+               <br><span id="#p64_21" class="line">21&nbsp;
+                  </span>
+               o fermarmi a <span class="place">Barge</span> o se andrò in un
+               <br><span id="#p64_22" class="line">22&nbsp;
+                  </span>
+               altro luogo e la mia vita può dipendere 
+               <br><span id="#p64_23" class="line">23&nbsp;
+                  </span>
+               da questa decisione.
+               </div>
+            <div class="w-1/2"><img src="image/pag1.jpg" alt="page1" class="h-[32rem] "></div>
+         </div>
+         <div id="pag2" class="flex items-center w-full">
+            <div class="page text-sm w-1/2 pl-2 text-center">
+               
+               <h3 class="font-sm title text-center">
+                  Pagina 2</h3>
+               <br><span id="#p65_1" class="line">1&nbsp;
+                  </span>
+               Sebbene i più mi conoscano, si terrà conto
+               <br><span id="#p65_2" class="line">2&nbsp;
+                  </span>
+               non dei miei interessi, ma di quelli <span class="del hide">del partito </span><span class="add">generali</span>.
+               <br><span id="#p65_3" class="line">3&nbsp;
+                  </span>
+               Così appena si entra nella vita politica ci si 
+               <br><span id="#p65_4" class="line">4&nbsp;
+                  </span>
+               accorge di essere <span class="del hide">una pedina di una schiacchiera </span><span class="add">il pezzo di un gioco:</span>
+               <br><span id="#p66_5" class="line">5&nbsp;
+                  </span>
+               potrò restare pedina in un angolo morto della
+               <br><span id="#p65_6" class="line">6&nbsp;
+                  </span>
+               scacchiera, potrò diventare dama, come parrà
+               <br><span id="#p65_7" class="line">7&nbsp;
+                  </span>
+               al Giocatore, cioè alpartito. Poco contano le 
+               <br><span id="#p65_8" class="line">8&nbsp;
+                  </span>
+               abilità: se mi lasciano qui, potrò rimproverarmi
+               <br><span id="#p65_9" class="line">9&nbsp;
+                  </span>
+               della polemica contro il Comunismo, che mi
+               <br><span id="#p65_10" class="line">10&nbsp;
+                  </span>
+               ha suscitato delle antipatie; supponiamo che
+               <br><span id="#p65_11" class="line">11&nbsp;
+                  </span>
+               mi nominino commissario di una banda perchè
+               <br><span id="#p66_12" class="line">12&nbsp;
+                  </span>
+               si è fatto <span class="del hide">questa </span><span class="add">libero</span> un posto del genere. Allora
+               <br><span id="#p65_13" class="line">13&nbsp;
+                  </span>
+               potrò congratularmi di aver preso una posizione 
+               <br><span id="#p65_14" class="line">14&nbsp;
+                  </span>
+               di punta, che mi ha fatto avanzare, ma i
+               <br><span id="#p65_15" class="line">15&nbsp;
+                  </span>
+               miei meriti saranno sempre gli stessi. Così
+               <br><span id="#p65_16" class="line">16&nbsp;
+                  </span>
+               l’altro giorno andai a <span class="place">Pinerolo</span>: se avessi trovato
+               <br><span id="#p65_17" class="line">17&nbsp;
+                  </span>
+               50 rivoltelle, sarei stato considerato un grande
+               <br><span id="#p65_18" class="line">18&nbsp;
+                  </span>
+               uomo; se <span class="add">non</span> ne avessi trovato nessuna uno stupido.
+               <br><span id="#p65_19" class="line">19&nbsp;
+                  </span>
+               Con quanto ho trovato, ho fatto una figura di
+               <br><span id="#p65_20" class="line">20&nbsp;
+                  </span>
+               screta, ma il merito è sempre della fortuna.
+               <br><span id="#p65_21" class="line">21&nbsp;
+                  </span>
+               In ciascuno dei tre casi il mio contegno è
+               <br><span id="#p65_22" class="line">22&nbsp;
+                  </span>
+               stato uguale. Smetto perchè fa tanto freddo che non
+               <br><span id="#p65_23" class="line">23&nbsp;
+                  </span>
+               riesco più a scrivere.
+               </div>
+            <div class="w-1/2"><img src="image/pag2.jpg" alt="page2" class="h-[32rem] "></div>
+         </div>
+         <div id="pag3" class="flex items-center w-full">
+            <div class="page text-sm w-1/2 pl-2 text-center">
+               
+               <h3 class="font-sm title text-center">
+                  Pagina 3</h3>
+               <br><span id="#p66_1" class="line">1&nbsp;
+                  </span>
+               con chi siamo,contro chi siamo », che pongano
+               <br><span id="#p66_2" class="line">2&nbsp;
+                  </span>
+               in rilievo i nostri contrasti con i Comunisti.
+               <span class="add">
+                  <br><span id="#p66_3" class="line">3&nbsp;
+                     </span>
+                  Anzi, mi pare assai più recisa
+                  <br><span id="#p66_4" class="line">4&nbsp;
+                     </span>
+                  della precedente: l’instaurazione della
+                  <br><span id="#p66_5" class="line">5&nbsp;
+                     </span>
+                  dittatura proletaria aprirebbe oggi ancora
+                  <br><span id="#p66_6" class="line">6&nbsp;
+                     </span>
+                  una volta la via alla peggiore delle
+                  <br><span id="#p66_7" class="line">7&nbsp;
+                     </span>
+                  reazioni.
+                  </span>
+               <br><span id="#p66_8" class="line">8&nbsp;
+                  </span>
+               Intanto la guerra si prolunga: <span class="del hide"> fino a </span><span class="add">prima di</span> settembre
+               <br><span id="#p66_9" class="line">9&nbsp;
+                  </span>
+               non c’è da sperare che finisca e a settembre
+               <br><span id="#p66_10" class="line">10&nbsp;
+                  </span>
+               forse saremo morti: si dice che è bello morire
+               <br><span id="#p66_11" class="line">11&nbsp;
+                  </span>
+               per una grande causa, ma ieri pensando a
+               <br><span id="#p66_12" class="line">12&nbsp;
+                  </span>
+               <span class="person">Sergio <span class="abbr">D.</span><span class="expan hide">Diena</span></span> mi pareva <span class="del hide">che </span><span class="add">amarissimo</span> vedere la vittoria
+               <br><span id="#p66_13" class="line">13&nbsp;
+                  </span>
+               sicura, ma sentire di non poterla affer
+               <br><span id="#p66_14" class="line">14&nbsp;
+                  </span>
+               rare e godere perchè la morte ci <span class="del hide">porta lo</span>
+               <br><span id="#p66_15" class="line">15&nbsp;
+                  </span>
+               strappa via e ci porta lontano.
+               <br><span id="#p66_16" class="line">16&nbsp;
+                  </span>
+               Domani scenderò a <span class="place">Sangone</span>, farò mez
+               <br><span id="#p66_17" class="line">17&nbsp;
+                  </span>
+               z’ora a piedi e giungerò a <span class="place">Moncalieri</span>;
+               <br><span id="#p66_18" class="line">18&nbsp;
+                  </span>
+               di qui prenderò il treno per <span class="place">Chieri</span>;
+               <br><span id="#p66_19" class="line">19&nbsp;
+                  </span>
+               evitando <span class="place">Torino</span>. Se tutto va bene,
+               <br><span id="#p66_20" class="line">20&nbsp;
+                  </span>
+               per le 10 sarò a casa.
+               </div>
+            <div class="w-1/2"><img src="image/pag3.jpg" alt="page3" class="h-[32rem] "></div>
+         </div>
+      </div><script type="text/javascript" src="script.js"></script></body>
 </html>
