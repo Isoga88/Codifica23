@@ -76,12 +76,14 @@
       </div>
       <h2 id="codifica" class="textimportant pt-12 pb-5">Codifica del testo</h2>
       <div class="flex text-center justify-center align-center"><button onclick="changePage(-1)" type="button" class="button">pagina precedente</button><button onclick="changePage(1)" type="button" class="button">pagina successiva</button></div>
-      <div class="flex flex-wrap gap-5 justify-around py-4">
-         <div class="relative inline-flex items-center cursor-pointer"><input id="correction" type="checkbox" class="sr-only peer/correction"><div onclick="changeCorrection()" class="w-11 h-6 bg-gray-200 rounded-full peer-checked/correction:after:translate-x-full peer-checked/correction:after:border-white after:content-[''] after:absolute after:top-0.5 after:left-[2px] after:bg-white after:border-gray-300 after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked/correction:bg-blue-600"></div><span class="text-sm font-medium text-gray-900 ">Correzioni</span></div>
-         <div class="relative inline-flex items-center cursor-pointer"><input id="place" type="checkbox" class="sr-only peer/place"><div onclick="changePlace()" class="w-11 h-6 bg-gray-200 rounded-full peer-checked/place:after:translate-x-full peer-checked/place:after:border-white after:content-[''] after:absolute after:top-0.5 after:left-[2px] after:bg-white after:border-gray-300 after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked/place:bg-red-600"></div><span class="text-sm font-medium text-gray-900 ">Luoghi</span></div>
-         <div class="relative inline-flex items-center cursor-pointer"><input id="person" type="checkbox" class="sr-only peer/person"><div onclick="changePerson()" class="w-11 h-6 bg-gray-200 rounded-full peer-checked/person:after:translate-x-full peer-checked/person:after:border-white after:content-[''] after:absolute after:top-0.5 after:left-[2px] after:bg-white after:border-gray-300 after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked/person:bg-yellow-600"></div><span class="text-sm font-medium text-gray-900 ">Persone</span></div>
-         <div class="relative inline-flex items-center cursor-pointer"><input id="normalization" type="checkbox" class="sr-only peer/normalization"><div onclick="changeNormalization()" class="w-11 h-6 bg-gray-200 rounded-full peer-checked/normalization:after:translate-x-full peer-checked/normalization:after:border-white after:content-[''] after:absolute after:top-0.5 after:left-[2px] after:bg-white after:border-gray-300 after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked/normalization:bg-zinc-600"></div><span class="text-sm font-medium text-gray-900 ">Normalizzazioni</span></div>
-         <div class="relative inline-flex items-center cursor-pointer"><input id="erasures" type="checkbox" class="sr-only peer/erasures"><div onclick="changeErasures()" class="w-11 h-6 bg-gray-200 rounded-full peer-checked/erasures:after:translate-x-full peer-checked/erasures:after:border-white after:content-[''] after:absolute after:top-0.5 after:left-[2px] after:bg-white after:border-gray-300 after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked/erasures:bg-green-600"></div><span class="text-sm font-medium text-gray-900">Cancellature</span></div>
+      <div class="flex flex-wrap gap-x-32 gap-y-2 justify-around py-4">
+         <div class="relative inline-flex items-center cursor-pointer"><input id="correction" type="checkbox" class="sr-only peer/correction"><div onclick="changeCorrection()" class="w-11 h-6 bg-gray-200 rounded-full peer-checked/correction:after:translate-x-full peer-checked/correction:after:border-white after:content-[''] after:absolute after:top-0.5 after:left-[2px] after:bg-white after:border-gray-300 after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked/correction:bg-blue-300"></div><span class="ml-1 text-sm font-medium text-gray-900 ">Correzioni</span></div>
+         <div class="relative inline-flex items-center cursor-pointer"><input id="place" type="checkbox" class="sr-only peer/place"><div onclick="changePlace()" class="w-11 h-6 bg-gray-200 rounded-full peer-checked/place:after:translate-x-full peer-checked/place:after:border-white after:content-[''] after:absolute after:top-0.5 after:left-[2px] after:bg-white after:border-gray-300 after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked/place:bg-red-300"></div><span class="ml-1 text-sm font-medium text-gray-900 ">Luoghi</span></div>
+         <div class="relative inline-flex items-center cursor-pointer"><input id="person" type="checkbox" class="sr-only peer/person"><div onclick="changePerson()" class="w-11 h-6 bg-gray-200 rounded-full peer-checked/person:after:translate-x-full peer-checked/person:after:border-white after:content-[''] after:absolute after:top-0.5 after:left-[2px] after:bg-white after:border-gray-300 after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked/person:bg-yellow-300"></div><span class="ml-1 text-sm font-medium text-gray-900 ">Persone</span></div>
+         <div class="relative inline-flex items-center cursor-pointer"><input id="normalization" type="checkbox" class="sr-only peer/normalization"><div onclick="changeNormalization()" class="w-11 h-6 bg-gray-200 rounded-full peer-checked/normalization:after:translate-x-full peer-checked/normalization:after:border-white after:content-[''] after:absolute after:top-0.5 after:left-[2px] after:bg-white after:border-gray-300 after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked/normalization:bg-zinc-600"></div><span class="ml-1 text-sm font-medium text-gray-900 ">Normalizzazioni</span></div>
+         <div class="relative inline-flex items-center cursor-pointer"><input id="erasures" type="checkbox" class="sr-only peer/erasures"><div onclick="changeErasures()" class="w-11 h-6 bg-gray-200 rounded-full peer-checked/erasures:after:translate-x-full peer-checked/erasures:after:border-white after:content-[''] after:absolute after:top-0.5 after:left-[2px] after:bg-white after:border-gray-300 after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked/erasures:bg-green-300"></div><span class="ml-1 text-sm font-medium text-gray-900">Cancellature</span></div>
+         <div class="relative inline-flex items-center cursor-pointer"><input id="abbrevation" type="checkbox" class="sr-only peer/abbrevation"><div onclick="changeAbbrevation()" class="w-11 h-6 bg-gray-200 rounded-full peer-checked/abbrevation:after:translate-x-full peer-checked/abbrevation:after:border-white after:content-[''] after:absolute after:top-0.5 after:left-[2px] after:bg-white after:border-gray-300 after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked/abbrevation:bg-orange-300"></div><span class="ml-1 text-sm font-medium text-gray-900">Abbreviazioni</span></div>
+         <div class="relative inline-flex items-center cursor-pointer"><input id="supplied" type="checkbox" class="sr-only peer/supplied"><div onclick="changeSupplied()" class="w-11 h-6 bg-gray-200 rounded-full peer-checked/supplied:after:translate-x-full peer-checked/supplied:after:border-white after:content-[''] after:absolute after:top-0.5 after:left-[2px] after:bg-white after:border-gray-300 after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked/supplied:bg-violet-300"></div><span class="ml-1 text-sm font-medium text-gray-900">Aggiunte editoriali</span></div>
       </div>
       <div class="flex">
          <div id="pag1" class="flex items-center w-full">
@@ -103,16 +105,18 @@
                buoni e <span class="orig">stamane</span><span class="normalization hide"> stamani</span> avevano regalato alla
                <br><span id="#p64_5" class="line">5&nbsp;
                   </span>
-               popolazione di <span class="place">Barge</span> tanto latte. Infatti,
+               popolazione di <span class="place tooltip">Barge<span class="tooltiptext barge">
+                     <div>
+                        <div class="bold">Nome: </div>Barge<br><div class="bold">Provincia: </div>Cuneo<br><div class="bold">Region: </div>Piemonte<br><div class="bold">Stato: </div>Italia<br></div></span></span> tanto latte. Infatti,
                <br><span id="#p64_6" class="line">6&nbsp;
                   </span>
-               come poi seppi; nella notte avevano
+               come poi seppi<span class="sic">;</span><span class="corr hide">,</span> nella notte avevano
                <br><span id="#p64_7" class="line">7&nbsp;
                   </span>
                fermato un camion di latte destinato 
                <br><span id="#p64_8" class="line">8&nbsp;
                   </span>
-               ai Tedeschi. Studio storia. Oggi fa freddo,
+               ai <span class="sic">Tedeschi</span><span class="corr hide"> tedeschi</span>. Studio storia. Oggi fa freddo,
                <br><span id="#p64_9" class="line">9&nbsp;
                   </span>
                piove e c’è per la <span class="del hide">strada </span><span class="add">campagna</span> un gran fango. Ho
@@ -124,10 +128,16 @@
                Ho composto <span class="del hide"> </span> durante la strada la prima
                <br><span id="#p64_12" class="line">12&nbsp;
                   </span>
-               strofa della lirica, che dovrà commemo
+               strofa di una lirica, che dovrà commemo
                <br><span id="#p64_13" class="line">13&nbsp;
                   </span>
-               rare <span class="person">Sergio Diena</span>:
+               rare <span class="person tooltip">Sergio Diena<span class="tooltiptext">
+                     <div>
+                        <div class="bold">Nome: </div>
+                        
+                        Sergio
+                        Diena
+                        <br><div class="bold">Sesso : </div>uomo<br><div class="bold">Data nascita: </div>10 ottobre 1919, Torino<br><div class="bold">Data morte: </div>4 dicembre 1948,  Villar Pellice</div></span></span>:
                <br><span id="#p64_14" class="line">14&nbsp;
                   </span>
                <span class="italic">Ancora andare<span class="del hide">,</span><span class="add">.</span> Vivere la guerra<br><span id="#p64_15" class="line">15&nbsp;
@@ -139,13 +149,17 @@
                Mentre scrivo può essere che si decida 
                <br><span id="#p64_19" class="line">19&nbsp;
                   </span>
-               del mio destino, perchè forse a <span class="place">Torre</span>
+               del mio destino perchè forse a <span class="place tooltip">Torre<span class="tooltiptext torre">
+                     <div>
+                        <div class="bold">Nome: </div>Torre Pellice<br><div class="bold">Provincia: </div>Torino<br><div class="bold">Region: </div>Piemonte<br><div class="bold">Stato: </div>Italia<br></div></span></span>
                <br><span id="#p64_20" class="line">20&nbsp;
                   </span>
                Pellice il <span class="abbr">P.d.A</span><span class="expan hide">Partito d’Azione</span> deciderà se devo
                <br><span id="#p64_21" class="line">21&nbsp;
                   </span>
-               o fermarmi a <span class="place">Barge</span> o se andrò in un
+               o fermarmi a <span class="place tooltip">Barge<span class="tooltiptext barge">
+                     <div>
+                        <div class="bold">Nome: </div>Barge<br><div class="bold">Provincia: </div>Cuneo<br><div class="bold">Region: </div>Piemonte<br><div class="bold">Stato: </div>Italia<br></div></span></span> o se andrò in un
                <br><span id="#p64_22" class="line">22&nbsp;
                   </span>
                altro luogo e la mia vita può dipendere 
@@ -180,16 +194,16 @@
                scacchiera, potrò diventare dama, come parrà
                <br><span id="#p65_7" class="line">7&nbsp;
                   </span>
-               al Giocatore, cioè alpartito. Poco contano le 
+               al <span class="sic">Giocatore</span><span class="corr hide"> giocatore</span>, cioè al partito. Poco contano le 
                <br><span id="#p65_8" class="line">8&nbsp;
                   </span>
                abilità: se mi lasciano qui, potrò rimproverarmi
                <br><span id="#p65_9" class="line">9&nbsp;
                   </span>
-               della polemica contro il Comunismo, che mi
+               della polemica contro il <span class="sic">Comunismo</span><span class="corr hide"> comunismo</span>, che mi
                <br><span id="#p65_10" class="line">10&nbsp;
                   </span>
-               ha suscitato delle antipatie; supponiamo che
+               ha suscitato delle antipatie<span class="sic">; supponiamo</span><span class="corr hide">. Supponiamo</span> che
                <br><span id="#p65_11" class="line">11&nbsp;
                   </span>
                mi nominino commissario di una banda perchè
@@ -207,13 +221,15 @@
                miei meriti saranno sempre gli stessi. Così
                <br><span id="#p65_16" class="line">16&nbsp;
                   </span>
-               l’altro giorno andai a <span class="place">Pinerolo</span>: se avessi trovato
+               l’altro giorno andai a <span class="place tooltip">Pinerolo<span class="tooltiptext pinerolo">
+                     <div>
+                        <div class="bold">Nome: </div>Pinerolo<br><div class="bold">Provincia: </div>Torino<br><div class="bold">Region: </div>Piemonte<br><div class="bold">Stato: </div>Italia<br></div></span></span>: se avessi trovato
                <br><span id="#p65_17" class="line">17&nbsp;
                   </span>
                50 rivoltelle, sarei stato considerato un grande
                <br><span id="#p65_18" class="line">18&nbsp;
                   </span>
-               uomo; se <span class="add">non</span> ne avessi trovato nessuna uno stupido.
+               uomo; se <span class="add">non</span> ne avessi trovato nessuna, uno stupido.
                <br><span id="#p65_19" class="line">19&nbsp;
                   </span>
                Con quanto ho trovato, ho fatto una figura di
@@ -239,10 +255,10 @@
                   Pagina 3</h3>
                <br><span id="#p66_1" class="line">1&nbsp;
                   </span>
-               con chi siamo,contro chi siamo », che pongano
+               con chi siamo, contro chi siamo », che pongano
                <br><span id="#p66_2" class="line">2&nbsp;
                   </span>
-               in rilievo i nostri contrasti con i Comunisti.
+               in rilievo i nostri contrasti con i <span class="sic">Comunisti</span><span class="corr hide"> comunisti</span>.
                <span class="add">
                   <br><span id="#p66_3" class="line">3&nbsp;
                      </span>
@@ -274,7 +290,13 @@
                per una grande causa, ma ieri pensando a
                <br><span id="#p66_12" class="line">12&nbsp;
                   </span>
-               <span class="person">Sergio <span class="abbr">D.</span><span class="expan hide">Diena</span></span> mi pareva <span class="del hide">che </span><span class="add">amarissimo</span> vedere la vittoria
+               <span class="person tooltip">Sergio <span class="abbr">D.</span><span class="expan hide">Diena</span><span class="tooltiptext">
+                     <div>
+                        <div class="bold">Nome: </div>
+                        
+                        Sergio
+                        Diena
+                        <br><div class="bold">Sesso : </div>uomo<br><div class="bold">Data nascita: </div>10 ottobre 1919, Torino<br><div class="bold">Data morte: </div>4 dicembre 1948,  Villar Pellice</div></span></span> mi pareva <span class="del hide">che </span><span class="add">amarissimo</span> vedere la vittoria
                <br><span id="#p66_13" class="line">13&nbsp;
                   </span>
                sicura, ma sentire di non poterla affer
@@ -286,16 +308,22 @@
                strappa via e ci porta lontano.
                <br><span id="#p66_16" class="line">16&nbsp;
                   </span>
-               Domani scenderò a <span class="place">Sangone</span>, farò mez
+               Domani scenderò a <span class="place tooltip">Sangone<span class="tooltiptext "></span></span>, farò mez
                <br><span id="#p66_17" class="line">17&nbsp;
                   </span>
-               z’ora a piedi e giungerò a <span class="place">Moncalieri</span>;
+               z’ora a piedi e giungerò a <span class="place tooltip">Moncalieri<span class="tooltiptext moncalieri">
+                     <div>
+                        <div class="bold">Nome: </div>Moncalieri<br><div class="bold">Provincia: </div>Torino<br><div class="bold">Region: </div>Piemonte<br><div class="bold">Stato: </div>Italia<br></div></span></span>;
                <br><span id="#p66_18" class="line">18&nbsp;
                   </span>
-               di qui prenderò il treno per <span class="place">Chieri</span>;
+               di qui prenderò il treno per <span class="place tooltip">Chieri<span class="tooltiptext chieri">
+                     <div>
+                        <div class="bold">Nome: </div>Chieri<br><div class="bold">Provincia: </div>Torino<br><div class="bold">Region: </div>Piemonte<br><div class="bold">Stato: </div>Italia<br></div></span></span>;
                <br><span id="#p66_19" class="line">19&nbsp;
                   </span>
-               evitando <span class="place">Torino</span>. Se tutto va bene,
+               evitando <span class="place tooltip">Torino<span class="tooltiptext torino">
+                     <div>
+                        <div class="bold">Nome: </div>Torino<br><div class="bold">Provincia: </div>Torino<br><div class="bold">Region: </div>Piemonte<br><div class="bold">Stato: </div>Italia<br></div></span></span>. Se tutto va bene,
                <br><span id="#p66_20" class="line">20&nbsp;
                   </span>
                per le 10 sarò a casa.

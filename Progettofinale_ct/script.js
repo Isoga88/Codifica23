@@ -6,10 +6,15 @@ var place;
 var person;
 var normalization;
 var erasures;
+var abbrevation;
+var supplied;
+var corrArray;
 var delArray;
 var personArray;
 var placeArray;
 var normalizationArray;
+var abbrevationArray;
+var suppliedArray;
 var pg=1;
 
 function gestoreLoad(){
@@ -21,14 +26,21 @@ function gestoreLoad(){
     person = document.getElementById("person");
     normalization = document.getElementById("normalization");
     erasures = document.getElementById("erasures"); 
+    abbrevation = document.getElementById("abbrevation"); 
+    supplied = document.getElementById("supplied"); 
 
     pag2.classList.add("hide");
     pag3.classList.add("hide");
 
+    corrArray = document.getElementsByClassName("corr");
+    sicArray = document.getElementsByClassName("sic");
     delArray = document.getElementsByClassName("del");
+    origArray = document.getElementsByClassName("orig");
     personArray = document.getElementsByClassName("person");
     placeArray = document.getElementsByClassName("place");
     normalizationArray = document.getElementsByClassName("normalization");
+    abbrevationArray = document.getElementsByClassName("expan");
+    suppliedArray = document.getElementsByClassName("supplied");
 
 }
 function changePage(n){
@@ -56,8 +68,22 @@ function changePage(n){
 function changeCorrection(){
     if(correction.hasAttribute('checked')){
         correction.removeAttribute('checked');
+        Array.from(corrArray).forEach(function(element) {
+            element.classList.add("hide");
+            element.classList.remove("cor");
+          });        
+          Array.from(sicArray).forEach(function(element) {
+            element.classList.remove("overstrike");
+          });
     } else{
         correction.setAttribute('checked','');
+        Array.from(corrArray).forEach(function(element) {
+            element.classList.remove("hide");
+            element.classList.add("cor");
+          });
+          Array.from(sicArray).forEach(function(element) {
+            element.classList.add("overstrike");
+          });
     }
 }
 function changePlace(){
@@ -93,11 +119,17 @@ function changeNormalization(){
             element.classList.add("hide");
             element.classList.remove("nor");
           });
+          Array.from(origArray).forEach(function(element) {
+            element.classList.remove("overstrike");
+          });
     } else{
         normalization.setAttribute('checked','');
         Array.from(normalizationArray).forEach(function(element) {
             element.classList.remove("hide");
             element.classList.add("nor");
+          });
+          Array.from(origArray).forEach(function(element) {
+            element.classList.add("overstrike");
           });
     }
 }
@@ -114,6 +146,37 @@ function changeErasures(){
         Array.from(delArray).forEach(function(element) {
             element.classList.remove("hide");
             element.classList.add("delete");
+          });
+    }
+}
+
+function changeAbbrevation(){
+    if(abbrevation.hasAttribute('checked')){
+        abbrevation.removeAttribute('checked');
+        Array.from(abbrevationArray).forEach(function(element) {
+            element.classList.add("hide");
+            element.classList.remove("ex");
+          });
+    } else{
+        abbrevation.setAttribute('checked','');
+        Array.from(abbrevationArray).forEach(function(element) {
+            element.classList.remove("hide");
+            element.classList.add("ex");
+          });
+    }
+}
+function changeSupplied(){
+    if(supplied.hasAttribute('checked')){
+        supplied.removeAttribute('checked');
+        Array.from(suppliedArray).forEach(function(element) {
+            element.classList.add("hide");
+            element.classList.remove("supp");
+          });
+    } else{
+        supplied.setAttribute('checked','');
+        Array.from(suppliedArray).forEach(function(element) {
+            element.classList.remove("hide");
+            element.classList.add("supp");
           });
     }
 }

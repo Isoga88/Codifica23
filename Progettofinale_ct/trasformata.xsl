@@ -50,31 +50,41 @@
                     <button onclick="changePage(-1)" type="button" class="button">pagina precedente</button>
                     <button onclick="changePage(1)" type="button" class="button">pagina successiva</button>
                 </div>
-                <div class="flex flex-wrap gap-5 justify-around py-4">
+                <div class="flex flex-wrap gap-x-32 gap-y-2 justify-around py-4">
                     <div class="relative inline-flex items-center cursor-pointer">
                         <input id="correction" type="checkbox" class="sr-only peer/correction" />
-                        <div onclick="changeCorrection()" class="w-11 h-6 bg-gray-200 rounded-full peer-checked/correction:after:translate-x-full peer-checked/correction:after:border-white after:content-[''] after:absolute after:top-0.5 after:left-[2px] after:bg-white after:border-gray-300 after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked/correction:bg-blue-600"></div>
-                        <span class="text-sm font-medium text-gray-900 ">Correzioni</span>
+                        <div onclick="changeCorrection()" class="w-11 h-6 bg-gray-200 rounded-full peer-checked/correction:after:translate-x-full peer-checked/correction:after:border-white after:content-[''] after:absolute after:top-0.5 after:left-[2px] after:bg-white after:border-gray-300 after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked/correction:bg-blue-300"></div>
+                        <span class="ml-1 text-sm font-medium text-gray-900 ">Correzioni</span>
                     </div>
                     <div class="relative inline-flex items-center cursor-pointer">
                         <input id="place" type="checkbox" class="sr-only peer/place" />
-                        <div onclick="changePlace()" class="w-11 h-6 bg-gray-200 rounded-full peer-checked/place:after:translate-x-full peer-checked/place:after:border-white after:content-[''] after:absolute after:top-0.5 after:left-[2px] after:bg-white after:border-gray-300 after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked/place:bg-red-600"></div>
-                        <span class="text-sm font-medium text-gray-900 ">Luoghi</span>
+                        <div onclick="changePlace()" class="w-11 h-6 bg-gray-200 rounded-full peer-checked/place:after:translate-x-full peer-checked/place:after:border-white after:content-[''] after:absolute after:top-0.5 after:left-[2px] after:bg-white after:border-gray-300 after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked/place:bg-red-300"></div>
+                        <span class="ml-1 text-sm font-medium text-gray-900 ">Luoghi</span>
                     </div>
                     <div class="relative inline-flex items-center cursor-pointer">
                         <input id="person" type="checkbox" class="sr-only peer/person" />
-                        <div onclick="changePerson()" class="w-11 h-6 bg-gray-200 rounded-full peer-checked/person:after:translate-x-full peer-checked/person:after:border-white after:content-[''] after:absolute after:top-0.5 after:left-[2px] after:bg-white after:border-gray-300 after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked/person:bg-yellow-600"></div>
-                        <span class="text-sm font-medium text-gray-900 ">Persone</span>
+                        <div onclick="changePerson()" class="w-11 h-6 bg-gray-200 rounded-full peer-checked/person:after:translate-x-full peer-checked/person:after:border-white after:content-[''] after:absolute after:top-0.5 after:left-[2px] after:bg-white after:border-gray-300 after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked/person:bg-yellow-300"></div>
+                        <span class="ml-1 text-sm font-medium text-gray-900 ">Persone</span>
                     </div>
                     <div class="relative inline-flex items-center cursor-pointer">
                         <input id="normalization" type="checkbox" class="sr-only peer/normalization" />
                         <div onclick="changeNormalization()" class="w-11 h-6 bg-gray-200 rounded-full peer-checked/normalization:after:translate-x-full peer-checked/normalization:after:border-white after:content-[''] after:absolute after:top-0.5 after:left-[2px] after:bg-white after:border-gray-300 after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked/normalization:bg-zinc-600"></div>
-                        <span class="text-sm font-medium text-gray-900 ">Normalizzazioni</span>
+                        <span class="ml-1 text-sm font-medium text-gray-900 ">Normalizzazioni</span>
                     </div>
                     <div class="relative inline-flex items-center cursor-pointer">
                         <input id="erasures" type="checkbox" class="sr-only peer/erasures" />
-                        <div onclick="changeErasures()" class="w-11 h-6 bg-gray-200 rounded-full peer-checked/erasures:after:translate-x-full peer-checked/erasures:after:border-white after:content-[''] after:absolute after:top-0.5 after:left-[2px] after:bg-white after:border-gray-300 after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked/erasures:bg-green-600"></div>
-                        <span class="text-sm font-medium text-gray-900">Cancellature</span>
+                        <div onclick="changeErasures()" class="w-11 h-6 bg-gray-200 rounded-full peer-checked/erasures:after:translate-x-full peer-checked/erasures:after:border-white after:content-[''] after:absolute after:top-0.5 after:left-[2px] after:bg-white after:border-gray-300 after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked/erasures:bg-green-300"></div>
+                        <span class="ml-1 text-sm font-medium text-gray-900">Cancellature</span>
+                    </div>
+                    <div class="relative inline-flex items-center cursor-pointer">
+                        <input id="abbrevation" type="checkbox" class="sr-only peer/abbrevation" />
+                        <div onclick="changeAbbrevation()" class="w-11 h-6 bg-gray-200 rounded-full peer-checked/abbrevation:after:translate-x-full peer-checked/abbrevation:after:border-white after:content-[''] after:absolute after:top-0.5 after:left-[2px] after:bg-white after:border-gray-300 after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked/abbrevation:bg-orange-300"></div>
+                        <span class="ml-1 text-sm font-medium text-gray-900">Abbreviazioni</span>
+                    </div>
+                    <div class="relative inline-flex items-center cursor-pointer">
+                        <input id="supplied" type="checkbox" class="sr-only peer/supplied" />
+                        <div onclick="changeSupplied()" class="w-11 h-6 bg-gray-200 rounded-full peer-checked/supplied:after:translate-x-full peer-checked/supplied:after:border-white after:content-[''] after:absolute after:top-0.5 after:left-[2px] after:bg-white after:border-gray-300 after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked/supplied:bg-violet-300"></div>
+                        <span class="ml-1 text-sm font-medium text-gray-900">Aggiunte editoriali</span>
                     </div>
                 </div>
                 <div class="flex">
@@ -147,18 +157,53 @@
     </xsl:template>
 
     <xsl:template match="tei:placeName">
+        <xsl:variable name="myPlace">
+            <xsl:value-of select="substring-after(@ref, '#')" />
+        </xsl:variable>
         <xsl:element name="span">
-            <xsl:attribute name="class">place</xsl:attribute>
+            <xsl:attribute name="class">place tooltip</xsl:attribute>
             <xsl:apply-templates/>
+            <xsl:element name="span">
+                <xsl:attribute name="class">tooltiptext <xsl:value-of select="$myPlace" /></xsl:attribute>
+                <xsl:apply-templates select="//tei:listPlace/tei:place[@xml:id=$myPlace]"/>
+            </xsl:element>
         </xsl:element>
     </xsl:template>
 
+    <xsl:template match="tei:listPlace/tei:place">
+        <div>
+            <div class="bold">Nome: </div><xsl:value-of select="tei:placeName"/><br/>
+            <div class="bold">Provincia: </div><xsl:value-of select="tei:settlement[@type='province']"/><br/>
+            <div class="bold">Region: </div><xsl:value-of select="tei:settlement[@type='region']"/><br/>
+            <div class="bold">Stato: </div><xsl:value-of select="tei:country"/><br/>
+        </div>
+    </xsl:template>
+
+
     <xsl:template match="tei:persName">
+        <xsl:variable name="myPerson">
+            <xsl:value-of select="substring-after(@ref, '#')" />
+        </xsl:variable>
         <xsl:element name="span">
-            <xsl:attribute name="class">person</xsl:attribute>
+            <xsl:attribute name="class">person tooltip</xsl:attribute>
             <xsl:apply-templates/>
+            <xsl:element name="span">
+                <xsl:attribute name="class">tooltiptext</xsl:attribute>
+                <xsl:apply-templates select="//tei:listPerson/tei:person[@xml:id=$myPerson]"/>
+            </xsl:element>
         </xsl:element>
     </xsl:template>
+
+    <xsl:template match="tei:listPerson/tei:person">
+        <div>
+            <div class="bold">Nome: </div><xsl:value-of select="tei:persName"/><br/>
+            <div class="bold">Sesso : </div><xsl:value-of select="tei:sex"/><br/>
+            <div class="bold">Data nascita: </div><xsl:value-of select="tei:birth/tei:date"/>, <xsl:value-of select="tei:birth/tei:placeName/tei:settlement[@type='municipality']/text()"/><br/>
+            <div class="bold">Data morte: </div><xsl:value-of select="tei:death/tei:date"/>, <xsl:value-of select="tei:death/tei:placeName/tei:settlement[@type='municipality']/text()"/>
+        </div>
+    </xsl:template>
+
+    
 
     <xsl:template match="tei:orig">
         <xsl:element name="span">
@@ -189,11 +234,6 @@
     </xsl:template>
 
 
-
-
-    
-
-    <!-- abbreviazione -->
     <xsl:template match="tei:abbr">
         <xsl:element name="span">
             <xsl:attribute name="class">abbr</xsl:attribute>
@@ -201,22 +241,13 @@
         </xsl:element>
     </xsl:template>
 
-
-
-
-    <!--errori-->
-    <xsl:template match="tei:sic">
+    <xsl:template match="tei:expan">
         <xsl:element name="span">
-            <xsl:attribute name="class">sic hide</xsl:attribute>
-            <xsl:apply-templates />
+            <xsl:attribute name="class">expan hide</xsl:attribute>
+            <xsl:apply-templates/>
         </xsl:element>
     </xsl:template>
 
-    <!-- cancellature -->
-
-
-
-    <!-- agg. editoriale -->
     <xsl:template match="tei:supplied">
         <xsl:element name="span">
             <xsl:attribute name="class">supplied hide</xsl:attribute>
@@ -224,14 +255,13 @@
         </xsl:element>
     </xsl:template>
 
-    <!-- espansione -->
-    <xsl:template match="tei:expan">
+    <xsl:template match="tei:sic">
         <xsl:element name="span">
-            <xsl:attribute name="class">expan hide</xsl:attribute>
-            <xsl:apply-templates/>
+            <xsl:attribute name="class">sic</xsl:attribute>
+            <xsl:apply-templates />
         </xsl:element>
     </xsl:template>
-        <!-- correzione -->
+
     <xsl:template match="tei:corr">
         <xsl:element name="span">
             <xsl:attribute name="class">corr hide</xsl:attribute>

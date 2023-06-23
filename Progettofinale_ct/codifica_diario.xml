@@ -227,11 +227,11 @@
                 <lb xml:id="pag64_5" n="5" facs="#p64_5"/>
                 popolazione di <placeName ref="#barge">Barge</placeName> tanto latte<pc>.</pc> Infatti<pc>,</pc>
                 <lb xml:id="pag64_6" n="6" facs="#p64_6"/>
-                come poi seppi<pc>;</pc> nella notte avevano
+                come poi seppi<choice><sic><pc>;</pc></sic><corr resp="#personal"><pc>,</pc></corr></choice> nella notte avevano
                 <lb xml:id="pag64_7" n="7" facs="#p64_7"/>
                 fermato un camion di latte destinato 
                 <lb xml:id="pag64_8" n="8" facs="#p64_8"/>
-                ai Tedeschi<pc>.</pc> Studio storia<pc>.</pc> Oggi fa freddo<pc>,</pc>
+                ai <choice><sic>Tedeschi</sic><corr resp="#personal"> tedeschi</corr></choice><pc>.</pc> Studio storia<pc>.</pc> Oggi fa freddo<pc>,</pc>
                 <lb xml:id="pag64_9" n="9" facs="#p64_9"/>
                 piove e c’è per la <subst><del rend="overstrike" hand="author">strada </del> <add place="above" hand="author">campagna</add></subst> un gran fango<pc>.</pc> Ho
                 <lb xml:id="pag64_10" rend="" n="10" facs="#p64_10"/>
@@ -239,7 +239,7 @@
                 <lb xml:id="pag64_11" n="11" facs="#p64_11"/>
                 Ho composto <del rend="overstrike" hand="author"> <gap reason="illegible" quantity="2" unit="character"/></del> durante la strada la prima
                 <lb xml:id="pag64_12" n="12" facs="#p64_12"/>
-                strofa della lirica<pc>,</pc> che dovrà commemo
+                strofa di una lirica<pc>,</pc> che dovrà commemo
                 <lb xml:id="pag64_13" n="13" facs="#p64_13"/>
                 rare <persName ref="#diena">Sergio Diena</persName><pc>:</pc>
                 <lb xml:id="pag64_14" n="14" facs="#p64_14"/>
@@ -259,7 +259,7 @@
                 <lb xml:id="pag64_18" n="18" facs="#p64_18"/>
                 Mentre scrivo può essere che si decida 
                 <lb xml:id="pag64_19" n="19" facs="#p64_19"/>
-                del mio destino<pc>,</pc> perchè forse a <placeName ref="#torre">Torre</placeName>
+                del mio destino perchè forse a <placeName ref="#torre">Torre</placeName>
                 <lb xml:id="pag64_20" n="20" facs="#p64_20"/>
                 Pellice il <choice><abbr type="acronym">P.d.A</abbr><expan resp="#personal" cert="high"><orgName ref="#pda">Partito d’Azione</orgName></expan></choice> deciderà se devo
                 <lb xml:id="pag64_21" n="21" facs="#p64_21"/>
@@ -284,13 +284,13 @@
                 <lb xml:id="pag65_6" n="6" facs="#p65_6"/>
                 scacchiera<pc>,</pc> potrò diventare dama<pc>,</pc> come parrà
                 <lb xml:id="pag65_7" n="7" facs="#p65_7"/>
-                 al Giocatore<pc>,</pc> cioè al<orgName ref="#pda">partito</orgName><pc>.</pc> Poco contano le 
+                 al <choice><sic>Giocatore</sic><corr resp="#personal"> giocatore</corr></choice><pc>,</pc> cioè al<orgName ref="#pda"> partito</orgName><pc>.</pc> Poco contano le 
                 <lb xml:id="pag65_8" n="8" facs="#p65_8"/>
                 abilità<pc>:</pc> se mi lasciano qui<pc>,</pc> potrò rimproverarmi
                 <lb xml:id="pag65_9" n="9" facs="#p65_9"/>
-                della polemica contro il Comunismo<pc>,</pc> che mi
+                della polemica contro il <choice><sic>Comunismo</sic><corr resp="#personal"> comunismo</corr></choice><pc>,</pc> che mi
                 <lb xml:id="pag65_10" n="10" facs="#p65_10"/>
-                ha suscitato delle antipatie<pc>;</pc> supponiamo che
+                ha suscitato delle antipatie<choice><sic><pc>; </pc>supponiamo</sic><corr resp="#personal"><pc>. </pc>Supponiamo</corr></choice> che
                 <lb xml:id="pag65_11" n="11" facs="#p65_11"/>
                 mi nominino commissario di una banda perchè
                 <lb xml:id="pag65_12" n="12" facs="#p66_12"/>
@@ -306,7 +306,7 @@
                 <lb xml:id="pag65_17" n="17" facs="#p65_17"/>
                 <num value="50">50</num> rivoltelle, sarei stato considerato un grande
                 <lb xml:id="pag65_18" n="18" facs="#p65_18"/>
-                uomo<pc>;</pc> se <add place="above" hand="author">non</add> ne avessi trovato nessuna uno stupido<pc>.</pc>
+                uomo<pc>;</pc> se <add place="above" hand="author">non</add> ne avessi trovato nessuna<pc>, </pc>uno stupido<pc>.</pc>
                 <lb xml:id="pag65_19" n="19" facs="#p65_19"/>
                 Con quanto ho trovato<pc>,</pc> ho fatto una figura di
                 <lb xml:id="pag65_20" n="20" facs="#p65_20"/>
@@ -321,9 +321,9 @@
             <ab n="3">
                 <pb xml:id="pag66" n="3" facs="#p66" />
                 <lb xml:id="pag66_1" n="1" facs="#p66_1"/>
-                con chi siamo<pc>,</pc>contro chi siamo &#187;<pc>,</pc> che pongano
+                con chi siamo<pc>,</pc> contro chi siamo &#187;<pc>,</pc> che pongano
                 <lb xml:id="pag66_2" n="2" facs="#p66_2"/>
-                in rilievo i nostri contrasti con i Comunisti<pc>.</pc>
+                in rilievo i nostri contrasti con i <choice><sic>Comunisti</sic><corr resp="#personal"> comunisti</corr></choice><pc>.</pc>
                 <add place="below" hand="author" rend="pencil">
                     <lb xml:id="pag66_3" n="3" facs="#p66_3"/>
                     Anzi<pc>,</pc> mi pare assai più recisa
@@ -345,7 +345,7 @@
                 <lb xml:id="pag66_11" n="11" facs="#p66_11"/>
                 per una grande causa<pc>,</pc> ma ieri pensando a
                 <lb xml:id="pag66_12" n="12" facs="#p66_12"/>
-                <persName ref="diena">Sergio <choice><abbr>D.</abbr><expan resp="#personal" cert="high">Diena</expan></choice></persName> mi pareva <subst><del rend="overstrike" hand="author">che </del> <add place="above" hand="author">amarissimo</add></subst> vedere la vittoria
+                <persName ref="#diena">Sergio <choice><abbr>D.</abbr><expan resp="#personal" cert="high">Diena</expan></choice></persName> mi pareva <subst><del rend="overstrike" hand="author">che </del> <add place="above" hand="author">amarissimo</add></subst> vedere la vittoria
                 <lb xml:id="pag66_13" n="13" facs="#p66_13"/>
                 sicura<pc>,</pc> ma sentire di non poterla affer
                 <lb xml:id="pag66_14" n="14" facs="#p66_14"/>
