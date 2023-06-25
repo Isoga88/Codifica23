@@ -47,14 +47,22 @@ function gestoreLoad(){
 var idZone;
 var idLine;
 function underlineStart(line){
-    console.log(line);
+    myId = line[0].getAttribute('id');
     Array.from(lineArray).forEach(function(element){
         idLine = element.getAttribute('id');
-        if(idLine == line){
+        if(idLine == myId){
+            line[0].classList.add("evidence");
         }
     })
 }
 function underlineEnd(line){
+    myId = line[0].getAttribute('id');
+    Array.from(lineArray).forEach(function(element){
+        idLine = element.getAttribute('id');
+        if(idLine == myId){
+            line[0].classList.remove("evidence");
+        }
+    })
 }
 function changePage(n){
     pg = pg+ n;
@@ -192,5 +200,26 @@ function changeSupplied(){
             element.classList.add("supp");
           });
     }
+}
+var elementList;
+var openArrow;
+var closeArrow;
+function openMenu(list){
+    elementList= list.getElementsByClassName("elementList");
+    openArrow= document.getElementById("arrowbtn");
+    closeArrow= document.getElementById("arrowbtn2");
+    Array.from(elementList).forEach(function(element) {
+        if(element.classList.contains('hide')){
+            element.classList.remove("hide");
+            element.classList.add("show");
+            closeArrow.classList.remove("hide");
+            openArrow.classList.add("hide");
+        }else{
+            element.classList.add("hide");
+            element.classList.remove("show");
+            closeArrow.classList.add("hide");
+            openArrow.classList.remove("hide");
+        }
+      });
 }
 window.onload = gestoreLoad()

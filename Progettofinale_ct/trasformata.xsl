@@ -16,19 +16,22 @@
                 <nav class="navbar">
                     <a href="#info" class="textnav">Info</a>
                     <a href="#codifica" class="textnav">Codifica</a>
-
+                    <a href="#liste" class="textnav">Liste</a>
                 </nav>
                 <div id="header">
                     <h1 class="titolo"><xsl:value-of select="tei:TEI/tei:teiHeader/tei:fileDesc/tei:titleStmt/tei:title"/></h1>
                     <h2 class="subtitle"><xsl:value-of select="tei:TEI/tei:teiHeader/tei:fileDesc/tei:titleStmt/tei:respStmt"/></h2>
                 </div>
-                <h2 class="textimportant">Informazioni utili</h2>
+                <h2 id="info" class="textimportant">Informazioni utili</h2>
                 <div class="cardtot">
                     <div id="info" class="halfcard">
                         <h3 class="textimp">Codifica</h3>
                         <p class="center"><xsl:value-of select="tei:TEI/tei:teiHeader/tei:fileDesc/tei:editionStmt/tei:edition"/></p>
-                        <p><div class="bold">Curatore: </div> <xsl:value-of select="tei:TEI/tei:teiHeader/tei:fileDesc/tei:editionStmt/tei:editor"/></p>
                         <p><xsl:value-of select="tei:TEI/tei:teiHeader/tei:fileDesc/tei:publicationStmt/tei:availability"/></p>
+                        <p><div class="bold">Esecutore: </div> <xsl:value-of select="tei:TEI/tei:teiHeader/tei:fileDesc/tei:editionStmt/tei:respStmt/tei:persName"/></p>
+                        <p><div class="bold">Curatore: </div> <xsl:value-of select="tei:TEI/tei:teiHeader/tei:fileDesc/tei:editionStmt/tei:editor"/></p>
+                        <p><div class="bold">Organizzazione: </div> <xsl:value-of select="tei:TEI/tei:teiHeader/tei:fileDesc/tei:editionStmt/tei:sponsor"/></p>
+
                     </div>
                     <div id="manoscritto" class="halfcard">
                         <h3 class="textimp">Manoscritto</h3>
@@ -90,6 +93,42 @@
                 <div class="flex">
                     <xsl:apply-templates select="tei:TEI/tei:text/tei:body"/>
                 </div>
+                <section id="liste" class="pt-12">
+                    <h2 id="info" class="textimportant">Liste</h2>
+                    <div id="personMenu" onclick="openMenu(this)" class="flex flex-col max-h-min my-1 justify-center p-3 mx-auto bg-white border border-gray-200 rounded-lg shadow min-w-[94%] max-w-[94%] ">
+                        <div>
+                            <div class="w-full flex justify-between items-center gap-2 ">
+                                <div class="text-xl font-extrabold text-left">Persone</div>
+                                <div class="arrowbtn" id="arrowbtn"></div><div  id="arrowbtn2"  class=" arrowbtn2 hide"></div>
+                            </div>
+                            <div class="hide w-full text-center flex flex-col gap-3 elementList">
+                                <xsl:apply-templates select="tei:TEI/tei:text/tei:back/tei:listPerson/tei:person"/>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="placeMenu" onclick="openMenu(this)" class="flex flex-col max-h-min my-1 justify-center p-3 mx-auto bg-white border border-gray-200 rounded-lg shadow  min-w-[94%] max-w-[94%] ">
+                        <div>
+                            <div class="w-full flex justify-between items-center gap-2 ">
+                                <div class="text-xl font-extrabold text-left">Luoghi</div>
+                                <div class="arrowbtn" id="arrowbtn"></div><div  id="arrowbtn2"  class=" arrowbtn2 hide"></div>
+                            </div>
+                            <div class="hide w-full text-center flex flex-col gap-3 elementList">
+                                <xsl:apply-templates select="tei:TEI/tei:text/tei:back/tei:listPlace/tei:place"/>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="organizationMenu" onclick="openMenu(this)" class="flex flex-col max-h-min my-1 justify-center p-3 mx-auto bg-white border border-gray-200 rounded-lg shadow  min-w-[94%] max-w-[94%] ">
+                        <div>
+                            <div class="w-full flex justify-between items-center gap-2 ">
+                                <div class="text-xl font-extrabold text-left">Organizzazioni</div>
+                                <div class="arrowbtn" id="arrowbtn"></div><div id="arrowbtn2"  class=" arrowbtn2 hide"></div>
+                            </div>
+                            <div class="hide w-full text-center flex flex-col gap-3 elementList">
+                                <xsl:apply-templates select="tei:TEI/tei:text/tei:back/tei:listOrg/tei:org"/>
+                            </div>
+                        </div>
+                    </div>
+                </section>
             <script type="text/javascript" src="script.js"></script>
             </body>
         </html>
@@ -98,9 +137,9 @@
     <xsl:template match="tei:msItemStruct">
         <xsl:element name="div">
             <xsl:attribute name="class">divide<xsl:value-of select="@n" />  w-2/6</xsl:attribute>
-            <p><xsl:value-of select="tei:title" /></p>
-            <p>Autore: <xsl:value-of select="tei:author"/></p>
-            <p>Info: <xsl:value-of select="tei:note"/></p>
+            <p class="bold text-center"><xsl:value-of select="tei:title"/></p>
+            <p><div class="bold">Autore: </div><xsl:value-of select="tei:author"/></p>
+            <p><div class="bold">Info: </div> <xsl:value-of select="tei:note"/></p>
         </xsl:element>
     </xsl:template>
 
@@ -148,8 +187,8 @@
             <xsl:attribute name="class">elementZone</xsl:attribute>
             <xsl:attribute name="id"><xsl:value-of select="@xml:id"/></xsl:attribute>
             <xsl:attribute name="coords"><xsl:value-of select="@ulx"/>,<xsl:value-of select="@uly"/>,<xsl:value-of select="@lrx"/>,<xsl:value-of select="@lry"/></xsl:attribute>
-            <xsl:attribute name="onmouseout">underlineEnd(<xsl:value-of select="@xml:id"/>)</xsl:attribute>
-            <xsl:attribute name="onmouseover">underlineStart(<xsl:value-of select="@xml:id"/>)</xsl:attribute>
+            <xsl:attribute name="onmouseout">underlineEnd(<xsl:value-of select="[@xml:id]"/>)</xsl:attribute>
+            <xsl:attribute name="onmouseover">underlineStart(<xsl:value-of select="[@xml:id]"/>)</xsl:attribute>
 
         </xsl:element>
     </xsl:template>
@@ -163,6 +202,9 @@
     </xsl:template>
   
     <xsl:template match="tei:lb">
+        <xsl:if test="@break = 'no'">
+            <span class="align-baseline ">=</span>
+        </xsl:if>
         <xsl:element name="br"></xsl:element>
         <xsl:element name="span">
             <xsl:attribute name="id">
@@ -170,6 +212,8 @@
             </xsl:attribute>
             <xsl:attribute name="class">line</xsl:attribute><xsl:value-of select="@n" />&#160;
         </xsl:element>
+        <xsl:apply-templates/>
+
     </xsl:template>
 
     <xsl:template match="tei:floatingText">
@@ -194,11 +238,19 @@
     </xsl:template>
 
     <xsl:template match="tei:listPlace/tei:place">
-        <div>
+        <div class="cardname">
             <div class="bold">Nome: </div><xsl:value-of select="tei:placeName"/><br/>
             <div class="bold">Provincia: </div><xsl:value-of select="tei:settlement[@type='province']"/><br/>
-            <div class="bold">Region: </div><xsl:value-of select="tei:settlement[@type='region']"/><br/>
+            <div class="bold">Regione: </div><xsl:value-of select="tei:settlement[@type='region']"/><br/>
             <div class="bold">Stato: </div><xsl:value-of select="tei:country"/><br/>
+        </div>
+    </xsl:template>
+
+    <xsl:template match="tei:listOrg/tei:org">
+        <div class="cardname">
+            <div class="bold">Nome: </div><xsl:value-of select="tei:orgName"/><br/>
+            <div class="bold">Luogo: </div><xsl:value-of select="tei:placeName"/><br/>
+            <div class="bold">Descrizione: </div><xsl:value-of select="tei:desc"/><br/>
         </div>
     </xsl:template>
 
@@ -218,7 +270,7 @@
     </xsl:template>
 
     <xsl:template match="tei:listPerson/tei:person">
-        <div>
+        <div class="cardname">
             <div class="bold">Nome: </div><xsl:value-of select="tei:persName"/><br/>
             <div class="bold">Sesso : </div><xsl:value-of select="tei:sex"/><br/>
             <div class="bold">Data nascita: </div><xsl:value-of select="tei:birth/tei:date"/>, <xsl:value-of select="tei:birth/tei:placeName/tei:settlement[@type='municipality']/text()"/><br/>

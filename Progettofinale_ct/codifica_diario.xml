@@ -8,9 +8,9 @@
             <titleStmt>
                 <title>Codifica del diario di Emanuele Artom</title>
                 <author ref="#artom">Emanuele Artom</author>
-                <respStmt xml:id="personal">
+                <respStmt>
                     <resp>Conversione TEI P5 a cura di</resp>
-                    <persName>
+                    <persName xml:id="personal">
                         <forename>Gabriele</forename>
                         <surname> Isola </surname>
                     </persName>
@@ -18,10 +18,10 @@
             </titleStmt>
             <editionStmt>
                 <edition>
-                    Edizione universitaria del<date when="2023-06"> Giugno 2023 per il progetto d'esame del corso di Codifica di testi</date>
+                    Edizione universitaria del<date when="2023-06"> Giugno 2023 </date> per il progetto d'esame del corso di Codifica di testi
                 </edition>
                 <respStmt>
-                    <resp>Codifica TEI a cura di</resp>
+                    <resp>Codifica in TEI P5 a cura di</resp>
                     <persName ref="#personal">
                         <forename>Gabriele</forename>
                         <surname> Isola </surname>
@@ -53,7 +53,7 @@
                         <textLang mainLang="it"> Italiano</textLang>
                         <msItemStruct n="1">
                             <author ref="#segre">Amalia Segre</author>
-                            <title>lettera introduttiva</title>
+                            <title>Lettera introduttiva</title>
                             <note> lettera originale della madre <persName ref="#segre"> Amalia </persName> al figlio <persName ref="#artom"> Emanuele Artom </persName> </note>
                         </msItemStruct>
                         <msItemStruct n="2">
@@ -63,7 +63,7 @@
                         </msItemStruct>
                         <msItemStruct n="3">
                             <author ref="#artom">Emanuele Artom</author>
-                            <title>seconda parte</title>
+                            <title>Seconda parte</title>
                             <note> riguarda il periodo che va dal <date when="1943-11">novembre 1943 </date> al <date when="1944-02-23">23 febbraio 1944</date> riguarda invece l'esperienza partigiana di <persName ref="artom">Emanuele Artom </persName></note>
                         </msItemStruct>
                     </msContents>
@@ -91,12 +91,26 @@
         <encodingDesc>
             <projectDesc><p>Codifica svolta per il progetto finale di Codifica di testi, corso svolto dal professor <persName>Angelo Del Grosso</persName> nella triennale di informatica umanistica, <orgName ref="#unipi">unipi</orgName> </p></projectDesc>
             <editorialDecl>
+                <punctuation><p>La punteggiatura non è stata modificata se non attraverso correzioni autoriali</p></punctuation>
                 <segmentation><p>Codifica svolta dividendo il testo in frasi numerate in base alla pagina e alla riga</p></segmentation>
+                <stdVals><p>L'attributo when all'interno dell'elemento date è stato disposto nell'ordine <val>AAAA-MM-GG</val>.</p></stdVals>
+                <correction status="high" method="markup"> 
+                    <p>Per la correzione di errori sono stati usati i tag <gi>sic</gi> e <gi>corr</gi>.</p>
+                    <p>Sono stati corretti i seguenti errori:
+                        <list>
+                            <item>da ';' a ','; pag. 64, riga 6 </item>
+                            <item>da 'Tedeschi' a 'tedeschi'; pag. 64, riga 8 </item>
+                            <item>da 'Giocatore' a 'giocatore'; pag. 65, riga 7 </item>
+                            <item>da '; supponiamo' a '. Supponiamo'; pag. 65, riga 10 </item>
+                            <item>da 'Comunisti' a 'comunisti'; pag. 66, riga 2 </item>
+                        </list>
+                    </p>
+                </correction>
                 <normalization method="markup">
                     <p>Per le normalizzazioni sono stati usati i tag <gi>orig</gi> e <gi>reg</gi>.</p>
                     <p>Sono state normalizzare le seguenti parole:
                         <list>
-                            <item>Stamane in stamani; pag. 64, riga 4</item>
+                            <item>'Stamane' in 'stamani'; pag. 64, riga 4</item>
                         </list>
                     </p>
                 </normalization>
@@ -238,9 +252,9 @@
                 <add place="inspace">mal di pancia e le mani mi tremano per il freddo<pc>.</pc></add><add place="margin"> Resisterò un pezzo a questa vitaccia<pc>?</pc></add>
                 <lb xml:id="pag64_11" n="11" facs="#p64_11"/>
                 Ho composto <del rend="overstrike" hand="author"> <gap reason="illegible" quantity="2" unit="character"/></del> durante la strada la prima
-                <lb xml:id="pag64_12" n="12" facs="#p64_12"/>
+                <lb xml:id="pag64_12"  n="12" facs="#p64_12"/>
                 strofa di una lirica<pc>,</pc> che dovrà commemo
-                <lb xml:id="pag64_13" n="13" facs="#p64_13"/>
+                <lb xml:id="pag64_13" n="13" break="no" facs="#p64_13"/>
                 rare <persName ref="#diena">Sergio Diena</persName><pc>:</pc>
                 <lb xml:id="pag64_14" n="14" facs="#p64_14"/>
                 <floatingText>
@@ -279,21 +293,21 @@
                 Così appena si entra nella vita politica ci si 
                 <lb xml:id="pag65_4" n="4" facs="#p65_4"/>
                 accorge di essere <subst><del rend="overstrike" hand="author">una pedina di una schiacchiera </del> <add place="above" hand="author" rend="pencil">il pezzo di un gioco<pc>:</pc></add></subst>
-                <lb xml:id="pag65_5" n="5" facs="#p66_5"/>
+                <lb xml:id="pag65_5" n="5" facs="#p65_5"/>
                 potrò restare pedina in un angolo morto della
                 <lb xml:id="pag65_6" n="6" facs="#p65_6"/>
                 scacchiera<pc>,</pc> potrò diventare dama<pc>,</pc> come parrà
                 <lb xml:id="pag65_7" n="7" facs="#p65_7"/>
-                 al <choice><sic>Giocatore</sic><corr resp="#personal"> giocatore</corr></choice><pc>,</pc> cioè al<orgName ref="#pda"> partito</orgName><pc>.</pc> Poco contano le 
+                al <choice><sic>Giocatore</sic><corr resp="#personal"> giocatore</corr></choice><pc>,</pc> cioè al<orgName ref="#pda"> partito</orgName><pc>.</pc> Poco contano le 
                 <lb xml:id="pag65_8" n="8" facs="#p65_8"/>
                 abilità<pc>:</pc> se mi lasciano qui<pc>,</pc> potrò rimproverarmi
                 <lb xml:id="pag65_9" n="9" facs="#p65_9"/>
-                della polemica contro il <choice><sic>Comunismo</sic><corr resp="#personal"> comunismo</corr></choice><pc>,</pc> che mi
+                della polemica contro il comunismo<pc>,</pc> che mi
                 <lb xml:id="pag65_10" n="10" facs="#p65_10"/>
                 ha suscitato delle antipatie<choice><sic><pc>; </pc>supponiamo</sic><corr resp="#personal"><pc>. </pc>Supponiamo</corr></choice> che
                 <lb xml:id="pag65_11" n="11" facs="#p65_11"/>
                 mi nominino commissario di una banda perchè
-                <lb xml:id="pag65_12" n="12" facs="#p66_12"/>
+                <lb xml:id="pag65_12" n="12" facs="#p65_12"/>
                 si è fatto <subst><del rend="overstrike" hand="author">questa </del> <add place="alongside" hand="author">libero</add></subst> un posto del genere<pc>.</pc> Allora
                 <lb xml:id="pag65_13" n="13" facs="#p65_13"/>
                 potrò congratularmi di aver preso una posizione 
@@ -308,8 +322,8 @@
                 <lb xml:id="pag65_18" n="18" facs="#p65_18"/>
                 uomo<pc>;</pc> se <add place="above" hand="author">non</add> ne avessi trovato nessuna<pc>, </pc>uno stupido<pc>.</pc>
                 <lb xml:id="pag65_19" n="19" facs="#p65_19"/>
-                Con quanto ho trovato<pc>,</pc> ho fatto una figura di
-                <lb xml:id="pag65_20" n="20" facs="#p65_20"/>
+                Con quanto ho trovato<pc>,</pc> ho fatto una figura di 
+                <lb xml:id="pag65_20" n="20"  break="no" facs="#p65_20"/>
                 screta<pc>,</pc> ma il merito è sempre della fortuna.
                 <lb xml:id="pag65_21" n="21" facs="#p65_21"/>
                 In ciascuno dei <num value="3">tre</num> casi il mio contegno è
@@ -346,15 +360,15 @@
                 per una grande causa<pc>,</pc> ma ieri pensando a
                 <lb xml:id="pag66_12" n="12" facs="#p66_12"/>
                 <persName ref="#diena">Sergio <choice><abbr>D.</abbr><expan resp="#personal" cert="high">Diena</expan></choice></persName> mi pareva <subst><del rend="overstrike" hand="author">che </del> <add place="above" hand="author">amarissimo</add></subst> vedere la vittoria
-                <lb xml:id="pag66_13" n="13" facs="#p66_13"/>
+                <lb xml:id="pag66_13" n="13"  facs="#p66_13"/>
                 sicura<pc>,</pc> ma sentire di non poterla affer
-                <lb xml:id="pag66_14" n="14" facs="#p66_14"/>
+                <lb xml:id="pag66_14" n="14" break="no" facs="#p66_14"/>
                 rare e godere perchè la morte ci <del rend="overstrike" hand="author">porta lo</del>
                 <lb xml:id="pag66_15" n="15" facs="#p66_15"/>
                 strappa via e ci porta lontano<pc>.</pc>
-                <lb xml:id="pag66_16" n="16" facs="#p66_16"/>
+                <lb xml:id="pag66_16" n="16"  facs="#p66_16"/>
                 Domani scenderò a <placeName type="river">Sangone</placeName><pc>,</pc> farò mez
-                <lb xml:id="pag66_17" n="17" facs="#p66_17"/>
+                <lb xml:id="pag66_17" n="17" break="no" facs="#p66_17"/>
                 z’ora a piedi e giungerò a <placeName ref="#moncalieri">Moncalieri</placeName><pc>;</pc>
                 <lb xml:id="pag66_18" n="18" facs="#p66_18"/>
                  di qui prenderò il treno per <placeName ref="#chieri">Chieri</placeName><pc>;</pc>
@@ -497,16 +511,10 @@
                 <head>Elenco organizzazioni</head>
                 <org xml:id="unipi">
                     <orgName ref="https://www.unipi.it/">Università di Pisa</orgName>
-                    <place>
-                        <location type="address">
-                            <country key="IT">Italia,</country>
-                            <settlement>Pisa</settlement>
-                            <address>
-                                <addrLine>Lungarno Antonio Pacinotti 43,</addrLine>
-                                <addrLine>56126, Pisa</addrLine>
-                            </address>
-                        </location>
-                    </place>
+                    <placeName>Pisa </placeName>
+                    <desc>
+                        L'Università di Pisa (UniPi), istituita ufficialmente nel 1343, è una delle più antiche e prestigiose università in Italia e in Europa.
+                    </desc>
                 </org>
                 <org xml:id="CDEC">
                     <orgName ref="https://www.cdec.it/"> CDEC - Centro di Documentazione Ebraica Contemporanea </orgName>
