@@ -123,11 +123,34 @@
             <xsl:element name="div">
                 <xsl:attribute name="class">w-1/2</xsl:attribute>
                 <xsl:element name="img">
-                    <xsl:attribute name="src">image/pag<xsl:value-of select="[@n]"/>.jpg</xsl:attribute>
+                    <xsl:variable name="myNumber">
+                        <xsl:value-of select="[@n]" />
+                    </xsl:variable>
+                    <xsl:attribute name="src">image/pag<xsl:value-of select="[@n]"/>.png</xsl:attribute>
                     <xsl:attribute name="alt">page<xsl:value-of select="[@n]"/></xsl:attribute>
-                    <xsl:attribute name="class">h-[32rem] </xsl:attribute>
+                    <xsl:attribute name="class">max-w-none </xsl:attribute>
+                    <xsl:attribute name="usemap">#page<xsl:value-of select="[@n]"/></xsl:attribute>
+                    <xsl:apply-templates select="../../../tei:facsimile/tei:surface[@n=$myNumber]"/>
                 </xsl:element>
             </xsl:element>
+        </xsl:element>
+    </xsl:template>
+
+    <xsl:template match="tei:surface">
+        <xsl:element name="map">
+            <xsl:attribute name="name">page<xsl:value-of select="[@n]"/></xsl:attribute>
+            <xsl:apply-templates select="tei:zone"/>
+        </xsl:element>
+    </xsl:template>
+
+    <xsl:template match="tei:zone">
+        <xsl:element name="area">
+            <xsl:attribute name="class">elementZone</xsl:attribute>
+            <xsl:attribute name="id"><xsl:value-of select="@xml:id"/></xsl:attribute>
+            <xsl:attribute name="coords"><xsl:value-of select="@ulx"/>,<xsl:value-of select="@uly"/>,<xsl:value-of select="@lrx"/>,<xsl:value-of select="@lry"/></xsl:attribute>
+            <xsl:attribute name="onmouseout">underlineEnd(<xsl:value-of select="@xml:id"/>)</xsl:attribute>
+            <xsl:attribute name="onmouseover">underlineStart(<xsl:value-of select="@xml:id"/>)</xsl:attribute>
+
         </xsl:element>
     </xsl:template>
 
@@ -143,7 +166,7 @@
         <xsl:element name="br"></xsl:element>
         <xsl:element name="span">
             <xsl:attribute name="id">
-                <xsl:value-of select="@facs"/>
+                <xsl:value-of  select="substring-after(@facs, '#')"/>
             </xsl:attribute>
             <xsl:attribute name="class">line</xsl:attribute><xsl:value-of select="@n" />&#160;
         </xsl:element>

@@ -15,6 +15,7 @@ var placeArray;
 var normalizationArray;
 var abbrevationArray;
 var suppliedArray;
+var zoneArray;
 var pg=1;
 
 function gestoreLoad(){
@@ -41,7 +42,19 @@ function gestoreLoad(){
     normalizationArray = document.getElementsByClassName("normalization");
     abbrevationArray = document.getElementsByClassName("expan");
     suppliedArray = document.getElementsByClassName("supplied");
-
+    lineArray = document.getElementsByClassName("line");
+}
+var idZone;
+var idLine;
+function underlineStart(line){
+    console.log(line);
+    Array.from(lineArray).forEach(function(element){
+        idLine = element.getAttribute('id');
+        if(idLine == line){
+        }
+    })
+}
+function underlineEnd(line){
 }
 function changePage(n){
     pg = pg+ n;

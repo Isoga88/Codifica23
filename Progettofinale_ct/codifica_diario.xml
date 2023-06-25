@@ -133,82 +133,82 @@
     </teiHeader>
     <facsimile>
         <surface xml:id="p64" start="#pag64" n="1">
-            <graphic url='image/pag1.jpg' width='530.571428px' height='717.571428px' />
-            <zone ulx="63" uly="64" lrx="441" lry="78" xml:id="p64_1" start="#pag64_1" />
-            <zone ulx="62" uly="89" lrx="451" lry="108" xml:id="p64_2" start="#pag64_2" />
-            <zone ulx="62" uly="119" lrx="452" lry="132" xml:id="p64_3" start="#pag64_3"/>
-            <zone ulx="64" uly="147" lrx="442" lry="163" xml:id="p64_4" start="#pag64_4"/>
-            <zone ulx="64" uly="174" lrx="464" lry="193" xml:id="p64_5" start="#pag64_5"/>
-            <zone ulx="64" uly="204" lrx="437" lry="219" xml:id="p64_6" start="#pag64_6"/>
-            <zone ulx="64" uly="229" lrx="454" lry="247" xml:id="p64_7" start="#pag64_7"/>
-            <zone ulx="63" uly="254" lrx="477" lry="273" xml:id="p64_8" start="#pag64_8"/>
-            <zone ulx="65" uly="276" lrx="472" lry="297" xml:id="p64_9" start="#pag64_9"/>
-            <zone ulx="21" uly="298" lrx="507" lry="313" xml:id="p64_10" start="#pag64_10"/>
-            <zone ulx="57" uly="313" lrx="453" lry="330" xml:id="p64_11" start="#pag64_11"/>
-            <zone ulx="64" uly="335" lrx="465" lry="360" xml:id="p64_12" start="#pag64_12"/>
-            <zone ulx="66" uly="366" lrx="246" lry="383" xml:id="p64_13" start="#pag64_13"/>
-            <zone ulx="84" uly="387" lrx="419" lry="413" xml:id="p64_14" start="#pag64_14"/>
-            <zone ulx="89" uly="418" lrx="412" lry="441" xml:id="p64_15" start="#pag64_15"/>
-            <zone ulx="92" uly="447" lrx="426" lry="468" xml:id="p64_16" start="#pag64_16"/>
-            <zone ulx="92" uly="474" lrx="426" lry="496" xml:id="p64_17" start="#pag64_17"/>
-            <zone ulx="66" uly="498" lrx="438" lry="521" xml:id="p64_18" start="#pag64_18"/>
-            <zone ulx="67" uly="526" lrx="453" lry="550" xml:id="p64_19" start="#pag64_19"/>
-            <zone ulx="67" uly="556" lrx="429" lry="574" xml:id="p64_20" start="#pag64_20"/>
-            <zone ulx="67" uly="580" lrx="445" lry="606" xml:id="p64_21" start="#pag64_21"/>
-            <zone ulx="69" uly="611" lrx="444" lry="633" xml:id="p64_22" start="#pag64_22"/>
-            <zone ulx="67" uly="638" lrx="275" lry="659" xml:id="p64_23" start="#pag64_23"/>
+            <graphic url='pag1.png' width='397.571428px' height='534.571428px' />
+            <zone ulx="49" uly="43" lrx="327" lry="56" xml:id="p64_1" start="#pag64_1" />
+            <zone ulx="47" uly="62" lrx="338" lry="83" xml:id="p64_2" start="#pag64_2"/>
+            <zone ulx="48" uly="86" lrx="339" lry="102" xml:id="p64_3" start="#pag64_3"/>
+            <zone ulx="47" uly="107" lrx="339" lry="121" xml:id="p64_4" start="#pag64_4"/>
+            <zone ulx="49" uly="124" lrx="344" lry="145" xml:id="p64_5" start="#pag64_5"/>
+            <zone ulx="47" uly="148" lrx="341" lry="163" xml:id="p64_6" start="#pag64_6"/>
+            <zone ulx="48" uly="166" lrx="340" lry="182" xml:id="p64_7" start="#pag64_7"/>
+            <zone ulx="48" uly="185" lrx="359" lry="204" xml:id="p64_8" start="#pag64_8"/>
+            <zone ulx="52" uly="210" lrx="350" lry="222" xml:id="p64_9" start="#pag64_9"/>
+            <zone ulx="16" uly="222" lrx="386" lry="233" xml:id="p64_10" start="#pag64_10"/>
+            <zone ulx="43" uly="234" lrx="342" lry="244" xml:id="p64_11" start="#pag64_11"/>
+            <zone ulx="51" uly="251" lrx="346" lry="270" xml:id="p64_12" start="#pag64_12"/>
+            <zone ulx="49" uly="273" lrx="184" lry="286" xml:id="p64_13" start="#pag64_13"/>
+            <zone ulx="65" uly="291" lrx="313" lry="310" xml:id="p64_14" start="#pag64_14"/>
+            <zone ulx="65" uly="309" lrx="306" lry="329" xml:id="p64_15" start="#pag64_15"/>
+            <zone ulx="70" uly="333" lrx="318" lry="351" xml:id="p64_16" start="#pag64_16"/>
+            <zone ulx="71" uly="353" lrx="322" lry="371" xml:id="p64_17" start="#pag64_17"/>
+            <zone ulx="50" uly="375" lrx="334" lry="390" xml:id="p64_18" start="#pag64_18"/>
+            <zone ulx="51" uly="395" lrx="342" lry="413" xml:id="p64_19" start="#pag64_19"/>
+            <zone ulx="52" uly="414" lrx="331" lry="431" xml:id="p64_20" start="#pag64_20"/>
+            <zone ulx="44" uly="436" lrx="343" lry="454" xml:id="p64_21" start="#pag64_21"/>
+            <zone ulx="51" uly="456" lrx="336" lry="476" xml:id="p64_22" start="#pag64_22"/>
+            <zone ulx="52" uly="480" lrx="214" lry="495" xml:id="p64_23" start="#pag64_23"/>
         </surface>
 
-        <surface xml:id="p65" start="#pag65" n="1">
-            <graphic url='pag2.jpg' width='521.571428px' height='716.571428px' />
-            <zone ulx="53" uly="48" lrx="446" lry="75" xml:id="p65_1" start="#pag65_1"/>
-            <zone ulx="53" uly="76" lrx="448" lry="104" xml:id="p65_2" start="#pag65_2" />
-            <zone ulx="55" uly="108" lrx="455" lry="129" xml:id="p65_3" start="#pag65_3"/>
-            <zone ulx="55" uly="130" lrx="486" lry="159" xml:id="p65_4" start="#pag65_4"/>
-            <zone ulx="54" uly="162" lrx="481" lry="186" xml:id="p65_5" start="#pag65_5"/>
-            <zone ulx="53" uly="191" lrx="459" lry="213" xml:id="p65_6" start="#pag65_6"/>
-            <zone ulx="54" uly="216" lrx="458" lry="238" xml:id="p65_7" start="#pag65_7"/>
-            <zone ulx="57" uly="240" lrx="475" lry="271" xml:id="p65_8" start="#pag65_8"/>
-            <zone ulx="56" uly="272" lrx="459" lry="293" xml:id="p65_9" start="#pag65_9"/>
-            <zone ulx="54" uly="296" lrx="459" lry="322" xml:id="p65_10" start="#pag65_10"/>
-            <zone ulx="54" uly="329" lrx="484" lry="353" xml:id="p65_11" start="#pag65_11"/>
-            <zone ulx="56" uly="357" lrx="479" lry="380" xml:id="p65_12" start="#pag65_12"/>
-            <zone ulx="56" uly="383" lrx="479" lry="406" xml:id="p65_13" start="#pag65_13"/>
-            <zone ulx="57" uly="410" lrx="460" lry="431" xml:id="p65_14" start="#pag65_14"/>
-            <zone ulx="56" uly="436" lrx="469" lry="459" xml:id="p65_15" start="#pag65_15"/>
-            <zone ulx="57" uly="465" lrx="475" lry="487" xml:id="p65_16" start="#pag65_16"/>
-            <zone ulx="57" uly="490" lrx="472" lry="514" xml:id="p65_17" start="#pag65_17"/>
-            <zone ulx="58" uly="517" lrx="487" lry="542" xml:id="p65_18" start="#pag65_18"/>
-            <zone ulx="57" uly="544" lrx="467" lry="568" xml:id="p65_19" start="#pag65_19"/>
-            <zone ulx="57" uly="569" lrx="471" lry="596" xml:id="p65_20" start="#pag65_20"/>
-            <zone ulx="57" uly="600" lrx="434" lry="621" xml:id="p65_21" start="#pag65_21"/>
-            <zone ulx="56" uly="626" lrx="474" lry="650" xml:id="p65_22" start="#pag65_22"/>
-            <zone ulx="58" uly="656" lrx="246" lry="674" xml:id="p65_23" start="#pag65_23"/>
+        <surface xml:id="p65" start="#pag65" n="2">
+            <graphic url='pag2.png' width='391.571428px' height='535.571428px' />
+            <zone ulx="39" uly="39" lrx="343" lry="56" xml:id="p65_1" start="#pag65_1" />
+            <zone ulx="39" uly="58" lrx="344" lry="80" xml:id="p65_2" start="#pag65_2" />
+            <zone ulx="41" uly="82" lrx="344" lry="97" xml:id="p65_3" start="#pag65_3" />
+            <zone ulx="39" uly="99" lrx="362" lry="120" xml:id="p65_4" start="#pag65_4" />
+            <zone ulx="41" uly="123" lrx="358" lry="139" xml:id="p65_5" start="#pag65_5" />
+            <zone ulx="39" uly="144" lrx="344" lry="162" xml:id="p65_6" start="#pag65_6" />
+            <zone ulx="40" uly="164" lrx="345" lry="180" xml:id="p65_7" start="#pag65_7" />
+            <zone ulx="41" uly="184" lrx="356" lry="204" xml:id="p65_8" start="#pag65_8" />
+            <zone ulx="40" uly="207" lrx="345" lry="223" xml:id="p65_9" start="#pag65_9" />
+            <zone ulx="39" uly="226" lrx="345" lry="243" xml:id="p65_10" start="#pag65_10" />
+            <zone ulx="42" uly="249" lrx="364" lry="264" xml:id="p65_11" start="#pag65_11" />
+            <zone ulx="41" uly="266" lrx="360" lry="284" xml:id="p65_12" start="#pag65_12" />
+            <zone ulx="42" uly="287" lrx="358" lry="305" xml:id="p65_13" start="#pag65_13" />
+            <zone ulx="40" uly="309" lrx="344" lry="322" xml:id="p65_14" start="#pag65_14" />
+            <zone ulx="40" uly="325" lrx="347" lry="343" xml:id="p65_15" start="#pag65_15" />
+            <zone ulx="43" uly="347" lrx="357" lry="365" xml:id="p65_16" start="#pag65_16" />
+            <zone ulx="42" uly="368" lrx="355" lry="385" xml:id="p65_17" start="#pag65_17" />
+            <zone ulx="42" uly="389" lrx="366" lry="409" xml:id="p65_18" start="#pag65_18" />
+            <zone ulx="41" uly="410" lrx="351" lry="425" xml:id="p65_19" start="#pag65_19" />
+            <zone ulx="41" uly="427" lrx="357" lry="447" xml:id="p65_20" start="#pag65_20" />
+            <zone ulx="41" uly="448" lrx="347" lry="465" xml:id="p65_21" start="#pag65_21" />
+            <zone ulx="42" uly="471" lrx="360" lry="485" xml:id="p65_22" start="#pag65_22" />
+            <zone ulx="42" uly="489" lrx="186" lry="506" xml:id="p65_23" start="#pag65_23" />
         </surface>
 
 
-        <surface xml:id="p66" start="#pag66" n="1">
-            <graphic url='pag3.jpg' width='527.571428px' height='713.571428px' />
-            <zone ulx="62" uly="56" lrx="493" lry="73" xml:id="p66_1" start="#pag66_1"/>
-            <zone ulx="65" uly="76" lrx="465" lry="101" xml:id="p66_2" start="#pag66_2"/>
-            <zone ulx="82" uly="493" lrx="457" lry="512" xml:id="p66_3" start="#pag66_3"/>
-            <zone ulx="69" uly="516" lrx="483" lry="539" xml:id="p66_4" start="#pag66_4"/>
-            <zone ulx="64" uly="541" lrx="492" lry="565" xml:id="p66_5" start="#pag66_5"/>
-            <zone ulx="63" uly="569" lrx="491" lry="592" xml:id="p66_6" start="#pag66_6"/>
-            <zone ulx="62" uly="598" lrx="180" lry="622" xml:id="p66_7" start="#pag66_7"/>
-            <zone ulx="64" uly="107" lrx="494" lry="129" xml:id="p66_8" start="#pag66_8"/>
-            <zone ulx="66" uly="135" lrx="477" lry="157" xml:id="p66_9" start="#pag66_9"/>
-            <zone ulx="64" uly="159" lrx="483" lry="187" xml:id="p66_10" start="#pag66_10"/>
-            <zone ulx="64" uly="194" lrx="474" lry="209" xml:id="p66_11" start="#pag66_11"/>
-            <zone ulx="65" uly="213" lrx="480" lry="239" xml:id="p66_12" start="#pag66_12"/>
-            <zone ulx="64" uly="243" lrx="481" lry="265" xml:id="p66_13" start="#pag66_13"/>
-            <zone ulx="64" uly="270" lrx="469" lry="289" xml:id="p66_14" start="#pag66_14"/>
-            <zone ulx="64" uly="294" lrx="400" lry="318" xml:id="p66_15" start="#pag66_15"/>
-            <zone ulx="64" uly="323" lrx="466" lry="346" xml:id="p66_16" start="#pag66_16"/>
-            <zone ulx="63" uly="351" lrx="472" lry="374" xml:id="p66_17" start="#pag66_17"/>
-            <zone ulx="63" uly="377" lrx="446" lry="401" xml:id="p66_18" start="#pag66_18"/>
-            <zone ulx="62" uly="405" lrx="429" lry="426" xml:id="p66_19" start="#pag66_19"/>
-            <zone ulx="63" uly="433" lrx="284" lry="454" xml:id="p66_20" start="#pag66_20"/>
+        <surface xml:id="p66" start="#pag66" n="3">                                                             
+            <graphic url='pag3.png' width='391.571428px' height='537.571428px' />
+            <zone ulx="45" uly="39" lrx="369" lry="55" xml:id="p66_1" start="#pag66_1" />
+            <zone ulx="47" uly="58" lrx="354" lry="78" xml:id="p66_2" start="#pag66_2"/>
+            <zone ulx="61" uly="372" lrx="347" lry="383" xml:id="p66_3" start="#pag66_3"/>
+            <zone ulx="52" uly="388" lrx="366" lry="406" xml:id="p66_4" start="#pag66_4"/>
+            <zone ulx="46" uly="408" lrx="368" lry="427" xml:id="p66_5" start="#pag66_5"/>
+            <zone ulx="46" uly="428" lrx="372" lry="448" xml:id="p66_6" start="#pag66_6"/>
+            <zone ulx="47" uly="451" lrx="133" lry="468" xml:id="p66_7" start="#pag66_7"/>
+            <zone ulx="45" uly="80" lrx="373" lry="100" xml:id="p66_8" start="#pag66_8"/>
+            <zone ulx="46" uly="100" lrx="356" lry="119" xml:id="p66_9" start="#pag66_9"/>
+            <zone ulx="47" uly="120" lrx="367" lry="140" xml:id="p66_10" start="#pag66_10"/>
+            <zone ulx="46" uly="143" lrx="355" lry="158" xml:id="p66_11" start="#pag66_11"/>
+            <zone ulx="46" uly="161" lrx="361" lry="180" xml:id="p66_12" start="#pag66_12"/>
+            <zone ulx="46" uly="182" lrx="360" lry="201" xml:id="p66_13" start="#pag66_13"/>
+            <zone ulx="46" uly="202" lrx="350" lry="218" xml:id="p66_14" start="#pag66_14"/>
+            <zone ulx="47" uly="222" lrx="302" lry="240" xml:id="p66_15" start="#pag66_15"/>
+            <zone ulx="46" uly="242" lrx="347" lry="262" xml:id="p66_16" start="#pag66_16"/>
+            <zone ulx="46" uly="264" lrx="353" lry="282" xml:id="p66_17" start="#pag66_17"/>
+            <zone ulx="48" uly="283" lrx="331" lry="304" xml:id="p66_18" start="#pag66_18"/>
+            <zone ulx="48" uly="304" lrx="327" lry="323" xml:id="p66_19" start="#pag66_19"/>
+            <zone ulx="47" uly="326" lrx="216" lry="342" xml:id="p66_20" start="#pag66_20"/>
         </surface>
      
     </facsimile>
