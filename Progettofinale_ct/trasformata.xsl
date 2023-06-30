@@ -71,7 +71,7 @@
                     </div>
                     <div class="relative inline-flex items-center cursor-pointer">
                         <input id="normalization" type="checkbox" class="sr-only peer/normalization" />
-                        <div onclick="changeNormalization()" class="w-11 h-6 bg-gray-200 rounded-full peer-checked/normalization:after:translate-x-full peer-checked/normalization:after:border-white after:content-[''] after:absolute after:top-0.5 after:left-[2px] after:bg-white after:border-gray-300 after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked/normalization:bg-zinc-600"></div>
+                        <div onclick="changeNormalization()" class="w-11 h-6 bg-gray-200 rounded-full peer-checked/normalization:after:translate-x-full peer-checked/normalization:after:border-white after:content-[''] after:absolute after:top-0.5 after:left-[2px] after:bg-white after:border-gray-300 after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked/normalization:bg-zinc-400"></div>
                         <span class="ml-1 text-sm font-medium text-gray-900 ">Normalizzazioni</span>
                     </div>
                     <div class="relative inline-flex items-center cursor-pointer">
@@ -154,7 +154,7 @@
     <xsl:template match="tei:ab">
         <xsl:element name="div">                    
             <xsl:attribute name="id">pag<xsl:value-of select="[@n]"/></xsl:attribute>
-            <xsl:attribute name="class">flex items-center w-full</xsl:attribute>
+            <xsl:attribute name="class">flex max-md:justify-center max-md:flex-col items-center w-full</xsl:attribute>
             <xsl:element name="div">
                 <xsl:attribute name="class">page text-sm w-1/2 pl-2 text-center</xsl:attribute>
                 <xsl:apply-templates />

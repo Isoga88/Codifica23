@@ -1,6 +1,9 @@
 body{
     font-family: 'Ubuntu', sans-serif;
 }
+html {
+  scroll-behavior: smooth;
+}
 .titolo {
     font-size: 3rem;
     font-weight: 800;
@@ -200,7 +203,7 @@ body{
     background-color: rgb(252 165 165);
   }
   .nor{
-    background-color: rgb(82 82 91);
+    background-color: rgb(161 161 170);
   }
   .ex{
     background-color: rgb(253 186 116);
@@ -248,3 +251,4 @@ body{
   .show{
     display: block;
   }
+

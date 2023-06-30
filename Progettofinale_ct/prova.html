@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background: #f2f2f2;
+      padding: 10px 0;
+    }
+
+    nav ul {
+      list-style: none;
+      text-align: center;
+    }
+
+    nav ul li {
+      display: inline-block;
+      margin: 0 10px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #333;
+      transition: all 0.3s ease; /* Aggiunge un'animazione di transizione */
+    }
+
+    .section {
+      height: 800px;
+      margin: 50px 0;
+    }
+
+    /* Aggiunge un colore di sfondo quando il link viene evidenziato */
+    nav ul li a:hover {
+      background-color: #ccc;
+    }
+
+    /* Aggiunge l'animazione di scorrimento */
+    .section:target {
+      animation: scrollAnimation 1s ease;
+    }
+
+    @keyframes scrollAnimation {
+      0% {
+        opacity: 0;
+        transform: translateY(-20px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+  <title>Scroll Animation</title>
+</head>
+
+<body>
+  <nav>
+    <ul>
+      <li><a href="#section1">Sezione 1</a></li>
+      <li><a href="#section2">Sezione 2</a></li>
+      <li><a href="#section3">Sezione 3</a></li>
+    </ul>
+  </nav>
+
+  <div id="section1" class="section">
+    <h2>Sezione 1</h2>
+    <p>Contenuto della sezione 1</p>
+  </div>
+
+  <div id="section2" class="section">
+    <h2>Sezione 2</h2>
+    <p>Contenuto della sezione 2</p>
+  </div>
+
+  <div id="section3" class="section">
+    <h2>Sezione 3</h2>
+    <p>Contenuto della sezione 3</p>
+  </div>
+</body>
+
+</html>
