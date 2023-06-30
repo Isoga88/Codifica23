@@ -238,7 +238,7 @@
                 <lb xml:id="pag64_3" n="3" facs="#p64_3"/>
                 mi raccontò che i partigiani sono molto 
                 <lb xml:id="pag64_4" n="4" facs="#p64_4"/>
-                buoni e <choice><orig>stamane</orig><reg resp="#personal"> stamani</reg></choice> avevano regalato alla
+                buoni e <choice><orig>stamane </orig><reg resp="#personal">stamani</reg></choice>avevano regalato alla
                 <lb xml:id="pag64_5" n="5" facs="#p64_5"/>
                 popolazione di <placeName ref="#barge">Barge</placeName> tanto latte<pc>.</pc> Infatti<pc>,</pc>
                 <lb xml:id="pag64_6" n="6" facs="#p64_6"/>
@@ -276,7 +276,7 @@
                 <lb xml:id="pag64_19" n="19" facs="#p64_19"/>
                 del mio destino perchè forse a <placeName ref="#torre">Torre</placeName>
                 <lb xml:id="pag64_20" n="20" facs="#p64_20"/>
-                Pellice il <choice><abbr type="acronym">P.d.A</abbr><expan resp="#personal" cert="high"><orgName ref="#pda">Partito d’Azione</orgName></expan></choice> deciderà se devo
+                Pellice il <choice><abbr type="acronym">P.d.A </abbr><expan resp="#personal" cert="high"><orgName ref="#pda">Partito d’Azione</orgName></expan></choice>deciderà se devo
                 <lb xml:id="pag64_21" n="21" facs="#p64_21"/>
                 o fermarmi a <placeName ref="#barge">Barge</placeName> o se andrò in un
                 <lb xml:id="pag64_22" n="22" facs="#p64_22"/>

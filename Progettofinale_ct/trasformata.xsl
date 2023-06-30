@@ -9,7 +9,7 @@
                 <link href="https://fonts.googleapis.com/css2?family=Ubuntu" rel="stylesheet"/>
 
                 <script src="https://cdn.tailwindcss.com"></script>
-                <link rel="stylesheet" href="style.css" type="text/css"/>
+                <link rel="stylesheet" href="src/style.css" type="text/css"/>
                 <title>Progetto di Gabriele Isola, Codifica di Testi </title>
             </head>
             <body>
@@ -129,7 +129,7 @@
                         </div>
                     </div>
                 </section>
-            <script type="text/javascript" src="script.js"></script>
+            <script type="text/javascript" src="src/script.js"></script>
             </body>
         </html>
     </xsl:template>
