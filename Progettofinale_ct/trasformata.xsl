@@ -152,27 +152,31 @@
 
 
     <xsl:template match="tei:ab">
-        <xsl:element name="div">                    
-            <xsl:attribute name="id">pag<xsl:value-of select="[@n]"/></xsl:attribute>
-            <xsl:attribute name="class">flex max-md:justify-center max-md:flex-col items-center w-full</xsl:attribute>
-            <xsl:element name="div">
-                <xsl:attribute name="class">page text-sm w-1/2 pl-2 text-center</xsl:attribute>
-                <xsl:apply-templates />
-            </xsl:element>  
-            <xsl:element name="div">
-                <xsl:attribute name="class">w-1/2</xsl:attribute>
-                <xsl:element name="img">
-                    <xsl:variable name="myNumber">
-                        <xsl:value-of select="[@n]" />
-                    </xsl:variable>
-                    <xsl:attribute name="src">image/pag<xsl:value-of select="[@n]"/>.png</xsl:attribute>
-                    <xsl:attribute name="alt">page<xsl:value-of select="[@n]"/></xsl:attribute>
-                    <xsl:attribute name="class">max-w-none </xsl:attribute>
-                    <xsl:attribute name="usemap">#page<xsl:value-of select="[@n]"/></xsl:attribute>
-                    <xsl:apply-templates select="../../../tei:facsimile/tei:surface[@n=$myNumber]"/>
-                </xsl:element>
-            </xsl:element>
-        </xsl:element>
+        <xsl:for-each-group select="node()" group-starting-with="tei:pb">
+            <xsl:if test="position() != 1">
+                <xsl:element name="div">                    
+                    <xsl:attribute name="id">pag<xsl:value-of select="position()-1"/></xsl:attribute>
+                    <xsl:attribute name="class">flex max-md:justify-center max-md:flex-col items-center w-full</xsl:attribute>
+                    <xsl:element name="div">
+                        <xsl:attribute name="class">page text-sm w-1/2 pl-2 text-center</xsl:attribute>
+                        <xsl:apply-templates select="current-group()"/>
+                    </xsl:element>  
+                    <xsl:element name="div">
+                        <xsl:attribute name="class">w-1/2</xsl:attribute>
+                        <xsl:element name="img">
+                            <xsl:variable name="myNumber">
+                                <xsl:value-of select="position()-1" />
+                            </xsl:variable>
+                            <xsl:attribute name="src">image/pag<xsl:value-of select="position()-1"/>.png</xsl:attribute>
+                            <xsl:attribute name="alt">page<xsl:value-of select="position()-1"/></xsl:attribute>
+                            <xsl:attribute name="class">max-w-none </xsl:attribute>
+                            <xsl:attribute name="usemap">#page<xsl:value-of select="position()-1"/></xsl:attribute>
+                            <xsl:apply-templates select="../../../../tei:facsimile/tei:surface[@n=$myNumber]"/>
+                        </xsl:element>
+                    </xsl:element>
+                </xsl:element> 
+            </xsl:if >
+        </xsl:for-each-group>
     </xsl:template>
 
     <xsl:template match="tei:surface">

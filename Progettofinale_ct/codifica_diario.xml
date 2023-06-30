@@ -6,8 +6,8 @@
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title>Codifica del diario di Emanuele Artom</title>
-                <author ref="#artom">Emanuele Artom</author>
+                <title type="main">Codifica del diario di <persName ref="#artom">Emanuele Artom</persName></title>
+                <author ref="#personal">Gabriele Isola</author>
                 <respStmt>
                     <resp>Conversione TEI P5 a cura di</resp>
                     <persName xml:id="personal">
@@ -29,13 +29,13 @@
                 </respStmt>
                 <principal ref="#personal"><persName ref="#personal"> Gabriele Isola</persName></principal>
                 <editor role="Managing_Editor">Angelo Del Grosso</editor>
-                <sponsor>Università di Pisa</sponsor>
+                <sponsor ref="#unipi">Università di Pisa</sponsor>
             </editionStmt>
             <publicationStmt>
                 <authority>
                     <orgName ref="#unipi">Università di Pisa</orgName>
                 </authority>
-                 <availability status="free">
+                <availability status="free">
                     <p>Codifica opensource disponibile sul<orgName> GitHub </orgName>di<persName ref="#personal"> Gabriele Isola</persName></p>
                 </availability>
                 <date when="2023">2023</date>
@@ -44,9 +44,9 @@
                 <msDesc>
                     <msIdentifier>
                         <country key="IT">Italia</country>
-                        <settlement ref="#milano">Milano</settlement>
+                        <settlement type="town" ref="#milano">Milano</settlement>
                         <institution ref="#CDEC">Centro di documentazione ebraiaca</institution>
-                        <repository ref="https://digital-library.cdec.it/cdec-web/storico/detail/IT-CDEC-ST0003-000001/fondo-emanuele-artom.html">Fondo Emanuele Artom, b.1, fasc9</repository>
+                        <repository source="https://digital-library.cdec.it/cdec-web/storico/detail/IT-CDEC-ST0003-000001/fondo-emanuele-artom.html">Fondo Emanuele Artom, b.1, fasc 9</repository>
                     </msIdentifier>
                     <msContents>
                         <summary>Raccolta degli scritti autografi di<persName ref="#artom"> Emanuele Artom </persName>redatti tra il <date when="1943">1943 </date>e il <date>1944</date> accompagnati dalla lettera originale della madre <persName ref="#segre">Amalia</persName> riportante l'epigrafe alla mia morte questo plico deve essere consegnato al <orgName ref="#CDEC">Centro di documentazione ebraica</orgName> [..] esso ha un grande valore storico</summary>
@@ -91,9 +91,6 @@
         <encodingDesc>
             <projectDesc><p>Codifica svolta per il progetto finale di Codifica di testi, corso svolto dal professor <persName>Angelo Del Grosso</persName> nella triennale di informatica umanistica, <orgName ref="#unipi">unipi</orgName> </p></projectDesc>
             <editorialDecl>
-                <punctuation><p>La punteggiatura non è stata modificata se non attraverso correzioni autoriali</p></punctuation>
-                <segmentation><p>Codifica svolta dividendo il testo in frasi numerate in base alla pagina e alla riga</p></segmentation>
-                <stdVals><p>L'attributo when all'interno dell'elemento date è stato disposto nell'ordine <val>AAAA-MM-GG</val>.</p></stdVals>
                 <correction status="high" method="markup"> 
                     <p>Per la correzione di errori sono stati usati i tag <gi>sic</gi> e <gi>corr</gi>.</p>
                     <p>Sono stati corretti i seguenti errori:
@@ -106,6 +103,7 @@
                         </list>
                     </p>
                 </correction>
+                <hyphenation><p>I trattini di fine riga sono stati omessi e indicati nella codifica tramite l'aggiunta dell'attributo break con il valor "no" all'interno del tag lb nella quale era compiuta la divisione</p></hyphenation>
                 <normalization method="markup">
                     <p>Per le normalizzazioni sono stati usati i tag <gi>orig</gi> e <gi>reg</gi>.</p>
                     <p>Sono state normalizzare le seguenti parole:
@@ -113,18 +111,21 @@
                             <item>'Stamane' in 'stamani'; pag. 64, riga 4</item>
                         </list>
                     </p>
-                </normalization>
+                </normalization>                
+                <punctuation><p>La punteggiatura non è stata modificata se non attraverso correzioni autoriali</p></punctuation>
                 <quotation marks="all"><p>Tutte le virgolette vengono mantenute nel testo e sono rappresentate dal codice Unicode appropriato</p></quotation>
+                <segmentation><p>Codifica svolta dividendo il testo in frasi numerate in base alla pagina e alla riga</p></segmentation>
+                <stdVals><p>L'attributo when all'interno dell'elemento date è stato disposto nell'ordine <val>AAAA-MM-GG</val>.</p></stdVals>
             </editorialDecl>
         </encodingDesc>
         <profileDesc>
-                <particDesc>
-                    <listPerson>
-                        <person><persName ref="#artom">Emanuele Artom</persName></person>
-                        <person><persName ref="#segre">Amalia Segre</persName></person>
-                        <person><persName ref="#diena">Sergio Diena</persName></person>
-                    </listPerson>
-                </particDesc>
+            <particDesc>
+                <listPerson>
+                    <person><persName ref="#artom">Emanuele Artom</persName></person>
+                    <person><persName ref="#segre">Amalia Segre</persName></person>
+                    <person><persName ref="#diena">Sergio Diena</persName></person>
+                </listPerson>
+            </particDesc>
             <langUsage>
                 <language ident="it">Italiano</language>
             </langUsage>
@@ -134,8 +135,8 @@
                 <derivation type="original"/>
                 <domain type="domestic"/>
                 <factuality type="fact"/>
-                <interaction type="partial" passive="self"></interaction>
-                <preparedness type="none"></preparedness>
+                <interaction type="partial" passive="self"/>
+                <preparedness type="none"/>
                 <purpose type="express"/>
             </textDesc>
             <creation> 
@@ -228,7 +229,7 @@
     </facsimile>
     <text xml:lang="it" subtype="diary">
         <body>
-            <ab n="1">
+            <ab>
                 <pb xml:id="pag64" n="1" facs="#p64" />
                 <lb xml:id="pag64_1" n="1" facs="#p64_1"/>
                 <q><supplied reason="omitted-in-original" cert="high" resp="#personal">&#171;</supplied>Non vede che vivo qui<pc>;</pc> sono sfollato
@@ -282,8 +283,8 @@
                 altro luogo e la mia vita può dipendere 
                 <lb xml:id="pag64_23" n="23" facs="#p64_23"/>
                 da questa decisione<pc>.</pc>
-            </ab>
-            <ab n="2">
+
+
                 <pb xml:id="pag65" n="2" facs="#p65" />
                 <lb xml:id="pag65_1" n="1" facs="#p65_1"/>
                 Sebbene i più mi conoscano<pc>,</pc> si terrà conto
@@ -331,8 +332,7 @@
                 stato uguale<pc>.</pc> Smetto perchè fa tanto freddo che non
                 <lb xml:id="pag65_23" n="23" facs="#p65_23"/>
                 riesco più a scrivere<pc>.</pc>
-            </ab>
-            <ab n="3">
+
                 <pb xml:id="pag66" n="3" facs="#p66" />
                 <lb xml:id="pag66_1" n="1" facs="#p66_1"/>
                 con chi siamo<pc>,</pc> contro chi siamo &#187;<pc>,</pc> che pongano
@@ -457,49 +457,49 @@
             <listPlace>
                 <head>Lista luoghi</head>
                 <place xml:id="torino">
-                    <placeName ref="http://www.comune.torino.it/">Torino</placeName>
+                    <placeName source="http://www.comune.torino.it/">Torino</placeName>
                     <settlement type="province">Torino</settlement>
                     <settlement type="region">Piemonte</settlement>
                     <country key="IT">Italia</country>
                 </place>
                 <place xml:id="aosta">
-                    <placeName ref="https://www.comune.milano.it/">Aosta</placeName>
+                    <placeName source="https://www.comune.milano.it/">Aosta</placeName>
                     <settlement type="province">Aosta</settlement>
                     <settlement type="region">Valle d'Aosta</settlement>
                     <country key="IT">Italia</country>
                 </place>
                 <place xml:id="milano">
-                    <placeName ref="https://www.comune.aosta.it/it">Milano</placeName>
+                    <placeName source="https://www.comune.aosta.it/it">Milano</placeName>
                     <settlement type="province">Milano</settlement>
                     <settlement type="region">Lombardia</settlement>
                     <country key="IT">Italia</country>
                 </place>
                 <place xml:id="barge">
-                    <placeName ref="https://www.comune.barge.cn.it/">Barge</placeName>
+                    <placeName source="https://www.comune.barge.cn.it/">Barge</placeName>
                     <settlement type="province">Cuneo</settlement>
                     <settlement type="region">Piemonte</settlement>
                     <country key="IT">Italia</country>
                 </place>
                 <place xml:id="torre">
-                    <placeName ref="https://www.comune.torrepellice.to.it/">Torre Pellice</placeName>
+                    <placeName source="https://www.comune.torrepellice.to.it/">Torre Pellice</placeName>
                     <settlement type="province">Torino</settlement>
                     <settlement type="region">Piemonte</settlement>
                     <country key="IT">Italia</country>
                 </place>
                 <place xml:id="pinerolo">
-                    <placeName ref="https://www.comune.pinerolo.to.it/">Pinerolo</placeName>
+                    <placeName source="https://www.comune.pinerolo.to.it/">Pinerolo</placeName>
                     <settlement type="province">Torino</settlement>
                     <settlement type="region">Piemonte</settlement>
                     <country key="IT">Italia</country>
                 </place>
                 <place xml:id="moncalieri">
-                    <placeName ref="https://www.comune.moncalieri.to.it/home">Moncalieri</placeName>
+                    <placeName source="https://www.comune.moncalieri.to.it/home">Moncalieri</placeName>
                     <settlement type="province">Torino</settlement>
                     <settlement type="region">Piemonte</settlement>
                     <country key="IT">Italia</country>
                 </place>
                 <place xml:id="chieri">
-                    <placeName ref="https://www.comune.chieri.to.it/home">Chieri</placeName>
+                    <placeName source="https://www.comune.chieri.to.it/home">Chieri</placeName>
                     <settlement type="province">Torino</settlement>
                     <settlement type="region">Piemonte</settlement>
                     <country key="IT">Italia</country>
@@ -510,21 +510,21 @@
             <listOrg>
                 <head>Elenco organizzazioni</head>
                 <org xml:id="unipi">
-                    <orgName ref="https://www.unipi.it/">Università di Pisa</orgName>
+                    <orgName source="https://www.unipi.it/">Università di Pisa</orgName>
                     <placeName>Pisa </placeName>
                     <desc>
                         L'Università di Pisa (UniPi), istituita ufficialmente nel 1343, è una delle più antiche e prestigiose università in Italia e in Europa.
                     </desc>
                 </org>
                 <org xml:id="CDEC">
-                    <orgName ref="https://www.cdec.it/"> CDEC - Centro di Documentazione Ebraica Contemporanea </orgName>
+                    <orgName source="https://www.cdec.it/"> CDEC - Centro di Documentazione Ebraica Contemporanea </orgName>
                     <placeName ref="#milano"> Milano </placeName>
                     <desc>
                         Il CDEC è un istituto storico culturale indipendente con sede a Milano, che promuove lo studio delle vicende storiche, della cultura e della realtà degli ebrei, con particolare riferimento all'Italia e all'età contemporanea.
                     </desc>
                 </org>
                 <org xml:id="pda">
-                    <orgName ref="https://it.wikipedia.org/wiki/Partito_d%27Azione"> Partito d'Azione </orgName>
+                    <orgName source="https://it.wikipedia.org/wiki/Partito_d%27Azione"> Partito d'Azione </orgName>
                     <desc>
                         Partito politico italiano di centro-sinistra fondato nel <date when="1942">1942.</date>
                     </desc>
