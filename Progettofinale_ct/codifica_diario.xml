@@ -232,13 +232,13 @@
             <ab>
                 <pb xml:id="pag64" n="1" facs="#p64" />
                 <lb xml:id="pag64_1" n="1" facs="#p64_1"/>
-                <q><supplied reason="omitted-in-original" cert="high" resp="#personal">&#171;</supplied>Non vede che vivo qui<pc>;</pc> sono sfollato
+                <said aloud="true" direct="true"><supplied reason="omitted-in-original" cert="high" resp="#personal">&#171;</supplied>Non vede che vivo qui<pc>;</pc> sono sfollato
                 <lb xml:id="pag64_2" n="2" facs="#p64_2"/>
-                dopo gli ultimi bombardamenti<supplied reason="omitted-in-original" cert="high" resp="#personal">&#187;</supplied></q><pc>:</pc> allora
+                dopo gli ultimi bombardamenti<supplied reason="omitted-in-original" cert="high" resp="#personal">&#187;</supplied></said><pc>:</pc> allora
                 <lb xml:id="pag64_3" n="3" facs="#p64_3"/>
                 mi raccontò che i partigiani sono molto 
                 <lb xml:id="pag64_4" n="4" facs="#p64_4"/>
-                buoni e <choice><orig>stamane </orig><reg resp="#personal">stamani</reg></choice>avevano regalato alla
+                buoni e <choice><orig><distinct type="dialectal">stamane </distinct></orig><reg resp="#personal">stamani </reg></choice>avevano regalato alla
                 <lb xml:id="pag64_5" n="5" facs="#p64_5"/>
                 popolazione di <placeName ref="#barge">Barge</placeName> tanto latte<pc>.</pc> Infatti<pc>,</pc>
                 <lb xml:id="pag64_6" n="6" facs="#p64_6"/>
@@ -257,10 +257,10 @@
                 strofa di una lirica<pc>,</pc> che dovrà commemo
                 <lb xml:id="pag64_13" n="13" break="no" facs="#p64_13"/>
                 rare <persName ref="#diena">Sergio Diena</persName><pc>:</pc>
-                <lb xml:id="pag64_14" n="14" facs="#p64_14"/>
                 <floatingText>
                     <body>
                         <div type="poem">
+                            <lb xml:id="pag64_14" n="14" facs="#p64_14"/>
                             <l>Ancora andare<subst><del rend="overstrike" hand="author">,</del> <add place="over" hand="author">.</add></subst> Vivere la guerra</l>
                             <lb xml:id="pag64_15" n="15" facs="#p64_15"/>
                             <l>sotto la pioggia ed una sorte ignota<pc>;</pc></l>
@@ -276,7 +276,7 @@
                 <lb xml:id="pag64_19" n="19" facs="#p64_19"/>
                 del mio destino perchè forse a <placeName ref="#torre">Torre</placeName>
                 <lb xml:id="pag64_20" n="20" facs="#p64_20"/>
-                Pellice il <choice><abbr type="acronym">P.d.A </abbr><expan resp="#personal" cert="high"><orgName ref="#pda">Partito d’Azione</orgName></expan></choice>deciderà se devo
+                Pellice il <choice><abbr type="acronym">P<am>.</am>d<am>.</am>A </abbr><expan resp="#personal" cert="high"><orgName ref="#pda">P<ex>artito</ex> d’A<ex>zione</ex></orgName></expan></choice>deciderà se devo
                 <lb xml:id="pag64_21" n="21" facs="#p64_21"/>
                 o fermarmi a <placeName ref="#barge">Barge</placeName> o se andrò in un
                 <lb xml:id="pag64_22" n="22" facs="#p64_22"/>
@@ -359,7 +359,7 @@
                 <lb xml:id="pag66_11" n="11" facs="#p66_11"/>
                 per una grande causa<pc>,</pc> ma ieri pensando a
                 <lb xml:id="pag66_12" n="12" facs="#p66_12"/>
-                <persName ref="#diena">Sergio <choice><abbr>D.</abbr><expan resp="#personal" cert="high">Diena</expan></choice></persName> mi pareva <subst><del rend="overstrike" hand="author">che </del> <add place="above" hand="author">amarissimo</add></subst> vedere la vittoria
+                <persName ref="#diena">Sergio <choice><abbr>D<am>.</am></abbr><expan resp="#personal" cert="high">D<ex>iena</ex></expan></choice></persName> mi pareva <subst><del rend="overstrike" hand="author">che </del> <add place="above" hand="author">amarissimo</add></subst> vedere la vittoria
                 <lb xml:id="pag66_13" n="13"  facs="#p66_13"/>
                 sicura<pc>,</pc> ma sentire di non poterla affer
                 <lb xml:id="pag66_14" n="14" break="no" facs="#p66_14"/>
