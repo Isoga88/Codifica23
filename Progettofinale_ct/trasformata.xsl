@@ -31,7 +31,7 @@
                         <p><div class="bold">Esecutore: </div> <xsl:value-of select="tei:TEI/tei:teiHeader/tei:fileDesc/tei:editionStmt/tei:respStmt/tei:persName"/></p>
                         <p><div class="bold">Curatore: </div> <xsl:value-of select="tei:TEI/tei:teiHeader/tei:fileDesc/tei:editionStmt/tei:editor"/></p>
                         <p><div class="bold">Organizzazione: </div> <xsl:value-of select="tei:TEI/tei:teiHeader/tei:fileDesc/tei:editionStmt/tei:sponsor"/></p>
-
+                        <p><div class="bold">Realizzata nel: </div> <xsl:value-of select="tei:TEI/tei:teiHeader/tei:fileDesc/tei:publicationStmt/tei:date"/></p>
                     </div>
                     <div id="manoscritto" class="halfcard">
                         <h3 class="textimp">Manoscritto</h3>
@@ -171,7 +171,7 @@
                             <xsl:attribute name="alt">page<xsl:value-of select="position()-1"/></xsl:attribute>
                             <xsl:attribute name="class">max-w-none </xsl:attribute>
                             <xsl:attribute name="usemap">#page<xsl:value-of select="position()-1"/></xsl:attribute>
-                            <xsl:apply-templates select="../../../../tei:facsimile/tei:surface[@n=$myNumber]"/>
+                            <xsl:apply-templates select="../../../../../tei:facsimile/tei:surface[@n=$myNumber]"/>
                         </xsl:element>
                     </xsl:element>
                 </xsl:element> 
@@ -201,7 +201,7 @@
     <xsl:template match="tei:pb">
             <xsl:element name="h3">
                 <xsl:attribute name="class">font-sm title text-center</xsl:attribute>
-                Pagina <xsl:value-of select="[@n]"/>
+                Pagina <xsl:value-of select="substring-after(@xml:id, 'pag')"/>
             </xsl:element>
     </xsl:template>
   

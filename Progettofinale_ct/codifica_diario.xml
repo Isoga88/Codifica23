@@ -2,7 +2,7 @@
 <?xml-stylesheet type="text/xsl" href="trasformata.xsl"?>
 <!DOCTYPE TEI SYSTEM "tei_all.dtd">
 
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xml:lang="it" xmlns="http://www.tei-c.org/ns/1.0">
     <teiHeader>
         <fileDesc>
             <titleStmt>
@@ -27,7 +27,7 @@
                         <surname> Isola </surname>
                     </persName>
                 </respStmt>
-                <principal ref="#personal"><persName ref="#personal"> Gabriele Isola</persName></principal>
+                <principal><persName ref="#personal"> Gabriele Isola</persName></principal>
                 <editor role="Managing_Editor">Angelo Del Grosso</editor>
                 <sponsor ref="#unipi">Università di Pisa</sponsor>
             </editionStmt>
@@ -38,7 +38,7 @@
                 <availability status="free">
                     <p>Codifica opensource disponibile sul<orgName> GitHub </orgName>di<persName ref="#personal"> Gabriele Isola</persName></p>
                 </availability>
-                <date when="2023">2023</date>
+                <date when="2023-06">Giugno 2023</date>
             </publicationStmt>
             <sourceDesc>
                 <msDesc>
@@ -103,7 +103,7 @@
                         </list>
                     </p>
                 </correction>
-                <hyphenation><p>I trattini di fine riga sono stati omessi e indicati nella codifica tramite l'aggiunta dell'attributo break con il valor "no" all'interno del tag lb nella quale era compiuta la divisione</p></hyphenation>
+                <hyphenation><p>I trattini di fine riga sono stati indicati nella codifica tramite l'aggiunta dell'attributo <att>break</att> con il valor "no" all'interno del tag <gi>lb</gi> nella quale era compiuta la divisione</p></hyphenation>
                 <normalization method="markup">
                     <p>Per le normalizzazioni sono stati usati i tag <gi>orig</gi> e <gi>reg</gi>.</p>
                     <p>Sono state normalizzare le seguenti parole:
@@ -115,8 +115,17 @@
                 <punctuation><p>La punteggiatura non è stata modificata se non attraverso correzioni autoriali</p></punctuation>
                 <quotation marks="all"><p>Tutte le virgolette vengono mantenute nel testo e sono rappresentate dal codice Unicode appropriato</p></quotation>
                 <segmentation><p>Codifica svolta dividendo il testo in frasi numerate in base alla pagina e alla riga</p></segmentation>
-                <stdVals><p>L'attributo when all'interno dell'elemento date è stato disposto nell'ordine <val>AAAA-MM-GG</val>.</p></stdVals>
+                <stdVals><p>L'attributo <att>when</att> all'interno dell'elemento date è stato disposto nell'ordine <val>AAAA-MM-GG</val>.</p></stdVals>
             </editorialDecl>
+            <refsDecl>
+                <p>L'attributo <att>xml:id</att> fornisce un identificatore univoco per ogni elemento che ne necessita l'uso</p>
+            </refsDecl>
+            <styleDefDecl scheme="other"/>
+            <tagsDecl>
+                <rendition xml:id="textspace">Margini laterali dovuti ai margini del foglio sulla quale è scritto il testo</rendition>
+                <rendition xml:id="poemspace">Margini laterali aumentati</rendition>
+                <rendition xml:id="fullpage">Testo inserito tra due righe classiche e che va anche oltre i limiti laterali del foglio</rendition>
+            </tagsDecl>
         </encodingDesc>
         <profileDesc>
             <particDesc>
@@ -140,9 +149,9 @@
                 <purpose type="express"/>
             </textDesc>
             <creation> 
-                <date when="1943-12-11"> 12 dicembre 1943 </date> Pagina 64
-                <date when="1943-12-12"> 12 dicembre 1943 </date> Pagina 65
-                <date when="1943-12-12"> 13 dicembre 1943 </date> Pagina 66
+                Pagina 64<date when="1943-12-11"> 12 dicembre 1943 </date>;
+                Pagina 65<date when="1943-12-12"> 12 dicembre 1943 </date>;
+                Pagina 66<date when="1943-12-12"> 13 dicembre 1943 </date>;
             </creation>
         </profileDesc>
     </teiHeader>
@@ -227,163 +236,165 @@
         </surface>
      
     </facsimile>
-    <text xml:lang="it" subtype="diary">
+    <text type="diary">
         <body>
-            <ab>
-                <pb xml:id="pag64" n="1" facs="#p64" />
-                <lb xml:id="pag64_1" n="1" facs="#p64_1"/>
-                <said aloud="true" direct="true"><supplied reason="omitted-in-original" cert="high" resp="#personal">&#171;</supplied>Non vede che vivo qui<pc>;</pc> sono sfollato
-                <lb xml:id="pag64_2" n="2" facs="#p64_2"/>
-                dopo gli ultimi bombardamenti<supplied reason="omitted-in-original" cert="high" resp="#personal">&#187;</supplied></said><pc>:</pc> allora
-                <lb xml:id="pag64_3" n="3" facs="#p64_3"/>
-                mi raccontò che i partigiani sono molto 
-                <lb xml:id="pag64_4" n="4" facs="#p64_4"/>
-                buoni e <choice><orig><distinct type="dialectal">stamane </distinct></orig><reg resp="#personal">stamani </reg></choice>avevano regalato alla
-                <lb xml:id="pag64_5" n="5" facs="#p64_5"/>
-                popolazione di <placeName ref="#barge">Barge</placeName> tanto latte<pc>.</pc> Infatti<pc>,</pc>
-                <lb xml:id="pag64_6" n="6" facs="#p64_6"/>
-                come poi seppi<choice><sic><pc>;</pc></sic><corr resp="#personal"><pc>,</pc></corr></choice> nella notte avevano
-                <lb xml:id="pag64_7" n="7" facs="#p64_7"/>
-                fermato un camion di latte destinato 
-                <lb xml:id="pag64_8" n="8" facs="#p64_8"/>
-                ai <choice><sic>Tedeschi</sic><corr resp="#personal"> tedeschi</corr></choice><pc>.</pc> Studio storia<pc>.</pc> Oggi fa freddo<pc>,</pc>
-                <lb xml:id="pag64_9" n="9" facs="#p64_9"/>
-                piove e c’è per la <subst><del rend="overstrike" hand="author">strada </del> <add place="above" hand="author">campagna</add></subst> un gran fango<pc>.</pc> Ho
-                <lb xml:id="pag64_10" rend="" n="10" facs="#p64_10"/>
-                <add place="inspace">mal di pancia e le mani mi tremano per il freddo<pc>.</pc></add><add place="margin"> Resisterò un pezzo a questa vitaccia<pc>?</pc></add>
-                <lb xml:id="pag64_11" n="11" facs="#p64_11"/>
-                Ho composto <del rend="overstrike" hand="author"> <gap reason="illegible" quantity="2" unit="character"/></del> durante la strada la prima
-                <lb xml:id="pag64_12"  n="12" facs="#p64_12"/>
-                strofa di una lirica<pc>,</pc> che dovrà commemo
-                <lb xml:id="pag64_13" n="13" break="no" facs="#p64_13"/>
-                rare <persName ref="#diena">Sergio Diena</persName><pc>:</pc>
-                <floatingText>
-                    <body>
-                        <div type="poem">
-                            <lb xml:id="pag64_14" n="14" facs="#p64_14"/>
-                            <l>Ancora andare<subst><del rend="overstrike" hand="author">,</del> <add place="over" hand="author">.</add></subst> Vivere la guerra</l>
-                            <lb xml:id="pag64_15" n="15" facs="#p64_15"/>
-                            <l>sotto la pioggia ed una sorte ignota<pc>;</pc></l>
-                            <lb xml:id="pag64_16" n="16" facs="#p64_16"/>
-                            <l>sempre pestare questa grigia terra</l>
-                            <lb xml:id="pag64_17" n="17" facs="#p64_17"/>
-                            <l>sempre pestare questa fredda mota</l>
-                        </div>
-                    </body>
-                </floatingText>
-                <lb xml:id="pag64_18" n="18" facs="#p64_18"/>
-                Mentre scrivo può essere che si decida 
-                <lb xml:id="pag64_19" n="19" facs="#p64_19"/>
-                del mio destino perchè forse a <placeName ref="#torre">Torre</placeName>
-                <lb xml:id="pag64_20" n="20" facs="#p64_20"/>
-                Pellice il <choice><abbr type="acronym">P<am>.</am>d<am>.</am>A </abbr><expan resp="#personal" cert="high"><orgName ref="#pda">P<ex>artito</ex> d’A<ex>zione</ex></orgName></expan></choice>deciderà se devo
-                <lb xml:id="pag64_21" n="21" facs="#p64_21"/>
-                o fermarmi a <placeName ref="#barge">Barge</placeName> o se andrò in un
-                <lb xml:id="pag64_22" n="22" facs="#p64_22"/>
-                altro luogo e la mia vita può dipendere 
-                <lb xml:id="pag64_23" n="23" facs="#p64_23"/>
-                da questa decisione<pc>.</pc>
+            <div>
+                <ab rendition="#textspace">
+                    <pb xml:id="pag64" n="1" facs="#p64" />
+                    <lb xml:id="pag64_1" n="1" facs="#p64_1"/>
+                    <supplied reason="omitted-in-original" cert="high" resp="#personal">&#171;</supplied><said aloud="true" direct="true" toWhom="#artom">Non vede che vivo qui<pc>;</pc> sono sfollato
+                    <lb xml:id="pag64_2" n="2" facs="#p64_2"/>
+                    dopo gli ultimi bombardamenti</said><supplied reason="omitted-in-original" cert="high" resp="#personal">&#187;</supplied><pc>:</pc> allora
+                    <lb xml:id="pag64_3" n="3" facs="#p64_3"/>
+                    mi raccontò che i partigiani sono molto 
+                    <lb xml:id="pag64_4" n="4" facs="#p64_4"/>
+                    buoni e <choice><orig><distinct type="dialectal" space="regional">stamane </distinct></orig><reg resp="#personal">stamani </reg></choice>avevano regalato alla
+                    <lb xml:id="pag64_5" n="5" facs="#p64_5"/>
+                    popolazione di <placeName ref="#barge">Barge</placeName> tanto latte<pc>.</pc> Infatti<pc>,</pc>
+                    <lb xml:id="pag64_6" n="6" facs="#p64_6"/>
+                    come poi seppi<choice><sic><pc>;</pc></sic><corr resp="#personal"><pc>,</pc></corr></choice> nella notte avevano
+                    <lb xml:id="pag64_7" n="7" facs="#p64_7"/>
+                    fermato un camion di latte destinato 
+                    <lb xml:id="pag64_8" n="8" facs="#p64_8"/>
+                    ai <choice><sic>Tedeschi</sic><corr resp="#personal"> tedeschi</corr></choice><pc>.</pc> Studio storia<pc>.</pc> Oggi fa freddo<pc>,</pc>
+                    <lb xml:id="pag64_9" n="9" facs="#p64_9"/>
+                    piove e c’è per la <subst><del rend="overstrike" hand="author">strada </del> <add place="above" hand="author">campagna</add></subst> un gran fango<pc>.</pc> Ho
+                    <lb xml:id="pag64_10" rendition="#fullpage" n="10" facs="#p64_10"/>
+                    <add place="inspace">mal di pancia e le mani mi tremano per il freddo<pc>.</pc></add><add place="margin"> Resisterò un pezzo a questa vitaccia<pc>?</pc></add>
+                    <lb xml:id="pag64_11" n="11" facs="#p64_11"/>
+                    Ho composto <del rend="overstrike" hand="author"> <gap reason="illegible" quantity="2" unit="character"/></del> durante la strada la prima
+                    <lb xml:id="pag64_12"  n="12" facs="#p64_12"/>
+                    strofa di una lirica<pc>,</pc> che dovrà commemo
+                    <lb xml:id="pag64_13" n="13" break="no" facs="#p64_13"/>
+                    rare <persName ref="#diena">Sergio Diena</persName><pc>:</pc>
+                    <floatingText>
+                        <body>
+                            <div type="poem" rendition="#poemspace">
+                                <lb xml:id="pag64_14" n="14" facs="#p64_14"/>
+                                <l>Ancora andare<subst><del rend="overstrike" hand="author">,</del> <add place="over" hand="author">.</add></subst> Vivere la guerra</l>
+                                <lb xml:id="pag64_15" n="15" facs="#p64_15"/>
+                                <l>sotto la pioggia ed una sorte ignota<pc>;</pc></l>
+                                <lb xml:id="pag64_16" n="16" facs="#p64_16"/>
+                                <l>sempre pestare questa grigia terra</l>
+                                <lb xml:id="pag64_17" n="17" facs="#p64_17"/>
+                                <l>sempre pestare questa fredda mota</l>
+                            </div>
+                        </body>
+                    </floatingText>
+                    <lb xml:id="pag64_18" n="18" facs="#p64_18"/>
+                    Mentre scrivo può essere che si decida 
+                    <lb xml:id="pag64_19" n="19" facs="#p64_19"/>
+                    del mio destino perchè forse a <placeName ref="#torre">Torre</placeName>
+                    <lb xml:id="pag64_20" n="20" facs="#p64_20"/>
+                    Pellice il <choice><abbr type="acronym">P<am>.</am>d<am>.</am>A </abbr><expan resp="#personal" cert="high"><orgName ref="#pda">P<ex>artito</ex> d’A<ex>zione</ex></orgName></expan></choice>deciderà se devo
+                    <lb xml:id="pag64_21" n="21" facs="#p64_21"/>
+                    o fermarmi a <placeName ref="#barge">Barge</placeName> o se andrò in un
+                    <lb xml:id="pag64_22" n="22" facs="#p64_22"/>
+                    altro luogo e la mia vita può dipendere 
+                    <lb xml:id="pag64_23" n="23" facs="#p64_23"/>
+                    da questa decisione<pc>.</pc>
 
 
-                <pb xml:id="pag65" n="2" facs="#p65" />
-                <lb xml:id="pag65_1" n="1" facs="#p65_1"/>
-                Sebbene i più mi conoscano<pc>,</pc> si terrà conto
-                <lb xml:id="pag65_2" n="2" facs="#p65_2"/>
-                non dei miei interessi<pc>,</pc> ma di quelli <subst><del rend="overstrike" hand="author">del partito </del> <add place="above" hand="author">generali</add></subst><pc>.</pc>
-                <lb xml:id="pag65_3" n="3" facs="#p65_3"/>
-                Così appena si entra nella vita politica ci si 
-                <lb xml:id="pag65_4" n="4" facs="#p65_4"/>
-                accorge di essere <subst><del rend="overstrike" hand="author">una pedina di una schiacchiera </del> <add place="above" hand="author" rend="pencil">il pezzo di un gioco<pc>:</pc></add></subst>
-                <lb xml:id="pag65_5" n="5" facs="#p65_5"/>
-                potrò restare pedina in un angolo morto della
-                <lb xml:id="pag65_6" n="6" facs="#p65_6"/>
-                scacchiera<pc>,</pc> potrò diventare dama<pc>,</pc> come parrà
-                <lb xml:id="pag65_7" n="7" facs="#p65_7"/>
-                al <choice><sic>Giocatore</sic><corr resp="#personal"> giocatore</corr></choice><pc>,</pc> cioè al<orgName ref="#pda"> partito</orgName><pc>.</pc> Poco contano le 
-                <lb xml:id="pag65_8" n="8" facs="#p65_8"/>
-                abilità<pc>:</pc> se mi lasciano qui<pc>,</pc> potrò rimproverarmi
-                <lb xml:id="pag65_9" n="9" facs="#p65_9"/>
-                della polemica contro il comunismo<pc>,</pc> che mi
-                <lb xml:id="pag65_10" n="10" facs="#p65_10"/>
-                ha suscitato delle antipatie<choice><sic><pc>; </pc>supponiamo</sic><corr resp="#personal"><pc>. </pc>Supponiamo</corr></choice> che
-                <lb xml:id="pag65_11" n="11" facs="#p65_11"/>
-                mi nominino commissario di una banda perchè
-                <lb xml:id="pag65_12" n="12" facs="#p65_12"/>
-                si è fatto <subst><del rend="overstrike" hand="author">questa </del> <add place="alongside" hand="author">libero</add></subst> un posto del genere<pc>.</pc> Allora
-                <lb xml:id="pag65_13" n="13" facs="#p65_13"/>
-                potrò congratularmi di aver preso una posizione 
-                <lb xml:id="pag65_14" n="14" facs="#p65_14"/>
-                di punta<pc>,</pc> che mi ha fatto avanzare<pc>,</pc> ma i
-                <lb xml:id="pag65_15" n="15" facs="#p65_15"/>
-                miei meriti saranno sempre gli stessi<pc>.</pc> Così
-                <lb xml:id="pag65_16" n="16" facs="#p65_16"/>
-                l’altro giorno andai a <placeName ref="#pinerolo">Pinerolo</placeName><pc>:</pc> se avessi trovato
-                <lb xml:id="pag65_17" n="17" facs="#p65_17"/>
-                <num value="50">50</num> rivoltelle, sarei stato considerato un grande
-                <lb xml:id="pag65_18" n="18" facs="#p65_18"/>
-                uomo<pc>;</pc> se <add place="above" hand="author">non</add> ne avessi trovato nessuna<pc>, </pc>uno stupido<pc>.</pc>
-                <lb xml:id="pag65_19" n="19" facs="#p65_19"/>
-                Con quanto ho trovato<pc>,</pc> ho fatto una figura di 
-                <lb xml:id="pag65_20" n="20"  break="no" facs="#p65_20"/>
-                screta<pc>,</pc> ma il merito è sempre della fortuna.
-                <lb xml:id="pag65_21" n="21" facs="#p65_21"/>
-                In ciascuno dei <num value="3">tre</num> casi il mio contegno è
-                <lb xml:id="pag65_22" n="22" facs="#p65_22"/>
-                stato uguale<pc>.</pc> Smetto perchè fa tanto freddo che non
-                <lb xml:id="pag65_23" n="23" facs="#p65_23"/>
-                riesco più a scrivere<pc>.</pc>
+                    <pb xml:id="pag65" n="2" facs="#p65" />
+                    <lb xml:id="pag65_1" n="1" facs="#p65_1"/>
+                    Sebbene i più mi conoscano<pc>,</pc> si terrà conto
+                    <lb xml:id="pag65_2" n="2" facs="#p65_2"/>
+                    non dei miei interessi<pc>,</pc> ma di quelli <subst><del rend="overstrike" hand="author">del partito </del> <add place="above" hand="author">generali</add></subst><pc>.</pc>
+                    <lb xml:id="pag65_3" n="3" facs="#p65_3"/>
+                    Così appena si entra nella vita politica ci si 
+                    <lb xml:id="pag65_4" n="4" facs="#p65_4"/>
+                    accorge di essere <subst><del rend="overstrike" hand="author">una pedina di una schiacchiera </del> <add place="above" hand="author" rend="pencil">il pezzo di un gioco<pc>:</pc></add></subst>
+                    <lb xml:id="pag65_5" n="5" facs="#p65_5"/>
+                    potrò restare pedina in un angolo morto della
+                    <lb xml:id="pag65_6" n="6" facs="#p65_6"/>
+                    scacchiera<pc>,</pc> potrò diventare dama<pc>,</pc> come parrà
+                    <lb xml:id="pag65_7" n="7" facs="#p65_7"/>
+                    al <choice><sic>Giocatore</sic><corr resp="#personal"> giocatore</corr></choice><pc>,</pc> cioè al<orgName ref="#pda"> partito</orgName><pc>.</pc> Poco contano le 
+                    <lb xml:id="pag65_8" n="8" facs="#p65_8"/>
+                    abilità<pc>:</pc> se mi lasciano qui<pc>,</pc> potrò rimproverarmi
+                    <lb xml:id="pag65_9" n="9" facs="#p65_9"/>
+                    della polemica contro il comunismo<pc>,</pc> che mi
+                    <lb xml:id="pag65_10" n="10" facs="#p65_10"/>
+                    ha suscitato delle antipatie<choice><sic><pc>; </pc>supponiamo</sic><corr resp="#personal"><pc>. </pc>Supponiamo</corr></choice> che
+                    <lb xml:id="pag65_11" n="11" facs="#p65_11"/>
+                    mi nominino commissario di una banda perchè
+                    <lb xml:id="pag65_12" n="12" facs="#p65_12"/>
+                    si è fatto <subst><del rend="overstrike" hand="author">questa </del> <add place="alongside" hand="author">libero</add></subst> un posto del genere<pc>.</pc> Allora
+                    <lb xml:id="pag65_13" n="13" facs="#p65_13"/>
+                    potrò congratularmi di aver preso una posizione 
+                    <lb xml:id="pag65_14" n="14" facs="#p65_14"/>
+                    di punta<pc>,</pc> che mi ha fatto avanzare<pc>,</pc> ma i
+                    <lb xml:id="pag65_15" n="15" facs="#p65_15"/>
+                    miei meriti saranno sempre gli stessi<pc>.</pc> Così
+                    <lb xml:id="pag65_16" n="16" facs="#p65_16"/>
+                    l’altro giorno andai a <placeName ref="#pinerolo">Pinerolo</placeName><pc>:</pc> se avessi trovato
+                    <lb xml:id="pag65_17" n="17" facs="#p65_17"/>
+                    <num value="50">50</num> rivoltelle, sarei stato considerato un grande
+                    <lb xml:id="pag65_18" n="18" facs="#p65_18"/>
+                    uomo<pc>;</pc> se <add place="above" hand="author">non</add> ne avessi trovato nessuna<pc>, </pc>uno stupido<pc>.</pc>
+                    <lb xml:id="pag65_19" n="19" facs="#p65_19"/>
+                    Con quanto ho trovato<pc>,</pc> ho fatto una figura di 
+                    <lb xml:id="pag65_20" n="20"  break="no" facs="#p65_20"/>
+                    screta<pc>,</pc> ma il merito è sempre della fortuna.
+                    <lb xml:id="pag65_21" n="21" facs="#p65_21"/>
+                    In ciascuno dei <num value="3">tre</num> casi il mio contegno è
+                    <lb xml:id="pag65_22" n="22" facs="#p65_22"/>
+                    stato uguale<pc>.</pc> Smetto perchè fa tanto freddo che non
+                    <lb xml:id="pag65_23" n="23" facs="#p65_23"/>
+                    riesco più a scrivere<pc>.</pc>
 
-                <pb xml:id="pag66" n="3" facs="#p66" />
-                <lb xml:id="pag66_1" n="1" facs="#p66_1"/>
-                con chi siamo<pc>,</pc> contro chi siamo &#187;<pc>,</pc> che pongano
-                <lb xml:id="pag66_2" n="2" facs="#p66_2"/>
-                in rilievo i nostri contrasti con i <choice><sic>Comunisti</sic><corr resp="#personal"> comunisti</corr></choice><pc>.</pc>
-                <add place="below" hand="author" rend="pencil">
-                    <lb xml:id="pag66_3" n="3" facs="#p66_3"/>
-                    Anzi<pc>,</pc> mi pare assai più recisa
-                    <lb xml:id="pag66_4" n="4" facs="#p66_4"/>
-                    della precedente<pc>:</pc> l’instaurazione della
-                    <lb xml:id="pag66_5" n="5" facs="#p66_5"/>
-                    dittatura proletaria aprirebbe oggi ancora
-                    <lb xml:id="pag66_6" n="6" facs="#p66_6"/>
-                    una volta la via alla peggiore delle
-                    <lb xml:id="pag66_7" n="7" facs="#p66_7"/>
-                    reazioni<pc>.</pc>
-                </add>
-                <lb xml:id="pag66_8" n="8" facs="#p66_8"/>
-                Intanto la guerra si prolunga<pc>:</pc> <subst><del rend="overstrike" hand="author"> fino a </del> <add place="above" hand="author">prima di</add></subst> <date when="1943-9">settembre</date>
-                <lb xml:id="pag66_9" n="9" facs="#p66_9"/>
-                non c’è da sperare che finisca e a <date when="1943-9">settembre</date>
-                <lb xml:id="pag66_10" n="10" facs="#p66_10"/>
-                forse saremo morti<pc>:</pc> si dice che è bello morire
-                <lb xml:id="pag66_11" n="11" facs="#p66_11"/>
-                per una grande causa<pc>,</pc> ma ieri pensando a
-                <lb xml:id="pag66_12" n="12" facs="#p66_12"/>
-                <persName ref="#diena">Sergio <choice><abbr>D<am>.</am></abbr><expan resp="#personal" cert="high">D<ex>iena</ex></expan></choice></persName> mi pareva <subst><del rend="overstrike" hand="author">che </del> <add place="above" hand="author">amarissimo</add></subst> vedere la vittoria
-                <lb xml:id="pag66_13" n="13"  facs="#p66_13"/>
-                sicura<pc>,</pc> ma sentire di non poterla affer
-                <lb xml:id="pag66_14" n="14" break="no" facs="#p66_14"/>
-                rare e godere perchè la morte ci <del rend="overstrike" hand="author">porta lo</del>
-                <lb xml:id="pag66_15" n="15" facs="#p66_15"/>
-                strappa via e ci porta lontano<pc>.</pc>
-                <lb xml:id="pag66_16" n="16"  facs="#p66_16"/>
-                Domani scenderò a <placeName type="river">Sangone</placeName><pc>,</pc> farò mez
-                <lb xml:id="pag66_17" n="17" break="no" facs="#p66_17"/>
-                z’ora a piedi e giungerò a <placeName ref="#moncalieri">Moncalieri</placeName><pc>;</pc>
-                <lb xml:id="pag66_18" n="18" facs="#p66_18"/>
-                 di qui prenderò il treno per <placeName ref="#chieri">Chieri</placeName><pc>;</pc>
-                <lb xml:id="pag66_19" n="19" facs="#p66_19"/>
-                evitando <placeName ref="#torino">Torino</placeName><pc>.</pc> Se tutto va bene<pc>,</pc>
-                <lb xml:id="pag66_20" n="20" facs="#p66_20"/>
-                per le <num value="10">10</num> sarò a casa<pc>.</pc>
-            </ab>
+                    <pb xml:id="pag66" n="3" facs="#p66" />
+                    <lb xml:id="pag66_1" n="1" facs="#p66_1"/>
+                    con chi siamo<pc>,</pc> contro chi siamo &#187;<pc>,</pc> che pongano
+                    <lb xml:id="pag66_2" n="2" facs="#p66_2"/>
+                    in rilievo i nostri contrasti con i <choice><sic>Comunisti</sic><corr resp="#personal"> comunisti</corr></choice><pc>.</pc>
+                    <add place="below" hand="author" rend="pencil">
+                        <lb xml:id="pag66_3" n="3" facs="#p66_3"/>
+                        Anzi<pc>,</pc> mi pare assai più recisa
+                        <lb xml:id="pag66_4" n="4" facs="#p66_4"/>
+                        della precedente<pc>:</pc> l’instaurazione della
+                        <lb xml:id="pag66_5" n="5" facs="#p66_5"/>
+                        dittatura proletaria aprirebbe oggi ancora
+                        <lb xml:id="pag66_6" n="6" facs="#p66_6"/>
+                        una volta la via alla peggiore delle
+                        <lb xml:id="pag66_7" n="7" facs="#p66_7"/>
+                        reazioni<pc>.</pc>
+                    </add>
+                    <lb xml:id="pag66_8" n="8" facs="#p66_8"/>
+                    Intanto la guerra si prolunga<pc>:</pc> <subst><del rend="overstrike" hand="author"> fino a </del> <add place="above" hand="author">prima di</add></subst> <date when="1943-9">settembre</date>
+                    <lb xml:id="pag66_9" n="9" facs="#p66_9"/>
+                    non c’è da sperare che finisca e a <date when="1943-9">settembre</date>
+                    <lb xml:id="pag66_10" n="10" facs="#p66_10"/>
+                    forse saremo morti<pc>:</pc> si dice che è bello morire
+                    <lb xml:id="pag66_11" n="11" facs="#p66_11"/>
+                    per una grande causa<pc>,</pc> ma ieri pensando a
+                    <lb xml:id="pag66_12" n="12" facs="#p66_12"/>
+                    <persName ref="#diena">Sergio <choice><abbr>D<am>.</am></abbr><expan resp="#personal" cert="high">D<ex>iena</ex></expan></choice></persName> mi pareva <subst><del rend="overstrike" hand="author">che </del> <add place="above" hand="author">amarissimo</add></subst> vedere la vittoria
+                    <lb xml:id="pag66_13" n="13"  facs="#p66_13"/>
+                    sicura<pc>,</pc> ma sentire di non poterla affer
+                    <lb xml:id="pag66_14" n="14" break="no" facs="#p66_14"/>
+                    rare e godere perchè la morte ci <del rend="overstrike" hand="author">porta lo</del>
+                    <lb xml:id="pag66_15" n="15" facs="#p66_15"/>
+                    strappa via e ci porta lontano<pc>.</pc>
+                    <lb xml:id="pag66_16" n="16"  facs="#p66_16"/>
+                    Domani scenderò a <placeName type="river">Sangone</placeName><pc>,</pc> farò mez
+                    <lb xml:id="pag66_17" n="17" break="no" facs="#p66_17"/>
+                    z’ora a piedi e giungerò a <placeName ref="#moncalieri">Moncalieri</placeName><pc>;</pc>
+                    <lb xml:id="pag66_18" n="18" facs="#p66_18"/>
+                    di qui prenderò il treno per <placeName ref="#chieri">Chieri</placeName><pc>;</pc>
+                    <lb xml:id="pag66_19" n="19" facs="#p66_19"/>
+                    evitando <placeName ref="#torino">Torino</placeName><pc>.</pc> Se tutto va bene<pc>,</pc>
+                    <lb xml:id="pag66_20" n="20" facs="#p66_20"/>
+                    per le <num value="10">10</num> sarò a casa<pc>.</pc>
+                </ab>
+            </div>
         </body>
         <back>
             <listPerson>
                 <head>Lista persone</head>
                 <person xml:id="artom">
                     <persName>
-                        <ref xml:lang="it" target="http://digital-library.cdec.it/cdec-web/persone/detail/person-it-cdec-eaccpf0001-000015/artom-emanuele.html"/>
+                        <ref target="http://digital-library.cdec.it/cdec-web/persone/detail/person-it-cdec-eaccpf0001-000015/artom-emanuele.html"/>
                         <forename>Emanuele</forename>
                         <surname>Artom</surname>
                     </persName>
@@ -407,7 +418,7 @@
                 </person>
                 <person xml:id="segre">
                     <persName>
-                        <ref xml:lang="it" target="http://digital-library.cdec.it/cdec-web/persone/detail/person-it-cdec-eaccpf0001-017448/segre-amalia.html?persone=%22Segre%2C+Amalia%22"/>
+                        <ref target="http://digital-library.cdec.it/cdec-web/persone/detail/person-it-cdec-eaccpf0001-017448/segre-amalia.html?persone=%22Segre%2C+Amalia%22"/>
                         <forename>Amalia</forename>
                         <surname>Segre</surname>
                     </persName>
@@ -431,7 +442,7 @@
                 </person>
                 <person xml:id="diena">
                     <persName>
-                        <ref xml:lang="it" target="http://digital-library.cdec.it/cdec-web/persone/detail/person-it-cdec-eaccpf0001-000162/diena-sergio.html?persone=%22Diena%2C+Sergio%22"/>
+                        <ref target="http://digital-library.cdec.it/cdec-web/persone/detail/person-it-cdec-eaccpf0001-000162/diena-sergio.html?persone=%22Diena%2C+Sergio%22"/>
                         <forename>Sergio</forename>
                         <surname>Diena</surname>
                     </persName>
