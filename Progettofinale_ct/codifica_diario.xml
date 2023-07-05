@@ -238,7 +238,7 @@
     </facsimile>
     <text type="diary">
         <body>
-            <div>
+            <div part="M" sample="medial">
                 <ab rendition="#textspace">
                     <pb xml:id="pag64" n="1" facs="#p64" />
                     <lb xml:id="pag64_1" n="1" facs="#p64_1"/>
