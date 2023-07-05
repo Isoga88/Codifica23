@@ -102,7 +102,7 @@
                                 <div class="arrowbtn" id="arrowbtn"></div><div  id="arrowbtn2"  class=" arrowbtn2 hide"></div>
                             </div>
                             <div class="hide w-full text-center flex flex-col gap-3 elementList">
-                                <xsl:apply-templates select="tei:TEI/tei:text/tei:back/tei:listPerson/tei:person"/>
+                                <xsl:apply-templates select="tei:TEI/tei:standOff/tei:listPerson/tei:person"/>
                             </div>
                         </div>
                     </div>
@@ -113,7 +113,7 @@
                                 <div class="arrowbtn" id="arrowbtn"></div><div  id="arrowbtn2"  class=" arrowbtn2 hide"></div>
                             </div>
                             <div class="hide w-full text-center flex flex-col gap-3 elementList">
-                                <xsl:apply-templates select="tei:TEI/tei:text/tei:back/tei:listPlace/tei:place"/>
+                                <xsl:apply-templates select="tei:TEI/tei:standOff/tei:listPlace/tei:place"/>
                             </div>
                         </div>
                     </div>
@@ -124,7 +124,7 @@
                                 <div class="arrowbtn" id="arrowbtn"></div><div id="arrowbtn2"  class=" arrowbtn2 hide"></div>
                             </div>
                             <div class="hide w-full text-center flex flex-col gap-3 elementList">
-                                <xsl:apply-templates select="tei:TEI/tei:text/tei:back/tei:listOrg/tei:org"/>
+                                <xsl:apply-templates select="tei:TEI/tei:standOff/tei:listOrg/tei:org"/>
                             </div>
                         </div>
                     </div>

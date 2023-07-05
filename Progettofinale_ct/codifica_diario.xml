@@ -82,7 +82,7 @@
                         <decoDesc><p>Non sono presenti particolari decorazioni all'interno del testo</p></decoDesc>
                     </physDesc>
                     <history>
-                        <origin>Raccolta degli scritti autografi di <persName ref="#artom"> Emanuele Artom</persName> redatti tra il <date when="1943"> 1943</date> e il <date when="1944">1944</date> accompagnati dalla lettera originale della madre <persName ref="#segre"> Amalia Segre</persName></origin>
+                        <origin>Raccolta degli scritti autografi di <persName ref="#artom"> Emanuele Artom</persName> redatti tra il <origDate when="1943"> 1943</origDate> e il <origDate when="1944">1944</origDate> accompagnati dalla lettera originale della madre <persName ref="#segre"> Amalia Segre</persName></origin>
                         <acquisition>Le carte del fondo Emanuele Artom sono state donate alla Fondazione CDEC su espressa volontà della madre <persName ref="#segre">Amalia Segre Artom</persName></acquisition>
                     </history>
                 </msDesc>
@@ -149,9 +149,9 @@
                 <purpose type="express"/>
             </textDesc>
             <creation> 
-                Pagina 64<date when="1943-12-11"> 12 dicembre 1943 </date>;
-                Pagina 65<date when="1943-12-12"> 12 dicembre 1943 </date>;
-                Pagina 66<date when="1943-12-12"> 13 dicembre 1943 </date>;
+                Pagina 64<origDate when="1943-12-11"> 12 dicembre 1943 </origDate>;
+                Pagina 65<origDate when="1943-12-12"> 12 dicembre 1943 </origDate>;
+                Pagina 66<origDate when="1943-12-12"> 13 dicembre 1943 </origDate>;
             </creation>
         </profileDesc>
     </teiHeader>
@@ -389,158 +389,156 @@
                 </ab>
             </div>
         </body>
-        <back>
-            <listPerson>
-                <head>Lista persone</head>
-                <person xml:id="artom">
-                    <persName>
-                        <ref target="http://digital-library.cdec.it/cdec-web/persone/detail/person-it-cdec-eaccpf0001-000015/artom-emanuele.html"/>
-                        <forename>Emanuele</forename>
-                        <surname>Artom</surname>
-                    </persName>
-                    <sex value="M">uomo</sex>
-                    <birth>
-                        <date when="1915-06-23">23 giugno 1915</date>
-                        <placeName ref="#aosta">
-                            <settlement type="municipality">Aosta</settlement>
-                            <settlement type="region">Valle d'Aosta</settlement>
-                            <country key="IT">Italia</country>
-                        </placeName>
-                    </birth>
-                    <death>
-                        <date when="1944-04-07">7 aprile 1944</date>
-                        <placeName ref="#torino">
-                            <settlement type="municipality">Torino</settlement>
-                            <settlement type="region">Piemonte</settlement>
-                            <country key="IT">Italia</country>
-                        </placeName>
-                    </death>
-                </person>
-                <person xml:id="segre">
-                    <persName>
-                        <ref target="http://digital-library.cdec.it/cdec-web/persone/detail/person-it-cdec-eaccpf0001-017448/segre-amalia.html?persone=%22Segre%2C+Amalia%22"/>
-                        <forename>Amalia</forename>
-                        <surname>Segre</surname>
-                    </persName>
-                    <sex value="F">donna</sex>
-                    <birth>
-                        <date when="1890">1890</date>
-                        <placeName ref="#torino">
-                            <settlement type="municipality">Torino</settlement>
-                            <settlement type="region">Piemonte</settlement>
-                            <country key="IT">Italia</country>
-                        </placeName>
-                    </birth>
-                    <death>
-                        <date when="1972-09-10">10 settembre 1972</date>
-                        <placeName ref="#torino">
-                            <settlement type="municipality">Torino</settlement>
-                            <settlement type="region">Piemonte</settlement>
-                            <country key="IT">Italia</country>
-                        </placeName>
-                    </death>
-                </person>
-                <person xml:id="diena">
-                    <persName>
-                        <ref target="http://digital-library.cdec.it/cdec-web/persone/detail/person-it-cdec-eaccpf0001-000162/diena-sergio.html?persone=%22Diena%2C+Sergio%22"/>
-                        <forename>Sergio</forename>
-                        <surname>Diena</surname>
-                    </persName>
-                    <sex value="M">uomo</sex>
-                    <birth>
-                        <date when="1919/10/10">10 ottobre 1919</date>
-                        <placeName ref="#torino">
-                            <settlement type="municipality">Torino</settlement>
-                            <settlement type="region">Piemonte</settlement>
-                            <country key="IT">Italia</country>
-                        </placeName>
-                    </birth>
-                    <death>
-                        <date when="1943-12-04">4 dicembre 1948</date>
-                        <placeName>
-                            <settlement type="municipality"> Villar Pellice</settlement>
-                            <settlement type="region">Piemonte</settlement>
-                            <country key="IT">Italia</country>
-                        </placeName>
-                    </death>
-                </person>
-            </listPerson>
-            <listPlace>
-                <head>Lista luoghi</head>
-                <place xml:id="torino">
-                    <placeName source="http://www.comune.torino.it/">Torino</placeName>
-                    <settlement type="province">Torino</settlement>
-                    <settlement type="region">Piemonte</settlement>
-                    <country key="IT">Italia</country>
-                </place>
-                <place xml:id="aosta">
-                    <placeName source="https://www.comune.milano.it/">Aosta</placeName>
-                    <settlement type="province">Aosta</settlement>
+    </text>
+    <standOff>
+        <listPerson>
+        <head>Lista persone</head>
+        <person xml:id="artom">
+            <persName>
+                <ref target="http://digital-library.cdec.it/cdec-web/persone/detail/person-it-cdec-eaccpf0001-000015/artom-emanuele.html"/>
+                <forename>Emanuele</forename>
+                <surname>Artom</surname>
+            </persName>
+            <sex value="M">uomo</sex>
+            <birth>
+                <date when="1915-06-23">23 giugno 1915</date>
+                <placeName ref="#aosta">
+                    <settlement type="municipality">Aosta</settlement>
                     <settlement type="region">Valle d'Aosta</settlement>
                     <country key="IT">Italia</country>
-                </place>
-                <place xml:id="milano">
-                    <placeName source="https://www.comune.aosta.it/it">Milano</placeName>
-                    <settlement type="province">Milano</settlement>
-                    <settlement type="region">Lombardia</settlement>
-                    <country key="IT">Italia</country>
-                </place>
-                <place xml:id="barge">
-                    <placeName source="https://www.comune.barge.cn.it/">Barge</placeName>
-                    <settlement type="province">Cuneo</settlement>
+                </placeName>
+            </birth>
+            <death>
+                <date when="1944-04-07">7 aprile 1944</date>
+                <placeName ref="#torino">
+                    <settlement type="municipality">Torino</settlement>
                     <settlement type="region">Piemonte</settlement>
                     <country key="IT">Italia</country>
-                </place>
-                <place xml:id="torre">
-                    <placeName source="https://www.comune.torrepellice.to.it/">Torre Pellice</placeName>
-                    <settlement type="province">Torino</settlement>
+                </placeName>
+            </death>
+        </person>
+        <person xml:id="segre">
+            <persName>
+                <ref target="http://digital-library.cdec.it/cdec-web/persone/detail/person-it-cdec-eaccpf0001-017448/segre-amalia.html?persone=%22Segre%2C+Amalia%22"/>
+                <forename>Amalia</forename>
+                <surname>Segre</surname>
+            </persName>
+            <sex value="F">donna</sex>
+            <birth>
+                <date when="1890">1890</date>
+                <placeName ref="#torino">
+                    <settlement type="municipality">Torino</settlement>
                     <settlement type="region">Piemonte</settlement>
                     <country key="IT">Italia</country>
-                </place>
-                <place xml:id="pinerolo">
-                    <placeName source="https://www.comune.pinerolo.to.it/">Pinerolo</placeName>
-                    <settlement type="province">Torino</settlement>
+                </placeName>
+            </birth>
+            <death>
+                <date when="1972-09-10">10 settembre 1972</date>
+                <placeName ref="#torino">
+                    <settlement type="municipality">Torino</settlement>
                     <settlement type="region">Piemonte</settlement>
                     <country key="IT">Italia</country>
-                </place>
-                <place xml:id="moncalieri">
-                    <placeName source="https://www.comune.moncalieri.to.it/home">Moncalieri</placeName>
-                    <settlement type="province">Torino</settlement>
+                </placeName>
+            </death>
+        </person>
+        <person xml:id="diena">
+            <persName>
+                <ref target="http://digital-library.cdec.it/cdec-web/persone/detail/person-it-cdec-eaccpf0001-000162/diena-sergio.html?persone=%22Diena%2C+Sergio%22"/>
+                <forename>Sergio</forename>
+                <surname>Diena</surname>
+            </persName>
+            <sex value="M">uomo</sex>
+            <birth>
+                <date when="1919/10/10">10 ottobre 1919</date>
+                <placeName ref="#torino">
+                    <settlement type="municipality">Torino</settlement>
                     <settlement type="region">Piemonte</settlement>
                     <country key="IT">Italia</country>
-                </place>
-                <place xml:id="chieri">
-                    <placeName source="https://www.comune.chieri.to.it/home">Chieri</placeName>
-                    <settlement type="province">Torino</settlement>
+                </placeName>
+            </birth>
+            <death>
+                <date when="1943-12-04">4 dicembre 1948</date>
+                <placeName>
+                    <settlement type="municipality"> Villar Pellice</settlement>
                     <settlement type="region">Piemonte</settlement>
                     <country key="IT">Italia</country>
-                </place>
-
-            </listPlace>
-
-            <listOrg>
-                <head>Elenco organizzazioni</head>
-                <org xml:id="unipi">
-                    <orgName source="https://www.unipi.it/">Università di Pisa</orgName>
-                    <placeName>Pisa </placeName>
-                    <desc>
-                        L'Università di Pisa (UniPi), istituita ufficialmente nel 1343, è una delle più antiche e prestigiose università in Italia e in Europa.
-                    </desc>
-                </org>
-                <org xml:id="CDEC">
-                    <orgName source="https://www.cdec.it/"> CDEC - Centro di Documentazione Ebraica Contemporanea </orgName>
-                    <placeName ref="#milano"> Milano </placeName>
-                    <desc>
-                        Il CDEC è un istituto storico culturale indipendente con sede a Milano, che promuove lo studio delle vicende storiche, della cultura e della realtà degli ebrei, con particolare riferimento all'Italia e all'età contemporanea.
-                    </desc>
-                </org>
-                <org xml:id="pda">
-                    <orgName source="https://it.wikipedia.org/wiki/Partito_d%27Azione"> Partito d'Azione </orgName>
-                    <desc>
-                        Partito politico italiano di centro-sinistra fondato nel <date when="1942">1942.</date>
-                    </desc>
-                </org>
-            </listOrg>
-        </back>
-    </text>
+                </placeName>
+            </death>
+        </person>
+    </listPerson>
+    <listPlace>
+        <head>Lista luoghi</head>
+        <place xml:id="torino">
+            <placeName source="http://www.comune.torino.it/">Torino</placeName>
+            <settlement type="province">Torino</settlement>
+            <settlement type="region">Piemonte</settlement>
+            <country key="IT">Italia</country>
+        </place>
+        <place xml:id="aosta">
+            <placeName source="https://www.comune.milano.it/">Aosta</placeName>
+            <settlement type="province">Aosta</settlement>
+            <settlement type="region">Valle d'Aosta</settlement>
+            <country key="IT">Italia</country>
+        </place>
+        <place xml:id="milano">
+            <placeName source="https://www.comune.aosta.it/it">Milano</placeName>
+            <settlement type="province">Milano</settlement>
+            <settlement type="region">Lombardia</settlement>
+            <country key="IT">Italia</country>
+        </place>
+        <place xml:id="barge">
+            <placeName source="https://www.comune.barge.cn.it/">Barge</placeName>
+            <settlement type="province">Cuneo</settlement>
+            <settlement type="region">Piemonte</settlement>
+            <country key="IT">Italia</country>
+        </place>
+        <place xml:id="torre">
+            <placeName source="https://www.comune.torrepellice.to.it/">Torre Pellice</placeName>
+            <settlement type="province">Torino</settlement>
+            <settlement type="region">Piemonte</settlement>
+            <country key="IT">Italia</country>
+        </place>
+        <place xml:id="pinerolo">
+            <placeName source="https://www.comune.pinerolo.to.it/">Pinerolo</placeName>
+            <settlement type="province">Torino</settlement>
+            <settlement type="region">Piemonte</settlement>
+            <country key="IT">Italia</country>
+        </place>
+        <place xml:id="moncalieri">
+            <placeName source="https://www.comune.moncalieri.to.it/home">Moncalieri</placeName>
+            <settlement type="province">Torino</settlement>
+            <settlement type="region">Piemonte</settlement>
+            <country key="IT">Italia</country>
+        </place>
+        <place xml:id="chieri">
+            <placeName source="https://www.comune.chieri.to.it/home">Chieri</placeName>
+            <settlement type="province">Torino</settlement>
+            <settlement type="region">Piemonte</settlement>
+            <country key="IT">Italia</country>
+        </place>
+    </listPlace>
+    <listOrg>
+        <head>Elenco organizzazioni</head>
+        <org xml:id="unipi">
+            <orgName source="https://www.unipi.it/">Università di Pisa</orgName>
+            <placeName>Pisa </placeName>
+            <desc>
+                L'Università di Pisa (UniPi), istituita ufficialmente nel 1343, è una delle più antiche e prestigiose università in Italia e in Europa.
+            </desc>
+        </org>
+        <org xml:id="CDEC">
+            <orgName source="https://www.cdec.it/"> CDEC - Centro di Documentazione Ebraica Contemporanea </orgName>
+            <placeName ref="#milano"> Milano </placeName>
+            <desc>
+                Il CDEC è un istituto storico culturale indipendente con sede a Milano, che promuove lo studio delle vicende storiche, della cultura e della realtà degli ebrei, con particolare riferimento all'Italia e all'età contemporanea.
+            </desc>
+        </org>
+        <org xml:id="pda">
+            <orgName source="https://it.wikipedia.org/wiki/Partito_d%27Azione"> Partito d'Azione </orgName>
+            <desc>
+                Partito politico italiano di centro-sinistra fondato nel <date when="1942">1942.</date>
+            </desc>
+        </org>
+    </listOrg>
+    </standOff>
 </TEI>
