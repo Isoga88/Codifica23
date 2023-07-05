@@ -46,7 +46,8 @@
                         <country key="IT">Italia</country>
                         <settlement type="town" ref="#milano">Milano</settlement>
                         <institution ref="#CDEC">Centro di documentazione ebraiaca</institution>
-                        <repository source="https://digital-library.cdec.it/cdec-web/storico/detail/IT-CDEC-ST0003-000001/fondo-emanuele-artom.html">Fondo Emanuele Artom, b.1, fasc 9</repository>
+                        <repository source="https://digital-library.cdec.it/cdec-web/storico/detail/IT-CDEC-ST0003-000001/fondo-emanuele-artom.html">Fondo Emanuele Artom, </repository>
+                        <idno>b.1, fasc 9</idno> 
                     </msIdentifier>
                     <msContents>
                         <summary>Raccolta degli scritti autografi di<persName ref="#artom"> Emanuele Artom </persName>redatti tra il <date when="1943">1943 </date>e il <date>1944</date> accompagnati dalla lettera originale della madre <persName ref="#segre">Amalia</persName> riportante l'epigrafe alla mia morte questo plico deve essere consegnato al <orgName ref="#CDEC">Centro di documentazione ebraica</orgName> [..] esso ha un grande valore storico</summary>
