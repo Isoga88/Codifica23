@@ -241,11 +241,18 @@
         </xsl:element>
     </xsl:template>
 
+    <xsl:template match="tei:geogName">
+        <xsl:element name="span">
+            <xsl:attribute name="class">place </xsl:attribute>
+            <xsl:apply-templates/>
+        </xsl:element>
+    </xsl:template>
+
     <xsl:template match="tei:listPlace/tei:place">
         <div class="cardname">
             <div class="bold">Nome: </div><xsl:value-of select="tei:placeName"/><br/>
             <div class="bold">Provincia: </div><xsl:value-of select="tei:settlement[@type='province']"/><br/>
-            <div class="bold">Regione: </div><xsl:value-of select="tei:settlement[@type='region']"/><br/>
+            <div class="bold">Regione: </div><xsl:value-of select="tei:region"/><br/>
             <div class="bold">Stato: </div><xsl:value-of select="tei:country"/><br/>
         </div>
     </xsl:template>

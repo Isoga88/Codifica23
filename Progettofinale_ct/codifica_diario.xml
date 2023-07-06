@@ -378,7 +378,7 @@
                     <lb xml:id="pag66_15" n="15" facs="#p66_15"/>
                     strappa via e ci porta lontano<pc>.</pc>
                     <lb xml:id="pag66_16" n="16"  facs="#p66_16"/>
-                    Domani scenderò a <placeName type="river">Sangone</placeName><pc>,</pc> farò mez
+                    Domani scenderò a <geogName type="river">Sangone</geogName><pc>,</pc> farò mez
                     <lb xml:id="pag66_17" n="17" break="no" facs="#p66_17"/>
                     z’ora a piedi e giungerò a <placeName ref="#moncalieri">Moncalieri</placeName><pc>;</pc>
                     <lb xml:id="pag66_18" n="18" facs="#p66_18"/>
@@ -405,7 +405,7 @@
                 <date when="1915-06-23">23 giugno 1915</date>
                 <placeName ref="#aosta">
                     <settlement type="municipality">Aosta</settlement>
-                    <settlement type="region">Valle d'Aosta</settlement>
+                    <region>Valle d'Aosta</region>
                     <country key="IT">Italia</country>
                 </placeName>
             </birth>
@@ -413,7 +413,7 @@
                 <date when="1944-04-07">7 aprile 1944</date>
                 <placeName ref="#torino">
                     <settlement type="municipality">Torino</settlement>
-                    <settlement type="region">Piemonte</settlement>
+                    <region>Piemonte</region>
                     <country key="IT">Italia</country>
                 </placeName>
             </death>
@@ -429,7 +429,7 @@
                 <date when="1890">1890</date>
                 <placeName ref="#torino">
                     <settlement type="municipality">Torino</settlement>
-                    <settlement type="region">Piemonte</settlement>
+                    <region>Piemonte</region>
                     <country key="IT">Italia</country>
                 </placeName>
             </birth>
@@ -437,7 +437,7 @@
                 <date when="1972-09-10">10 settembre 1972</date>
                 <placeName ref="#torino">
                     <settlement type="municipality">Torino</settlement>
-                    <settlement type="region">Piemonte</settlement>
+                    <region>Piemonte</region>
                     <country key="IT">Italia</country>
                 </placeName>
             </death>
@@ -453,7 +453,7 @@
                 <date when="1919/10/10">10 ottobre 1919</date>
                 <placeName ref="#torino">
                     <settlement type="municipality">Torino</settlement>
-                    <settlement type="region">Piemonte</settlement>
+                    <region>Piemonte</region>
                     <country key="IT">Italia</country>
                 </placeName>
             </birth>
@@ -461,7 +461,7 @@
                 <date when="1943-12-04">4 dicembre 1948</date>
                 <placeName>
                     <settlement type="municipality"> Villar Pellice</settlement>
-                    <settlement type="region">Piemonte</settlement>
+                    <region>Piemonte</region>
                     <country key="IT">Italia</country>
                 </placeName>
             </death>
@@ -472,49 +472,49 @@
         <place xml:id="torino">
             <placeName source="http://www.comune.torino.it/">Torino</placeName>
             <settlement type="province">Torino</settlement>
-            <settlement type="region">Piemonte</settlement>
+            <region>Piemonte</region>
             <country key="IT">Italia</country>
         </place>
         <place xml:id="aosta">
             <placeName source="https://www.comune.milano.it/">Aosta</placeName>
             <settlement type="province">Aosta</settlement>
-            <settlement type="region">Valle d'Aosta</settlement>
+            <region>Valle d'Aosta</region>
             <country key="IT">Italia</country>
         </place>
         <place xml:id="milano">
             <placeName source="https://www.comune.aosta.it/it">Milano</placeName>
             <settlement type="province">Milano</settlement>
-            <settlement type="region">Lombardia</settlement>
+            <region>Lombardia</region>
             <country key="IT">Italia</country>
         </place>
         <place xml:id="barge">
             <placeName source="https://www.comune.barge.cn.it/">Barge</placeName>
             <settlement type="province">Cuneo</settlement>
-            <settlement type="region">Piemonte</settlement>
+            <region>Piemonte</region>
             <country key="IT">Italia</country>
         </place>
         <place xml:id="torre">
             <placeName source="https://www.comune.torrepellice.to.it/">Torre Pellice</placeName>
             <settlement type="province">Torino</settlement>
-            <settlement type="region">Piemonte</settlement>
+            <region>Piemonte</region>
             <country key="IT">Italia</country>
         </place>
         <place xml:id="pinerolo">
             <placeName source="https://www.comune.pinerolo.to.it/">Pinerolo</placeName>
             <settlement type="province">Torino</settlement>
-            <settlement type="region">Piemonte</settlement>
+            <region>Piemonte</region>
             <country key="IT">Italia</country>
         </place>
         <place xml:id="moncalieri">
             <placeName source="https://www.comune.moncalieri.to.it/home">Moncalieri</placeName>
             <settlement type="province">Torino</settlement>
-            <settlement type="region">Piemonte</settlement>
+            <region>Piemonte</region>
             <country key="IT">Italia</country>
         </place>
         <place xml:id="chieri">
             <placeName source="https://www.comune.chieri.to.it/home">Chieri</placeName>
             <settlement type="province">Torino</settlement>
-            <settlement type="region">Piemonte</settlement>
+            <region>Piemonte</region>
             <country key="IT">Italia</country>
         </place>
     </listPlace>
